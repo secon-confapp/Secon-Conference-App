@@ -4,9 +4,9 @@
             var settings = $.extend({
                 minwidth: 40,
                 maxwidth: 250,
-                animate: true,
-                speed: 1000,
-                initialdisplay: 'compact',
+                animate: false,
+                speed: 100000,
+                initialdisplay: 'expanded',
                 facebook: true,
                 twitter: true,
                 digg: true,
@@ -16,9 +16,9 @@
                 delicious: true,
                 linkedin: true,
                 googlebuzz: true,
-                yoursitetitle: '',
-                yoursiteurl: '',
-                yoursitename: '',
+                yoursitetitle: 'Secon 2012',
+                yoursiteurl: 'http://www.ieee-secon.org/',
+                yoursitename: 'Secon 2012',
                 desc: ''
             }, options);
             return this.each(function() {
