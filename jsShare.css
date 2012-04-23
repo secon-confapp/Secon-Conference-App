@@ -70,4 +70,7 @@
 {
 	border: none;
 }
+body{ text-align:center; }
+img{ float: right; margin: 0px 10px 10px 10px;}
+#content{ width:70%; margin: 0px auto; text-align: left; }
 
