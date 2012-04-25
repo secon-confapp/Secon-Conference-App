@@ -15,13 +15,20 @@
 </head>
 
 <body> 
-
 <div data-role="page" id="page">
-	<div data-role="header">
-		<h1>Page One</h1>
-	</div>
-	<div data-role="content">	
-		<p style="color:blue;text-align:center;font-size:36px">Event Details</p>
+<div data-role="header"  data-theme="c" data-id="myheader" data-position="fixed">		
+	<div data-role="navbar">
+		<ul>
+		<li><a href="index.html" class="ui-btn-active">Info</a></li>
+		<li><a href="events.html" rel="external">Events</a></li>
+        <li><a href="forums.html" rel="external">Forums</a></li>
+		</ul>
+	</div><!-- /navbar -->
+    </div><!-- /header -->
+    
+<div data-role="content">	
+<p style="color:blue;text-align:center;font-size:36px">
+Event Details</p>
 <p style="color:black;text-align:center;font-size:24px">Event Name</p>
 <p style="color:black;text-align:center;font-size:24px">Event Presenter</p>
 <p style="color:black;text-align:center;">Summary</p>
@@ -31,10 +38,9 @@ akgh;ai;ohgioqaergio;ahgfkiagh;fkagh;a;ghkah;lgkfl;aghka;l
 kioa;gh;oahkgj;ahgfk;ahkgf;lahkgfg;airthreithuaoituiaopthiirapo;
 aghd;ahjtreityuaiergh;kahfbvnfkghjr;eiohg;avgnn.</p>
 
-	<p style="text-align:center;font-size:24px">Time</p><p style="text-align:center"><a href="#" data-role="button" data-theme="b" data-inline="true">Add To Calendar</a></p>
+<p style="text-align:center;font-size:24px">Time</p><p style="text-align:center"><a href="#" data-role="button" data-theme="b" data-inline="true">Add To Calendar</a></p>
   
-	<p style="text-align:center;font-size:24px">Directions</p><p style="text-align:center;"><a href="http://media.expedia.com/hotels/1000000/20000/16900/16801/16801_69_b.jpg" data-role="button" data-icon="star" data-theme="b" data-inline="true">
-     View Map</a></p>
+<p style="text-align:center;font-size:24px">Directions</p><p style="text-align:center;"><a href="http://media.expedia.com/hotels/1000000/20000/16900/16801/16801_69_b.jpg" data-role="button" data-icon="star" data-theme="b" data-inline="true">View Map</a></p>
 
 <p style="text-align:center; font-size:24px">Rate This Event:</p>
 <div data-role="none">
@@ -44,48 +50,8 @@ aghd;ahjtreityuaiergh;kahfbvnfkghjr;eiohg;avgnn.</p>
 <input name="star1" type="radio" class="star"/>
 <input name="star1" type="radio" class="star"/>
 </div>
-	
-	</div>
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div>
 </div>
-
-<div data-role="page" id="page2">
-	<div data-role="header">
-		<h1>Page Two</h1>
-	</div>
-	<div data-role="content">	
-		Content		
-	</div>
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div>
+<div data-role="footer"  data-theme="c" data-id="myfooter" data-position="fixed"><a href="http://www.wikitravel.org/en/Seoul" target="_blank">Explore Korea</a></div><!-- /footer -->
 </div>
-
-<div data-role="page" id="page3">
-	<div data-role="header">
-		<h1>Page Three</h1>
-	</div>
-	<div data-role="content">	
-		Content		
-	</div>
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div>
-</div>
-
-<div data-role="page" id="page4">
-	<div data-role="header">
-		<h1>Page Four</h1>
-	</div>
-	<div data-role="content">	
-		Content		
-	</div>
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div>
-</div>
-
 </body>
 </html>
