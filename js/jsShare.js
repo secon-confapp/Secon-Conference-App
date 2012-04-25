@@ -19,7 +19,7 @@
                 yoursitetitle: 'Secon 2012',
                 yoursiteurl: 'http://www.ieee-secon.org/',
                 yoursitename: 'Secon 2012',
-                desc: ''
+                desc: 'adfasfer'
             }, options);
             return this.each(function() {
                 var container = $(this);
