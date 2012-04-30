@@ -12,6 +12,13 @@
 <script src="star-rating/jquery.rating.pack.js"></script>
 <script src="star-rating/jquery.form.js"></script>
 <script src="star-rating/jquery.rating.js"></script>
+<link rel="stylesheet" type="text/css" href="Social/jsShare.css">
+<script src="Social/jsShare.js" type="text/javascript"></script>
+<script type="text/javascript">
+       $(document).ready(function() {
+           $('#buttons').jsShare({ maxwidth: 370 });
+       });
+   </script>
 </head>
 
 <body> 
@@ -50,7 +57,11 @@ aghd;ahjtreityuaiergh;kahfbvnfkghjr;eiohg;avgnn.</p>
 <input name="star1" type="radio" class="star"/>
 </div>
 </div>
-<div data-role="footer"  data-theme="c" data-id="myfooter" data-position="fixed"><a href="http://www.wikitravel.org/en/Seoul" target="_blank">Explore Korea</a></div><!-- /footer -->
-</div>
+<div data-role="footer" data-theme="c" data-position="fixed">	
+<div class="ui-grid-a">
+	<div class="ui-block-a" id="buttons"></div>
+	<div class="ui-block-b"> <a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></div>
+</div><!-- /grid-a -->	 
+</div><!-- /footer -->
 </body>
 </html>
