@@ -7,104 +7,142 @@
 <script src="jquery-mobile/jquery-1.5.min.js" type="text/javascript"></script>
 <script src="jquery-mobile/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
 <script src="/phonegap.js" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+
+
+
 <link rel="stylesheet" type="text/css" href="Social/jsShare.css">
 <script src="Social/jsShare.js" type="text/javascript"></script>
 <script type="text/javascript">
-       $(document).ready(function() {
-           $('#buttons').jsShare({ maxwidth: 370 });
+       jQuery(document).ready(function() {
+           jQuery('#buttons').jsShare({ maxwidth: 370 });
        });
    </script>
+   
+   
+   <script type="text/javascript" src="scriptaculous/lib/prototype.js"></script>
+<script type="text/javascript" src="fastinit.js"></script>
+<script type="text/javascript" src="tablekit.js"></script>
+<script>var data; var table_obj1;
+</script>
+<script>
+jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", function(json) {
+   data = json;
+   
+   table_obj1 = jQuery('table');
+   
+   for(i=0; i<data.length; i++)
+   {if(data[i].edate ==" April 23rd")
+	   {jQuery('#day1events').append('<tr><td>'+data[i].edate+'</td><td>'+data[i].edate+'</td><td>'+data[i].ename+'</td><td>'+data[i].oname+'</td><td>'+data[i].elocation+'</td></tr>')};}
+	 
+ });</script>
+
+
+
+
+
 </head> 
 <body>
 <div data-role="page" id="page">
-<div data-role="header"  data-theme="c" data-id="myheader" data-position="fixed">		
-	<div data-role="navbar">
-		<ul>
-		<li><a href="index.html" rel="external">Info</a></li>
-		<li><a href="events.html" class="ui-btn-active">Events</a></li>
-        <li><a href="forums.html" rel="external">Forums</a></li>
-		
-		</ul>
-	</div><!-- /navbar -->
-</div><!-- /nav --> 
+	<div data-role="header"  data-theme="c" data-id="myheader" data-position="fixed">		
+		<div data-role="navbar">
+			<ul>
+				<li><a href="index.html" rel="external">Info</a></li>
+				<li><a href="events.html" class="ui-btn-active">Events</a></li>
+        		<li><a href="forums.html" rel="external">Forums</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /nav --> 
 	<div data-role="content">	
-	<p style="color:blue;text-align:center;font-size:36px">Events</p>
-<ul data-role="listview" data-inset="true">
-	<li><a href="#page3" rel="internal">Day 1 Events</a></li>
-	<li><a href="#page4" rel="internal">Day 2 Events</a></li>
-	<li><a href="#page5" rel="internal">Day 3 Events</a></li>
-</ul>
-<p style="color:blue;text-align:center;font-size:36px">Posters & Demos</p>
-<ul data-role="listview" data-inset="true">
-	<li><a href="#page6" rel="internal">Day 1</a></li>
-	<li><a href="#page7" rel="internal">Day 2</a></li>
-	<li><a href="#page8" rel="internal">Day 3</a></li>
-</ul>
-</div>
+		<p style="color:blue;text-align:center;font-size:36px">Events</p>
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#page3" rel="internal">Day 1 Events</a></li>
+				<li><a href="#page4" rel="internal">Day 2 Events</a></li>
+				<li><a href="#page5" rel="internal">Day 3 Events</a></li>
+			</ul>
+		<p style="color:blue;text-align:center;font-size:36px">Posters & Demos</p>
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#page6" rel="internal">Day 1</a></li>
+				<li><a href="#page7" rel="internal">Day 2</a></li>
+				<li><a href="#page8" rel="internal">Day 3</a></li>
+				</ul>
+	</div><!-- /content -->
 
-<div data-role="footer" data-theme="c" data-position="fixed">	
-<div data-role="navbar">
-		<ul>
-		<li><div id="buttons"></div></li>
-		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
-		</ul>
-	</div><!-- /navbar -->   
-</div><!-- /footer -->
-    
-</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">	
+		<div data-role="navbar">
+			<ul>
+				<li><div id="buttons"></div></li>
+				<li><p style="text-align:center">Secon2012</p></li>
+        		<li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+			</ul>
+		</div><!-- /navbar -->   
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+
+
 <div data-role="page" id="page3">
 	<div data-role="header">
 		<h1>Day 1: Events</h1>
 	</div>
 	<div data-role="content">	
-		<ul data-role="listview" data-inset="true">
-	<li><a href="eventDetails.html" rel="external">Event 1</a></li>
-	<li><a href="eventDetails.html" rel="external">Event 2</a></li>
-	<li><a href="eventDetails.html" rel="external">Event 3</a></li>
-	<li><a href="eventDetails.html" rel="external">Event 4</a></li>
-	<li><a href="eventDetails.html" rel="external">Event 5</a></li>
-</ul>		
-	</div>
-<div data-role="footer" data-theme="c" data-position="fixed">	
-<a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a> 
-</div><!-- /footer -->
-</div>
+
+<table class="sortable" id ="day1events" width="100%" >
+
+			<thead>
+					<tr><th id="creation-date">Date</th><th id="time">Time</th><th id="title">Title</th><th id="speaker">Speaker</th><th id="room">Room</th></tr>
+				</thead>
+		
+				<tbody>
+                </tbody></table>
+
+	</div><!-- /content -->
+	<div data-role="footer" data-theme="c" data-position="fixed">	
+		<a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a> 
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+
 
 <div data-role="page" id="page4">
 	<div data-role="header">
 		<h1>Day 2: Events</h1>
 	</div>
 	<div data-role="content">	
-		<ul data-role="listview" data-inset="true">
-	<li><a href="eventDetails.html" rel="external">Event 1</a></li>
-	<li><a href="eventDetails.html" rel="external">Event 2</a></li>
-	<li><a href="eventDetails.html" rel="external">Event 3</a></li>
-	<li><a href="eventDetails.html" rel="external">Event 4</a></li>
-	<li><a href="eventDetails.html" rel="external">Event 5</a></li>
-</ul>		
-	</div>
+		<table class="sortable" id ="day2events" width="100%" >
+
+			<thead>
+					<tr><th id="creation-date">Date</th><th id="time">Time</th><th id="title">Title</th><th id="speaker">Speaker</th><th id="room">Room</th></tr>
+				</thead>
+		
+				<tbody>
+                </tbody></table>		
+	</div><!-- /content -->
 	<div data-role="footer" data-theme="c" data-position="fixed">	
-<a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a> 
-</div><!-- /footer -->
-</div>
+		<a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a> 
+	</div><!-- /footer -->
+</div><!-- /page -->
 
 <div data-role="page" id="page5">
 	<div data-role="header">
 		<h1>Day 3: Events</h1>
 	</div>
 	<div data-role="content">	
-		<ul data-role="listview" data-inset="true">
-	<li><a href="eventDetails.html" rel="external">Event 1</a></li>
-	<li><a href="eventDetails.html" rel="external">Event 2</a></li>
-	<li><a href="eventDetails.html" rel="external">Event 3</a></li>
-	<li><a href="eventDetails.html" rel="external">Event 4</a></li>
-	<li><a href="eventDetails.html" rel="external">Event 5</a></li>
-</ul>	
+	<table class="sortable" id ="day3events" width="100%" >
+
+			<thead>
+					<tr><th id="creation-date">Date</th><th id="time">Time</th><th id="title">Title</th><th id="speaker">Speaker</th><th id="room">Room</th></tr>
+				</thead>
+		
+				<tbody>
+                </tbody></table>
 	</div>
 	<div data-role="footer" data-theme="c" data-position="fixed">	
-<a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a> 
-</div><!-- /footer -->
+		<a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a> 
+	</div><!-- /footer -->
 </div>
 
 <div data-role="page" id="page6">
@@ -160,6 +198,7 @@
 <a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a> 
 </div><!-- /footer -->
 </div>
+
 
 </body>
 </html>
