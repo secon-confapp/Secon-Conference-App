@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>jQuery Mobile Web App</title>
+<title>Secon 2012</title>
 <link href="jquery-mobile/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css"/>
 <script src="jquery-mobile/jquery-1.5.min.js" type="text/javascript"></script>
 <script src="jquery-mobile/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
@@ -13,8 +13,9 @@
 
 
 <link rel="stylesheet" type="text/css" href="Social/jsShare.css">
-<script src="Social/jsShare.js" type="text/javascript"></script>
+<script src="Social/jsShare.js" type="text/javascript"></script> 
 <script type="text/javascript">
+<<<<<<< HEAD
        jQuery(document).ready(function() {
            jQuery('#buttons').jsShare({ maxwidth: 370 });
        });
@@ -42,6 +43,12 @@ jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", f
 
 
 
+=======
+       $(document).ready(function() {
+           $('#buttons').jsShare({ maxwidth: 280 });
+       });
+</script>
+>>>>>>> consistent theme
 </head> 
 <body>
 <div data-role="page" id="page">
@@ -84,10 +91,11 @@ jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", f
 
 
 <div data-role="page" id="page3">
-	<div data-role="header">
+	<div data-role="header" data-theme="c">
 		<h1>Day 1: Events</h1>
 	</div>
 	<div data-role="content">	
+<<<<<<< HEAD
 
 <table class="sortable" id ="day1events" width="100%" >
 
@@ -106,9 +114,28 @@ jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", f
 
 
 
+=======
+		<ul data-role="listview" data-inset="true">
+	<li><a href="eventDetails.html" rel="external">Event 1</a></li>
+	<li><a href="eventDetails.html" rel="external">Event 2</a></li>
+	<li><a href="eventDetails.html" rel="external">Event 3</a></li>
+	<li><a href="eventDetails.html" rel="external">Event 4</a></li>
+	<li><a href="eventDetails.html" rel="external">Event 5</a></li>
+</ul>		
+	</div>
+<div data-role="footer" data-theme="c" data-position="fixed">	
+<div data-role="navbar">
+		<ul>
+		<li><p style="text-align:center">Secon2012</p></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+		</ul>
+	</div><!-- /navbar -->   
+</div><!-- /footer -->
+</div>
+>>>>>>> consistent theme
 
 <div data-role="page" id="page4">
-	<div data-role="header">
+	<div data-role="header" data-theme="c">
 		<h1>Day 2: Events</h1>
 	</div>
 	<div data-role="content">	
@@ -122,12 +149,23 @@ jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", f
                 </tbody></table>		
 	</div><!-- /content -->
 	<div data-role="footer" data-theme="c" data-position="fixed">	
+<<<<<<< HEAD
 		<a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a> 
 	</div><!-- /footer -->
 </div><!-- /page -->
+=======
+<div data-role="navbar">
+		<ul>
+		<li><p style="text-align:center">Secon2012</p></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+		</ul>
+	</div><!-- /navbar -->   
+</div><!-- /footer -->
+</div>
+>>>>>>> consistent theme
 
 <div data-role="page" id="page5">
-	<div data-role="header">
+	<div data-role="header" data-theme="c">
 		<h1>Day 3: Events</h1>
 	</div>
 	<div data-role="content">	
@@ -141,12 +179,22 @@ jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", f
                 </tbody></table>
 	</div>
 	<div data-role="footer" data-theme="c" data-position="fixed">	
+<<<<<<< HEAD
 		<a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a> 
 	</div><!-- /footer -->
+=======
+<div data-role="navbar">
+		<ul>
+		<li><p style="text-align:center">Secon2012</p></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+		</ul>
+	</div><!-- /navbar -->   
+</div><!-- /footer -->
+>>>>>>> consistent theme
 </div>
 
 <div data-role="page" id="page6">
-	<div data-role="header">
+	<div data-role="header" data-theme="c">
 		<h1>Day 1:  Posters & Demos</h1>
 	</div>
 	<div data-role="content">	
@@ -159,12 +207,17 @@ jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", f
 </ul>	
 	</div>
 	<div data-role="footer" data-theme="c" data-position="fixed">	
-<a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a> 
+<div data-role="navbar">
+		<ul>
+		<li><p style="text-align:center">Secon2012</p></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+		</ul>
+	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
 <div data-role="page" id="page7">
-	<div data-role="header">
+	<div data-role="header" data-theme="c">
 		<h1>Day 2:  Posters & Demos</h1>
 	</div>
 	<div data-role="content">	
@@ -177,12 +230,17 @@ jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", f
 </ul>	
 	</div>
 <div data-role="footer" data-theme="c" data-position="fixed">	
-<a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a> 
+<div data-role="navbar">
+		<ul>
+		<li><p style="text-align:center">Secon2012</p></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+		</ul>
+	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
 <div data-role="page" id="page8">
-	<div data-role="header">
+	<div data-role="header"data-theme="c">
 		<h1>Day 3: Posters & Demos</h1>
 	</div>
 	<div data-role="content">	
@@ -195,7 +253,12 @@ jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", f
 </ul>	
 	</div>
 	<div data-role="footer" data-theme="c" data-position="fixed">	
-<a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a> 
+<div data-role="navbar">
+		<ul>
+		<li><p style="text-align:center">Secon2012</p></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+		</ul>
+	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
