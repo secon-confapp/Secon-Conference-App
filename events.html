@@ -35,7 +35,7 @@ jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", f
    
    for(i=0; i<data.length; i++)
    {if(data[i].edate ==" April 23rd")
-	   {jQuery('#day1events').append('<tr><td>'+data[i].edate+'</td><td>'+data[i].edate+'</td><td>'+data[i].ename+'</td><td>'+data[i].oname+'</td><td>'+data[i].elocation+'</td></tr>')};}
+	   {jQuery('#day1events').append('<tr><td>'+data[i].edate+'</td><td>'+data[i].ename+'</td><td>'+data[i].oname+'</td><td>'+data[i].elocation+'</td></tr>')};}
 	 
  });
    $(document).ready(function() {
@@ -63,9 +63,9 @@ jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", f
 			</ul>
 		<p style="color:blue;text-align:center;font-size:36px">Sessions</p>
 			<ul data-role="listview" data-inset="true">
-				<li><a href="#page6" rel="internal">Day 1</a></li>
-				<li><a href="#page7" rel="internal">Day 2</a></li>
-				<li><a href="#page8" rel="internal">Day 3</a></li>
+				<li><a href="#page6" rel="internal">Day 1 Sessions</a></li>
+				<li><a href="#page7" rel="internal">Day 2 Sessions</a></li>
+				<li><a href="#page8" rel="internal">Day 3 Sessions</a></li>
 				</ul>
 	</div><!-- /content -->
 
@@ -90,7 +90,7 @@ jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", f
 	<div data-role="content">	
 <table class="sortable" id ="day1events" width="100%"  >
 <thead>
-					<tr><th width="18%" id="creation-date">Date</th><th width="18%" id="time">Time</th><th width="17%" id="title">Title</th><th width="20%" id="speaker">Speaker</th><th width="27%" id="room">Room</th></tr>
+					<tr><th width="18%" id="time">Time</th><th width="17%" id="title">Title</th><th width="20%" id="speaker">Speaker</th><th width="27%" id="room">Room</th></tr>
 				</thead>
 		
 				<tbody>
@@ -146,9 +146,9 @@ jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", f
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview" data-inset="true">
-	<li><a href="#page9" rel="internal">The Medley</a></li>
-	<li><a href="#page10" rel="internal">Energy Efficiency</a></li>
-	<li><a href="#page11" rel="internal">Scheduling and Resource Management </a></li>
+	<li><a href="#page9" rel="internal">The Medley (Tue 11-12:30)</a></li>
+	<li><a href="#page10" rel="internal">Energy Efficiency (Tue 3:30-5)</a></li>
+	<li><a href="#page11" rel="internal">Scheduling and Resource Management (Tue 3:30-5) </a></li>
 </ul>	
 	</div>
 	<div data-role="footer" data-theme="c" data-position="fixed">	
@@ -167,12 +167,12 @@ jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", f
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview" data-inset="true">
-	<li><a href="#page12" rel="internal">Data processing</a></li>
-	<li><a href="#page13" rel="internal">Routing I </a></li>
-	<li><a href="#page14" rel="internal">Localization</a></li>
-	<li><a href="#page15" rel="internal">Content sources and distribution</a></li>
-	<li><a href="#page16" rel="internal">Sensor Networks</a></li>
-    <li><a href="#page17" rel="internal">Routing II</a></li>
+	<li><a href="#page12" rel="internal">Data processing (Wed 9-10:30)</a></li>
+	<li><a href="#page13" rel="internal">Routing I (Wed 9-10:30)</a></li>
+	<li><a href="#page14" rel="internal">Localization (Wed 11-12:30)</a></li>
+	<li><a href="#page15" rel="internal">Content sources and distribution (Wed 11-12:30)</a></li>
+	<li><a href="#page16" rel="internal">Sensor Networks (Wed 3:30-5)</a></li>
+    <li><a href="#page17" rel="internal">Routing II (Wed 3:30-5)</a></li>
 </ul>	
 	</div>
 <div data-role="footer" data-theme="c" data-position="fixed">	
@@ -191,14 +191,14 @@ jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", f
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview" data-inset="true">
-	<li><a href="#page18" rel="internal">Performance and Fairness </a></li>
-	<li><a href="#page19" rel="internal">PHY/MAC Techniques</a></li>
-	<li><a href="#page20" rel="internal">Security</a></li>
-	<li><a href="#page21" rel="internal">Sensing and Estimation </a></li>
-	<li><a href="#page22" rel="internal">Mobile Sensor Networks </a></li>
-    <li><a href="#page23" rel="internal">Privacy and Trust</a></li>
-    <li><a href="#page24" rel="internal">Topology, Coverage and Connectivity </a></li>
-    <li><a href="#page25" rel="internal">Vehicular Systems </a></li>
+	<li><a href="#page18" rel="internal">Performance and Fairness (Thu 9-10:30) </a></li>
+	<li><a href="#page19" rel="internal">PHY/MAC Techniques (Thu 9-10:30)</a></li>
+	<li><a href="#page20" rel="internal">Security (Thu 11-12:30)</a></li>
+	<li><a href="#page21" rel="internal">Sensing and Estimation (Thu 11-12:30)</a></li>
+	<li><a href="#page22" rel="internal">Mobile Sensor Networks (Thu 1:30-3)</a></li>
+    <li><a href="#page23" rel="internal">Privacy and Trust (Thu 1:30-3)</a></li>
+    <li><a href="#page24" rel="internal">Topology, Coverage and Connectivity (Thu 3:30-5)</a></li>
+    <li><a href="#page25" rel="internal">Vehicular Systems (Thu 3:30-5)</a></li>
 </ul>	
 	</div>
 	<div data-role="footer" data-theme="c" data-position="fixed">	
