@@ -31,7 +31,7 @@ jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", f
    
    for(i=0; i<data.length; i++)
    {if(data[i].edate ==" April 23rd")
-	   {jQuery('#day1events').append('<tr><td>'+data[i].edate+'</td><td>'+data[i].edate+'</td><td>'+data[i].ename+'</td><td>'+data[i].oname+'</td><td>'+data[i].elocation+'</td></tr>')};}
+	   {jQuery('#day1events').append('<tr id= \'' +data[i].eid + '\'><td>'+data[i].edate+'</td><td>'+data[i].edate+'</td><td>'+data[i].ename+'</td><td>'+data[i].oname+'</td><td>'+data[i].elocation+'</td></tr>')};}
 	 
  });
    $(document).ready(function() {
@@ -87,9 +87,10 @@ jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", f
 <table class="sortable" id ="day1events" width="100%"  >
 <thead>
 					<tr><th width="18%" id="creation-date">Date</th><th width="18%" id="time">Time</th><th width="17%" id="title">Title</th><th width="20%" id="speaker">Speaker</th><th width="27%" id="room">Room</th></tr>
+                   
 				</thead>
 		
-				<tbody>
+				<tbody> 
                 </tbody></table>
 
 	</div><!-- /content -->
