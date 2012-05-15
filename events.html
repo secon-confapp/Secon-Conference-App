@@ -37,10 +37,20 @@
 	url= url+c+"&"+a+"&"+b;
 	
 		   window.location.href= url;
-		   
+	
        
 
 } </script>
+<script>function viewComments(id)
+{
+	
+	var eventUrl="http://cold-spring-4585.herokuapp.com/events/";
+	eventUrl= eventUrl + id;	
+	
+	window.location.href = eventUrl;
+	
+	
+}</script>
 </head> 
 <body>
 <div data-role="page" id="page">
@@ -68,7 +78,7 @@
 			<ul>
 				<li><div id="buttons"></div></li>
 				<li><p style="text-align:center">Secon2012</p></li>
-        		<li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        		<li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 			</ul>
 		</div><!-- /navbar -->   
 	</div><!-- /footer -->
@@ -90,7 +100,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -114,7 +124,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -140,7 +150,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -160,12 +170,13 @@
        
        <!-- start here -->
     Comments and Rating</br>
-    Name: <input type="text" name="fname" id="user"/><br />
-    Comments: <input type="text" name="lname" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
     	
     
 </form>
-<input type="button" onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. --> 
+<input type="button" onclick="viewComments(1)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[0].value , document.getElementsByName('comment')[0].value, 1)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
    
    
@@ -175,19 +186,42 @@
     <div data-role="collapsible"data-collapsed="true">
 	<h3>On Renewable Sensor Networks with Wireless Energy Transfer: The Multi-Node Case</h3>
     <p>Liguang Xie; Yi Shi; Thomas Hou; Wenjing Lou; Hanif Sherali; Scott F Midkiff<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+   
+    
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(2)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[1].value , document.getElementsByName('comment')[1].value, 2)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>QoI-Aware Energy Management in Internet-of-Things Sensory Environments</h4>
     <p>Zhanwei Sun; Chi Harold Liu; Chatschik Bisdikian; Jowl W. W. Branch; Bo Yang<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(3)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[2].value , document.getElementsByName('comment')[2].value, 3)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Online Learning for Combinatorial Network Optimization with Restless Markovian Rewards</h5>
     <p>Yi Gai; Bhaskar Krishnamachari; Mingyan Liu<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+    Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(4)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[3].value , document.getElementsByName('comment')[3].value, 4)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -196,7 +230,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -211,25 +245,53 @@
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Simulating Power/Energy Consumption of Sensor Nodes with Flexible Hardware in Wireless Networks</h2>
     <p>Jingyao Zhang; Srikrishna Iyer; Patrick Schaumont; Yaling Yang<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+   Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(5)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[4].value , document.getElementsByName('comment')[4].value, 5)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>OPERETTA: An Optimal Energy Efficient Bandwidth Aggregation System</h3>
     <p>Karim Habak; Khaled A. Harras; Moustafa Youssef<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+    Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(6)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[5].value , document.getElementsByName('comment')[5].value, 6)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>An Energy-Efficient Approach for Provenance Transmission in Wireless Sensor Networks</h4>
     <p>S. M. Iftekharul Alam; Sonia Fahmy<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(7)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[6].value , document.getElementsByName('comment')[6].value, 7)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>AutoSync: Automatic Duty-Cycle Control for Synchronous Low-Power Listening</h5>
     <p>Morten Tranberg Hanses; Branislav Kusy; Raja Jurdak; Koen Langendoen<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+    Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(8)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[7].value , document.getElementsByName('comment')[7].value, 8)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -238,7 +300,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -253,24 +315,52 @@
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Convergecast with Aggregatable Data Classes</h2>
     <p>Fangfei Chen; Matthew P Johnson; Amotz Bar-Noy; Tom La Porta<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(9)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[8].value , document.getElementsByName('comment')[8].value, 9)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Flexible Beacon Scheduling Scheme for Interference Mitigation in Body Sensor Networks</h3>
     <p>Seungku Kim; Seokhwan Kim; Jin-Woo Kim; Doo-seop Eom<br />
-
+    Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(10)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[9].value , document.getElementsByName('comment')[9].value, 10)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Network Stability of Cognitive Radio Networks in the Presence of Heavy Tailed Traffic</h4>
     <p>Pu Wang; Ian F. Akyildiz<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(11)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[10].value , document.getElementsByName('comment')[10].value, 11)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>PION: Human Mobility-based Service Provisioning Framework for Smartphone Users</h5>
     <p>Chanmin Yoon; Yohan Chon; Hojung Cha<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+    Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(12)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[11].value , document.getElementsByName('comment')[11].value, 12)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -279,7 +369,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -294,25 +384,52 @@
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>DECA: Recovering Fields of Physical Quantities from Incomplete Sensory Data</h2>
     <p>Liu Xiang; Jun Luo; Chenwei Deng; Athanasios V. Vasilakos; Weisi Lin<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
-</p>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(13)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[12].value , document.getElementsByName('comment')[12].value, 13)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Online Anomaly Rate Parameter Tracking for Anomaly Detection in Wireless Sensor Networks</h3>
     <p>Colin O'Reilly; Alexander Gluhak; Muhammad Ali Imran; Sutharshan Rajasegarar<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
-</p>
+ Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+
+<input type="button" onclick="viewComments(14)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[13].value , document.getElementsByName('comment')[13].value, 14)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Online Data Recovery in Wireless Sensor Networks</h4>
     <p>Oluwasoji O Omiwade; Rong Zheng<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(15)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[14].value , document.getElementsByName('comment')[14].value, 15)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Optimal Solution for the Index Coding Problem using Network Coding over GF(2)</h5>
     <p>Jalaluddin Qureshi; Chuan Heng Foh; Jianfei Cai<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(16)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[15].value , document.getElementsByName('comment')[15].value, 16)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -321,7 +438,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -336,25 +453,54 @@
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>MURAO: A Multi-level Routing Protocol for Acoustic-Optical Hybrid Underwater Wireless Sensor Networks</h2>
     <p>Tiansi Hu; Yunsi Fei<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+    Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(17)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[16].value , document.getElementsByName('comment')[16].value, 17)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Cross-layer Routing on MIMO-OFDM Underwater Acoustic Links</h3>
     <p>Li-Chung Kuo; Tommaso Melodia<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+    Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(18)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[17].value , document.getElementsByName('comment')[17].value, 18)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>MDR: A P2P-based Market-guided Distributed Routing Mechanism for High-Throughput Hybrid Wireless Networks</h4>
     <p>Ze Li; Haiying Shen<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(19)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[18].value , document.getElementsByName('comment')[18].value, 19)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Bubble Routing: A Scalable Algorithm with Guaranteed Delivery in 3D Sensor Networks</h5>
     <p>Su Xia; Miao Jin; Hongyi Wu; Hongyu Zhou<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+
+<input type="button" onclick="viewComments(20)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[19].value , document.getElementsByName('comment')[19].value, 20)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -363,7 +509,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -378,25 +524,53 @@
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Improving Crowd-Sourced Wi-Fi Localization Systems using Bluetooth Beacons</h2>
     <p>Jindan Zhu; Kai Zeng; Kyu-Han Kim; Prasant Mohapatra<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(21)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[20].value , document.getElementsByName('comment')[20].value, 21)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Range-free Selective Multilateration for Anisotropic Wireless Sensor Networks</h3>
     <p>Shigeng Zhang; Jianxin Wang; Xuan Liu; Jiannong Cao<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+   Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(22)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[21].value , document.getElementsByName('comment')[21].value, 22)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Uncertainty-Aware Localization Solution for Under-Ice Autonomous Underwater Vehicles</h4>
     <p>Baozhi Chen; Dario Pompili<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+   Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(23)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[22].value , document.getElementsByName('comment')[22].value, 23)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>JSL: Joint Time Synchronization and Localization Design with Stratification Compensation in Mobile Underwater Sensor Networks</h5>
     <p>Jun Liu; Zhaohui Wang; Michael Zuba; Zheng Peng; Jun-Hong Cui; Shengli Zhou<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(24)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[23].value , document.getElementsByName('comment')[23].value, 24)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -405,7 +579,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -420,25 +594,53 @@
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Maximizing Timely Content Advertising in Delay Tolerant Networks</h2>
     <p>Weixiong Rao; Kai Zhao; Yan Zhang; Pan Hui; Sasu Tarkoma<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+    Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(25)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[24].value , document.getElementsByName('comment')[24].value, 25)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Offloading Cellular Networks through ITS Content Download</h3>
     <p>Francesco Malandrino; Claudio E. Casetti; Carla-Fabiana Chiasserini; Marco Fiore<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+    Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(26)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[25].value , document.getElementsByName('comment')[25].value, 26)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>DOVE: Data Dissemination to A Fixed Number of Receivers in VANET</h4>
     <p>Tan Yan; Wensheng Zhang; Guiling Wang<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(27)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[26].value , document.getElementsByName('comment')[26].value, 27)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Identifying infection sources in large tree networks</h5>
     <p>Wuqiong Luo; Wee Peng Tay<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+    Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(28)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[27].value , document.getElementsByName('comment')[27].value, 28)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -447,7 +649,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -462,25 +664,53 @@
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Building an Efficient Overlay for Publish/Subscribe in Wireless Sensor Networks</h2>
     <p>Claude Chaudet; Nicola Costagliola; Isabelle Demeure; Salma Ktari; Samuel Tardieu<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+    Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(29)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[28].value , document.getElementsByName('comment')[28].value, 29)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>No-reboot and Zero-Flash Over-the-air Programming for Wireless Sensor Networks</h3>
     <p>Nasif Shafi; Kashif Ali; Hossam S. Hassanein<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(30)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[29].value , document.getElementsByName('comment')[29].value, 30)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>The Time-keeping Anomaly of Energy-saving Sensors: Manifestation, Solution, and a Structural Monitoring Case Study</h4>
     <p>Parya Moinzadeh; Kirill A. Mechitov; Reza Shiftehfar; Tarek Abdelzaher; Gul Asha; Billie Spences<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(31)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[30].value , document.getElementsByName('comment')[30].value, 31)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Active Consensus over Sensor Networks via Selective Communication</h5>
     <p>Lei Chen; Jeff Frolik<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(32)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[31].value , document.getElementsByName('comment')[31].value, 32)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -489,7 +719,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -504,25 +734,53 @@
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>On-Demand Data Forwarding for Automatic Adaptation of Data Propagation in WBANs</h2>
     <p>Majid Nabi; Marc Geilen; Twan Basten<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(33)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[32].value , document.getElementsByName('comment')[32].value, 33)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>A Metric for Opportunistic Routing in Duty Cycled Wireless Sensor Networks</h3>
     <p>Euhanna Ghadimi; Olaf Landsiedel; Pablo Soldati; Mikael Johansson<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(34)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[33].value , document.getElementsByName('comment')[33].value, 34)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Workload-Aware Opportunistic Routing in Multi-Channel, Multi-Radio Wireless Mesh Networks</h4>
     <p>Fan Wu; Nitin Vaidya<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(35)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[34].value , document.getElementsByName('comment')[34].value, 35)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Universal Opportunistic Routing Scheme using Network Coding</h5>
     <p>Abdallah A Khreishah; Issa M Khalil<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(36)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[35].value , document.getElementsByName('comment')[35].value, 36)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -531,7 +789,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -546,25 +804,53 @@
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Elimination of Exposed Terminal Problem Using Signature Detection</h2>
     <p>Junmei Yao; Tao Xiong; Wei Lou<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+    Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(37)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[36].value , document.getElementsByName('comment')[36].value, 37)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Robust Joint Congestion Control and Scheduling for Time-Varying Multihop Wireless Networks with Time Delay</h3>
     <p>Fan Qiu; Yuan Xue<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(38)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[37].value , document.getElementsByName('comment')[37].value, 38)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Joint Coding and Scheduling Optimization in Wireless Systems with Varying Delay Sensitivities</h4>
     <p>Weifei Zeng; Chris Ng; Muriel Medard<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(39)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[38].value , document.getElementsByName('comment')[38].value, 39)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Fairness and Social Welfare in Incentivizing Participatory Sensing</h5>
     <p>Tie Luo; Chen Khong Tham<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(40)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[39].value , document.getElementsByName('comment')[39].value, 40)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -573,7 +859,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -588,25 +874,53 @@
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Fast Rendezvous for Multiple Clients for Cognitive Radios Using Coordinated Channel Hopping</h2>
     <p>Rohan Gandhi; Chih-Chun Wang; Y. Charlie Hu<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(41)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[40].value , document.getElementsByName('comment')[40].value, 41)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>ASTRA: Application of Sequential Training to Rate Adaptation</h3>
     <p>Hui Liu; Jialin He; Pengfei Cui; Joseph D. Camp<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(42)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[41].value , document.getElementsByName('comment')[41].value, 42)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Packet Aggregation in Multi-Rate Wireless LANs</h4>
     <p>Adnan Majeed; Nael Abu-Ghazaleh<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+    Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(43)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[42].value , document.getElementsByName('comment')[42].value, 43)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>On the Performance of Successive Interference Cancellation in Random ess Networks</h5>
     <p>Mohsen Mollanoori; Majid Ghaderi<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(44)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[43].value , document.getElementsByName('comment')[43].value, 44)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -615,7 +929,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -630,25 +944,53 @@
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Authentication of Lossy Data in Body-Sensor Networks for Healthcare Monitoring</h2>
     <p>Syed Taha Ali; Vijay Sivaraman<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(45)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[44].value , document.getElementsByName('comment')[44].value, 45)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Split Null Keys: A Null Space Based Defense for Pollution Attacks in Wireless Network Coding</h3>
     <p>Andrew Newell; Cristina Nita-Rotaru<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+   Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(46)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[45].value , document.getElementsByName('comment')[45].value, 46)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>A Novel Unbalanced Tree Structure for Low-Cost Authentication of Streaming Content on Mobile and Sensor Devices</h4>
     <p>Thivya Kandappu; Vijay Sivaraman<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(47)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[46].value , document.getElementsByName('comment')[46].value, 47)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Watchdogs to the rescue: Securing Wireless TCP</h5>
     <p>Shehla Rana; Nitin Vaidya<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(48)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[47].value , document.getElementsByName('comment')[47].value, 48)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -657,7 +999,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -672,25 +1014,53 @@
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>On Scalability and Robustness Limitations of Real and Asymptotic Confidence Bounds in Social Sensing</h2>
     <p>Dong Wang; Lance Kaplan; Tarek Abdelzaher; Charu Aggarwal<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(49)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[48].value , document.getElementsByName('comment')[48].value, 49)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>ConDense: Managing Data in Community-driven Mobile Geosensor Networks</h3>
     <p>Sebastian Cartier; Saket Sathe; Dipanjan Chakraborty<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(50)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[49].value , document.getElementsByName('comment')[49].value, 50)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Transmit Power Estimation with a Single Monitor in Multi-band Networks</h4>
     <p>Shaxun Chen; Kai Zeng; Ningning Cheng; Prasant Mohapatra<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(51)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[50].value , document.getElementsByName('comment')[50].value, 51)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Semi-Markov State Estimation and Policy Optimization for Energy Efficient Mobile Sensing</h5>
     <p>Yi Wang; Bhaskar Krishnamachari; Murali Annavaram<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(52)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[51].value , document.getElementsByName('comment')[51].value, 52)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -699,7 +1069,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -714,25 +1084,53 @@
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Group-based Discovery in Low-duty-cycle Mobile Sensor Networks</h2>
     <p>Liangyin Chen; Yu Gu; Shuo Guo; Tian He; Yuanchao Shu; Fan Zhang; Jiming Chen<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+    Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(53)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[52].value , document.getElementsByName('comment')[52].value, 53)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Toward Distributed Optimal Movement Strategy for Data Harvesting in Wireless Sensor Networks</h3>
     <p>Chul-Ho Lee; Do Young Eun<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+    Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(54)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[53].value , document.getElementsByName('comment')[53].value, 54)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Mobile Data Harvesting in Wireless Underground Sensor Networks</h4>
     <p>John Tooker; Mehmet Can Vuran<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+    Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(55)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[54].value , document.getElementsByName('comment')[54].value, 55)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Forecasting DTN Performance under Heterogeneous Mobility: The Case of Limited Replication</h5>
     <p>Andreea M Picu; Thrasyvoulos Spyropoulos<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+    Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(56)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[55].value , document.getElementsByName('comment')[55].value, 56)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -741,7 +1139,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -756,25 +1154,53 @@
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>BP-P2P: Belief Propagation-Based Trust and Reputation Management for P2P Networks</h2>
     <p>Erman Ayday; Faramarz Fekri<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(57)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[56].value , document.getElementsByName('comment')[56].value, 57)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Seed and Grow: An Attack Against Anonymized Social Networks</h3>
     <p>Wei Peng; Feng Li; Xukai Zou; Jie Wu<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(58)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[57].value , document.getElementsByName('comment')[57].value, 58)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>A Privacy-Preserving Social-Aware Incentive System for Word-of-Mouth Advertisement Dissemination on Smart Mobile Devices</h4>
     <p>Wei Peng; Feng Li; Xukai Zou; Jie Wu<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(59)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[58].value , document.getElementsByName('comment')[58].value, 59)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Privacy-Preserving Energy Theft Detection in Smart Grids</h5>
     <p>Sergio Salinas; Ming Li; Pan Li<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(60)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[59].value , document.getElementsByName('comment')[59].value, 60)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -783,7 +1209,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -798,25 +1224,53 @@
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Generalized Geometry-Based Optimal Power Control in Wireless Networks</h2>
     <p>Wei Wang; Kang G. Shin; Zhaoyang Zhang; Wenbo Wang; Tao Peng<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(61)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[60].value , document.getElementsByName('comment')[60].value, 61)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Improving coverage prediction for primary multi-transmitter networks operating in the TV whitespaces</h3>
     <p>Andreas Achtzehn; Janne Riihijarvi; Guilberth Martinez Vargas; Marina Petrova; Petri Mahonen<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(62)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[61].value , document.getElementsByName('comment')[61].value, 62)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Delta-Graphs for Wireless Ad Hoc Networks</h4>
     <p>Ashikur Rahman; Carey Williamson<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(63)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[62].value , document.getElementsByName('comment')[62].value, 63)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>ARCHoN: Adaptive Range Control of Hotzone Cells in Heterogeneous Cellular Networks</h5>
     <p>Ji-Hoon Yun; Kang G. Shin<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(64)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[63].value , document.getElementsByName('comment')[63].value, 64)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -825,7 +1279,7 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -840,19 +1294,40 @@
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Network-Congestion-Aware Video Streaming: A Rest-and-Download Approach</h2>
     <p>Eric Jung; Dhruv Gupta; Nicholas Mastronarde; Xing Liu<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(65)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[64].value , document.getElementsByName('comment')[64].value, 65)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Congestion Control in CSMA-based Vehicular Networks: Do Not Forget the Carrier Sensing</h3>
     <p>Razvan Stanica; Emmanuel Chaput; Andre-Luc Beylot<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(66)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[65].value , document.getElementsByName('comment')[65].value, 66)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Power Control for Fair Dynamic Channel Reservation in VANETs</h4>
     <p>Parisa Haghani; Yih-Chun Hu<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+     Comments and Rating</br>
+    Name: <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="viewComments(67)" value="View Comments" />
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[66].value , document.getElementsByName('comment')[66].value, 67)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     </div>
@@ -861,53 +1336,13 @@
 <div data-role="navbar">
 		<ul>
 		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
-<div data-role="page" id="page26">
-	<div data-role="header" data-theme="c">
-		<h1>Day 2: Routing II</h1>
-	</div>
-    <div data-role="content">
-    <div data-role="collabsible-set">
-	<div data-role="collapsible"data-collapsed="true">	
-	<h2>On-Demand Data Forwarding for Automatic Adaptation of Data Propagation in WBANs</h2>
-    <p>Names<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
-</p>
-    </div>
-    <div data-role="collapsible"data-collapsed="true">
-	<h3>A Metric for Opportunistic Routing in Duty Cycled Wireless Sensor Networks</h3>
-    <p>Names<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
-</p>
-    </div>
-    <div data-role="collapsible"data-collapsed="true">
-	<h4>Workload-Aware Opportunistic Routing in Multi-Channel, Multi-Radio Wireless Mesh Networks</h4>
-    <p>Names<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
-</p>
-    </div>
-    <div data-role="collapsible"data-collapsed="true">
-    <h5>Universal Opportunistic Routing Scheme using Network Coding</h5>
-    <p>Names<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
-</p>
-	</div>
-    </div>
-    </div>
-	<div data-role="footer" data-theme="c" data-position="fixed">	
-<div data-role="navbar">
-		<ul>
-		<li><p style="text-align:center">Secon2012</p></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a></li>
-		</ul>
-	</div><!-- /navbar -->   
-</div><!-- /footer -->
-</div>
+
 
 
 </body>
