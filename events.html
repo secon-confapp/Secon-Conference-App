@@ -20,22 +20,7 @@
            jQuery('#buttons').jsShare({ maxwidth: 280 });
        });
    </script> 
-   <script type="text/javascript" src="scriptaculous/lib/prototype.js"></script>
-<script type="text/javascript" src="fastinit.js"></script>
-<script type="text/javascript" src="tablekit.js"></script>
-<script>var data; var table_obj1;
-</script>
-<script>
-jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", function(json) {
-   data = json;
-   
-   table_obj1 = jQuery('table');
-   
-   for(i=0; i<data.length; i++)
-   {if(data[i].edate ==" April 23rd")
-	   {jQuery('#day1events').append('<tr><td>'+data[i].edate+'</td><td>'+data[i].ename+'</td><td>'+data[i].oname+'</td><td>'+data[i].elocation+'</td></tr>')};}
-	 
- });
+
    $(document).ready(function() {
       $('#buttons').jsShare({ maxwidth: 280 });
        });
@@ -48,17 +33,12 @@ jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", f
 			<ul>
 				<li><a href="index.html" rel="external">Info</a></li>
 				<li><a href="events.html" class="ui-btn-active">Events</a></li>
-        		<li><a href="forums.html" rel="external">Forums</a></li>
+        
 			</ul>
 		</div><!-- /navbar -->
 	</div><!-- /nav --> 
 	<div data-role="content">	
-		<p style="color:blue;text-align:center;font-size:36px">Events</p>
-			<ul data-role="listview" data-inset="true">
-				<li><a href="#page3" rel="internal">Day 1 Events</a></li>
-				<li><a href="#page4" rel="internal">Day 2 Events</a></li>
-				<li><a href="#page5" rel="internal">Day 3 Events</a></li>
-			</ul>
+
 		<p style="color:blue;text-align:center;font-size:36px">Sessions</p>
 			<ul data-role="listview" data-inset="true">
 				<li><a href="#page6" rel="internal">Day 1 Sessions</a></li>
@@ -78,66 +58,6 @@ jQuery.getJSON("http://cold-spring-4585.herokuapp.com/events.json?callback=?", f
 	</div><!-- /footer -->
 </div><!-- /page -->
 
-
-
-
-<div data-role="page" id="page3">
-	<div data-role="header" data-theme="c">
-		<h1>Day 1: Events</h1>
-	</div>
-	<div data-role="content">	
-<table class="sortable" id ="day1events" width="100%"  >
-<thead>
-					<tr><th width="18%" id="time">Time</th><th width="17%" id="title">Title</th><th width="20%" id="speaker">Speaker</th><th width="27%" id="room">Room</th></tr>
-                   
-				</thead>
-		
-				<tbody> 
-                </tbody></table>
-
-	</div><!-- /content -->
-<div data-role="footer" data-theme="c" data-position="fixed">	
-		<a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a> 
-	</div><!-- /footer -->
-</div><!-- /page -->	
-
-<div data-role="page" id="page4">
-	<div data-role="header" data-theme="c">
-		<h1>Day 2: Events</h1>
-	</div>
-	<div data-role="content">	
-<table class="sortable" id ="day2events" width="100%" >
-<thead>
-					<tr><th id="time">Time</th><th id="title">Title</th><th id="speaker">Speaker</th><th id="room">Room</th></tr>
-				</thead>
-		
-				<tbody>
-                </tbody></table>
-
-	</div><!-- /content -->
-	<div data-role="footer" data-theme="c" data-position="fixed">	
-		<a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a> 
-	</div><!-- /footer -->
-</div><!-- /page -->	
-
-<div data-role="page" id="page5">
-	<div data-role="header" data-theme="c">
-		<h1>Day 3: Events</h1>
-	</div>
-	<div data-role="content">	
-<table class="sortable" id ="day3events" width="100%" >
-<thead>
-					<tr><th id="time">Time</th><th id="title">Title</th><th id="speaker">Speaker</th><th id="room">Room</th></tr>
-				</thead>
-		
-				<tbody>
-                </tbody></table>
-
-	</div><!-- /content -->
-	<div data-role="footer" data-theme="c" data-position="fixed">	
-		<a href="http://www.wikitravel.org/en/Seoul" data-role="button">Explore Korea</a> 
-	</div><!-- /footer -->
-</div><!-- /page -->	
 
 <div data-role="page" id="page6">
 	<div data-role="header" data-theme="c">
