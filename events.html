@@ -25,6 +25,22 @@
       $('#buttons').jsShare({ maxwidth: 280 });
        });
 </script>
+
+
+ <script>function formSubmit(name, comment, id)
+{
+	a = name;
+	b = comment;
+	c = id;
+		
+	var url= "http://cold-spring-4585.herokuapp.com/comments/add.";
+	url= url+c+"&"+a+"&"+b;
+	
+		   window.location.href= url;
+		   
+       
+
+} </script>
 </head> 
 <body>
 <div data-role="page" id="page">
@@ -139,7 +155,21 @@
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Harmonic Quorum Systems: Data Management in 2D/3D Wireless Sensor Networks with Holes</h2>
     <p>Chi Zhang; Jun Luo; Liu Xiang; Feng Li; Juncong Lin: Ying He<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
+       
+       
+       
+       <!-- start here -->
+    Comments and Rating</br>
+    Name: <input type="text" name="fname" id="user"/><br />
+    Comments: <input type="text" name="lname" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    	
+    
+</form>
+<input type="button" onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. --> 
+</p>
+   
+   
+ 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
@@ -229,8 +259,7 @@
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Flexible Beacon Scheduling Scheme for Interference Mitigation in Body Sensor Networks</h3>
     <p>Seungku Kim; Seokhwan Kim; Jin-Woo Kim; Doo-seop Eom<br />
-    <a data-role="button" data-inline="true">See comments</a><a data-role="button" data-inline="true">Post comment</a>
-</p>
+
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Network Stability of Cognitive Radio Networks in the Presence of Heavy Tailed Traffic</h4>
