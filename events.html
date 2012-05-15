@@ -37,15 +37,15 @@
 	url= url+c+"&"+a+"&"+b;
 	
 		   window.location.href= url;
-	
+			this.form.reset();
        
 
 } </script>
 <script>function viewComments(id)
 {
 	
-	var eventUrl="http://cold-spring-4585.herokuapp.com/events/";
-	eventUrl= eventUrl + id;	
+	var eventUrl="http://cold-spring-4585.herokuapp.com/comments/";
+	eventUrl= eventUrl + id+ "/view";	
 	
 	window.location.href = eventUrl;
 	
@@ -156,6 +156,30 @@
 </div><!-- /footer -->
 </div>
 
+<div id="tab-Testing" class="tabs-container" >
+<script type="text/javascript" language="javascript">
+$(function(){ 
+ $('#form1 :radio.star').rating(); 
+
+});
+</script>
+<script>
+$(function(){
+ $('#tab-Testing form').submit(function(){
+  $('.test',this).html('');
+  $('input',this).each(function(){
+	  var ratingUrl = "http://cold-spring-4585.herokuapp.com/events/rating."
+   if(this.checked) {ratingUrl = ratingUrl +this.name+"&"+this.value;
+   
+   window.location.href= ratingUrl;
+  	alert("Rated");
+   }}); window.location.href= events.html;
+  return false;
+ });
+});
+</script>
+<form id="form1">
+
 <div data-role="page" id="page9">
 	<div data-role="header" data-theme="c">
 		<h1>Day 1: The Medley</h1>
@@ -166,17 +190,23 @@
 	<h2>Harmonic Quorum Systems: Data Management in 2D/3D Wireless Sensor Networks with Holes</h2>
     <p>Chi Zhang; Jun Luo; Liu Xiang; Feng Li; Juncong Lin: Ying He<br />
        
-       
+ 
        
        <!-- start here -->
     Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="1" value="1" style="display:">
+<input class="star" type="radio" name="1" value="2" style="display: none; ">
+<input class="star" type="radio" name="1" value="3" style="display: none; ">
+<input class="star" type="radio" name="1" value="4" style="display: none; ">
+<input class="star" type="radio" name="1" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+
 <input type="button" onclick="viewComments(1)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[0].value , document.getElementsByName('comment')[0].value, 1)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+<input type="button" onclick="formSubmit(document.getElementsByName('user')[0].value , document.getElementsByName('comment')[0].value, 1)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val -->
+
 </p>
    
    
@@ -191,9 +221,16 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    <div>
+<input class="star" type="radio" name="2" value="1" style="display:">
+<input class="star" type="radio" name="2" value="2" style="display: none; ">
+<input class="star" type="radio" name="2" value="3" style="display: none; ">
+<input class="star" type="radio" name="2" value="4" style="display: none; ">
+<input class="star" type="radio" name="2" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
     	
     
-</form>
+
 <input type="button" onclick="viewComments(2)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[1].value , document.getElementsByName('comment')[1].value, 2)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -204,9 +241,16 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    <div>
+<input class="star" type="radio" name="3" value="1" style="display:">
+<input class="star" type="radio" name="3" value="2" style="display: none; ">
+<input class="star" type="radio" name="3" value="3" style="display: none; ">
+<input class="star" type="radio" name="3" value="4" style="display: none; ">
+<input class="star" type="radio" name="3" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
     	
     
-</form>
+
 <input type="button" onclick="viewComments(3)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[2].value , document.getElementsByName('comment')[2].value, 3)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -217,9 +261,16 @@
     Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    <div>
+<input class="star" type="radio" name="4" value="1" style="display:">
+<input class="star" type="radio" name="4" value="2" style="display: none; ">
+<input class="star" type="radio" name="4" value="3" style="display: none; ">
+<input class="star" type="radio" name="4" value="4" style="display: none; ">
+<input class="star" type="radio" name="4" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
     	
     
-</form>
+
 <input type="button" onclick="viewComments(4)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[3].value , document.getElementsByName('comment')[3].value, 4)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -248,9 +299,16 @@
    Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    <div>
+<input class="star" type="radio" name="5" value="1" style="display:">
+<input class="star" type="radio" name="5" value="2" style="display: none; ">
+<input class="star" type="radio" name="5" value="3" style="display: none; ">
+<input class="star" type="radio" name="5" value="4" style="display: none; ">
+<input class="star" type="radio" name="5" value="5" style="display: none; ">
+<input type="submit" value="Rate"></div>
     	
     
-</form>
+
 <input type="button" onclick="viewComments(5)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[4].value , document.getElementsByName('comment')[4].value, 5)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -261,9 +319,16 @@
     Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    <div>
+<input class="star" type="radio" name="6" value="1" style="display:">
+<input class="star" type="radio" name="6" value="2" style="display: none; ">
+<input class="star" type="radio" name="6" value="3" style="display: none; ">
+<input class="star" type="radio" name="6" value="4" style="display: none; ">
+<input class="star" type="radio" name="6" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
     	
     
-</form>
+
 <input type="button" onclick="viewComments(6)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[5].value , document.getElementsByName('comment')[5].value, 6)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -274,9 +339,16 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    <div>
+<input class="star" type="radio" name="7" value="1" style="display:">
+<input class="star" type="radio" name="7" value="2" style="display: none; ">
+<input class="star" type="radio" name="7" value="3" style="display: none; ">
+<input class="star" type="radio" name="7" value="4" style="display: none; ">
+<input class="star" type="radio" name="7" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
     	
     
-</form>
+
 <input type="button" onclick="viewComments(7)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[6].value , document.getElementsByName('comment')[6].value, 7)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -287,9 +359,16 @@
     Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
+    <div>
+<input class="star" type="radio" name="8" value="1" style="display:">
+<input class="star" type="radio" name="8" value="2" style="display: none; ">
+<input class="star" type="radio" name="8" value="3" style="display: none; ">
+<input class="star" type="radio" name="8" value="4" style="display: none; ">
+<input class="star" type="radio" name="8" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
     	
     
-</form>
+
 <input type="button" onclick="viewComments(8)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[7].value , document.getElementsByName('comment')[7].value, 8)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -318,9 +397,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="9" value="1" style="display:">
+<input class="star" type="radio" name="9" value="2" style="display: none; ">
+<input class="star" type="radio" name="9" value="3" style="display: none; ">
+<input class="star" type="radio" name="9" value="4" style="display: none; ">
+<input class="star" type="radio" name="9" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(9)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[8].value , document.getElementsByName('comment')[8].value, 9)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -331,9 +414,13 @@
     Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="10" value="1" style="display:">
+<input class="star" type="radio" name="10" value="2" style="display: none; ">
+<input class="star" type="radio" name="10" value="3" style="display: none; ">
+<input class="star" type="radio" name="10" value="4" style="display: none; ">
+<input class="star" type="radio" name="10" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(10)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[9].value , document.getElementsByName('comment')[9].value, 10)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> </p>
     </div>
@@ -343,9 +430,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="11" value="1" style="display:">
+<input class="star" type="radio" name="11" value="2" style="display: none; ">
+<input class="star" type="radio" name="11" value="3" style="display: none; ">
+<input class="star" type="radio" name="11" value="4" style="display: none; ">
+<input class="star" type="radio" name="11" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(11)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[10].value , document.getElementsByName('comment')[10].value, 11)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -356,9 +447,13 @@
     Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="12" value="1" style="display:">
+<input class="star" type="radio" name="12" value="2" style="display: none; ">
+<input class="star" type="radio" name="12" value="3" style="display: none; ">
+<input class="star" type="radio" name="12" value="4" style="display: none; ">
+<input class="star" type="radio" name="12" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(12)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[11].value , document.getElementsByName('comment')[11].value, 12)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -387,9 +482,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="13" value="1" style="display:">
+<input class="star" type="radio" name="13" value="2" style="display: none; ">
+<input class="star" type="radio" name="13" value="3" style="display: none; ">
+<input class="star" type="radio" name="13" value="4" style="display: none; ">
+<input class="star" type="radio" name="13" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(13)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[12].value , document.getElementsByName('comment')[12].value, 13)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
     </div>
@@ -399,9 +498,13 @@
  Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="14" value="1" style="display:">
+<input class="star" type="radio" name="14" value="2" style="display: none; ">
+<input class="star" type="radio" name="14" value="3" style="display: none; ">
+<input class="star" type="radio" name="14" value="4" style="display: none; ">
+<input class="star" type="radio" name="14" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 
 <input type="button" onclick="viewComments(14)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[13].value , document.getElementsByName('comment')[13].value, 14)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> </p>
@@ -412,9 +515,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="15" value="1" style="display:">
+<input class="star" type="radio" name="15" value="2" style="display: none; ">
+<input class="star" type="radio" name="15" value="3" style="display: none; ">
+<input class="star" type="radio" name="15" value="4" style="display: none; ">
+<input class="star" type="radio" name="15" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(15)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[14].value , document.getElementsByName('comment')[14].value, 15)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -425,9 +532,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="16" value="1" style="display:">
+<input class="star" type="radio" name="16" value="2" style="display: none; ">
+<input class="star" type="radio" name="16" value="3" style="display: none; ">
+<input class="star" type="radio" name="16" value="4" style="display: none; ">
+<input class="star" type="radio" name="16" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(16)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[15].value , document.getElementsByName('comment')[15].value, 16)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -456,9 +567,13 @@
     Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="17" value="1" style="display:">
+<input class="star" type="radio" name="17" value="2" style="display: none; ">
+<input class="star" type="radio" name="17" value="3" style="display: none; ">
+<input class="star" type="radio" name="17" value="4" style="display: none; ">
+<input class="star" type="radio" name="17" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(17)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[16].value , document.getElementsByName('comment')[16].value, 17)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -469,9 +584,13 @@
     Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="18" value="1" style="display:">
+<input class="star" type="radio" name="18" value="2" style="display: none; ">
+<input class="star" type="radio" name="18" value="3" style="display: none; ">
+<input class="star" type="radio" name="18" value="4" style="display: none; ">
+<input class="star" type="radio" name="18" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(18)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[17].value , document.getElementsByName('comment')[17].value, 18)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -482,9 +601,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="19" value="1" style="display:">
+<input class="star" type="radio" name="19" value="2" style="display: none; ">
+<input class="star" type="radio" name="19" value="3" style="display: none; ">
+<input class="star" type="radio" name="19" value="4" style="display: none; ">
+<input class="star" type="radio" name="19" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(19)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[18].value , document.getElementsByName('comment')[18].value, 19)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -495,9 +618,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="20" value="1" style="display:">
+<input class="star" type="radio" name="20" value="2" style="display: none; ">
+<input class="star" type="radio" name="20" value="3" style="display: none; ">
+<input class="star" type="radio" name="20" value="4" style="display: none; ">
+<input class="star" type="radio" name="20" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 
 <input type="button" onclick="viewComments(20)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[19].value , document.getElementsByName('comment')[19].value, 20)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
@@ -527,9 +654,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="21" value="1" style="display:">
+<input class="star" type="radio" name="21" value="2" style="display: none; ">
+<input class="star" type="radio" name="21" value="3" style="display: none; ">
+<input class="star" type="radio" name="21" value="4" style="display: none; ">
+<input class="star" type="radio" name="21" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(21)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[20].value , document.getElementsByName('comment')[20].value, 21)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -540,9 +671,13 @@
    Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="22" value="1" style="display:">
+<input class="star" type="radio" name="22" value="2" style="display: none; ">
+<input class="star" type="radio" name="22" value="3" style="display: none; ">
+<input class="star" type="radio" name="22" value="4" style="display: none; ">
+<input class="star" type="radio" name="22" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(22)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[21].value , document.getElementsByName('comment')[21].value, 22)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -553,9 +688,13 @@
    Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="23" value="1" style="display:">
+<input class="star" type="radio" name="23" value="2" style="display: none; ">
+<input class="star" type="radio" name="23" value="3" style="display: none; ">
+<input class="star" type="radio" name="23" value="4" style="display: none; ">
+<input class="star" type="radio" name="23" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(23)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[22].value , document.getElementsByName('comment')[22].value, 23)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -566,9 +705,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="24" value="1" style="display:">
+<input class="star" type="radio" name="24" value="2" style="display: none; ">
+<input class="star" type="radio" name="24" value="3" style="display: none; ">
+<input class="star" type="radio" name="24" value="4" style="display: none; ">
+<input class="star" type="radio" name="24" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(24)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[23].value , document.getElementsByName('comment')[23].value, 24)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -597,9 +740,13 @@
     Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="25" value="1" style="display:">
+<input class="star" type="radio" name="25" value="2" style="display: none; ">
+<input class="star" type="radio" name="25" value="3" style="display: none; ">
+<input class="star" type="radio" name="25" value="4" style="display: none; ">
+<input class="star" type="radio" name="25" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(25)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[24].value , document.getElementsByName('comment')[24].value, 25)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -610,9 +757,13 @@
     Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="26" value="1" style="display:">
+<input class="star" type="radio" name="26" value="2" style="display: none; ">
+<input class="star" type="radio" name="26" value="3" style="display: none; ">
+<input class="star" type="radio" name="26" value="4" style="display: none; ">
+<input class="star" type="radio" name="26" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(26)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[25].value , document.getElementsByName('comment')[25].value, 26)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -623,9 +774,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="27" value="1" style="display:">
+<input class="star" type="radio" name="27" value="2" style="display: none; ">
+<input class="star" type="radio" name="27" value="3" style="display: none; ">
+<input class="star" type="radio" name="27" value="4" style="display: none; ">
+<input class="star" type="radio" name="27" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(27)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[26].value , document.getElementsByName('comment')[26].value, 27)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -636,9 +791,13 @@
     Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="28" value="1" style="display:">
+<input class="star" type="radio" name="28" value="2" style="display: none; ">
+<input class="star" type="radio" name="28" value="3" style="display: none; ">
+<input class="star" type="radio" name="28" value="4" style="display: none; ">
+<input class="star" type="radio" name="28" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(28)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[27].value , document.getElementsByName('comment')[27].value, 28)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -667,9 +826,13 @@
     Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="29" value="1" style="display:">
+<input class="star" type="radio" name="29" value="2" style="display: none; ">
+<input class="star" type="radio" name="29" value="3" style="display: none; ">
+<input class="star" type="radio" name="29" value="4" style="display: none; ">
+<input class="star" type="radio" name="29" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(29)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[28].value , document.getElementsByName('comment')[28].value, 29)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -680,9 +843,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="30" value="1" style="display:">
+<input class="star" type="radio" name="30" value="2" style="display: none; ">
+<input class="star" type="radio" name="30" value="3" style="display: none; ">
+<input class="star" type="radio" name="30" value="4" style="display: none; ">
+<input class="star" type="radio" name="30" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(30)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[29].value , document.getElementsByName('comment')[29].value, 30)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -693,9 +860,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="31" value="1" style="display:">
+<input class="star" type="radio" name="31" value="2" style="display: none; ">
+<input class="star" type="radio" name="31" value="3" style="display: none; ">
+<input class="star" type="radio" name="31" value="4" style="display: none; ">
+<input class="star" type="radio" name="31" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(31)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[30].value , document.getElementsByName('comment')[30].value, 31)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -706,9 +877,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="32" value="1" style="display:">
+<input class="star" type="radio" name="32" value="2" style="display: none; ">
+<input class="star" type="radio" name="32" value="3" style="display: none; ">
+<input class="star" type="radio" name="32" value="4" style="display: none; ">
+<input class="star" type="radio" name="32" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(32)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[31].value , document.getElementsByName('comment')[31].value, 32)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -737,9 +912,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="33" value="1" style="display:">
+<input class="star" type="radio" name="33" value="2" style="display: none; ">
+<input class="star" type="radio" name="33" value="3" style="display: none; ">
+<input class="star" type="radio" name="33" value="4" style="display: none; ">
+<input class="star" type="radio" name="33" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(33)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[32].value , document.getElementsByName('comment')[32].value, 33)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -750,9 +929,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="34" value="1" style="display:">
+<input class="star" type="radio" name="34" value="2" style="display: none; ">
+<input class="star" type="radio" name="34" value="3" style="display: none; ">
+<input class="star" type="radio" name="34" value="4" style="display: none; ">
+<input class="star" type="radio" name="34" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(34)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[33].value , document.getElementsByName('comment')[33].value, 34)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -763,9 +946,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="35" value="1" style="display:">
+<input class="star" type="radio" name="35" value="2" style="display: none; ">
+<input class="star" type="radio" name="35" value="3" style="display: none; ">
+<input class="star" type="radio" name="35" value="4" style="display: none; ">
+<input class="star" type="radio" name="35" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(35)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[34].value , document.getElementsByName('comment')[34].value, 35)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -776,9 +963,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="36" value="1" style="display:">
+<input class="star" type="radio" name="36" value="2" style="display: none; ">
+<input class="star" type="radio" name="36" value="3" style="display: none; ">
+<input class="star" type="radio" name="36" value="4" style="display: none; ">
+<input class="star" type="radio" name="36" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(36)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[35].value , document.getElementsByName('comment')[35].value, 36)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -807,9 +998,13 @@
     Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="37" value="1" style="display:">
+<input class="star" type="radio" name="37" value="2" style="display: none; ">
+<input class="star" type="radio" name="37" value="3" style="display: none; ">
+<input class="star" type="radio" name="37" value="4" style="display: none; ">
+<input class="star" type="radio" name="37" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(37)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[36].value , document.getElementsByName('comment')[36].value, 37)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -820,9 +1015,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="38" value="1" style="display:">
+<input class="star" type="radio" name="38" value="2" style="display: none; ">
+<input class="star" type="radio" name="38" value="3" style="display: none; ">
+<input class="star" type="radio" name="38" value="4" style="display: none; ">
+<input class="star" type="radio" name="38" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(38)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[37].value , document.getElementsByName('comment')[37].value, 38)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -833,9 +1032,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="39" value="1" style="display:">
+<input class="star" type="radio" name="39" value="2" style="display: none; ">
+<input class="star" type="radio" name="39" value="3" style="display: none; ">
+<input class="star" type="radio" name="39" value="4" style="display: none; ">
+<input class="star" type="radio" name="39" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(39)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[38].value , document.getElementsByName('comment')[38].value, 39)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -846,9 +1049,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="40" value="1" style="display:">
+<input class="star" type="radio" name="40" value="2" style="display: none; ">
+<input class="star" type="radio" name="40" value="3" style="display: none; ">
+<input class="star" type="radio" name="40" value="4" style="display: none; ">
+<input class="star" type="radio" name="40" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(40)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[39].value , document.getElementsByName('comment')[39].value, 40)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -877,9 +1084,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="41" value="1" style="display:">
+<input class="star" type="radio" name="41" value="2" style="display: none; ">
+<input class="star" type="radio" name="41" value="3" style="display: none; ">
+<input class="star" type="radio" name="41" value="4" style="display: none; ">
+<input class="star" type="radio" name="41" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(41)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[40].value , document.getElementsByName('comment')[40].value, 41)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -890,9 +1101,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="42" value="1" style="display:">
+<input class="star" type="radio" name="42" value="2" style="display: none; ">
+<input class="star" type="radio" name="42" value="3" style="display: none; ">
+<input class="star" type="radio" name="42" value="4" style="display: none; ">
+<input class="star" type="radio" name="42" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(42)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[41].value , document.getElementsByName('comment')[41].value, 42)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -903,9 +1118,13 @@
     Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="43" value="1" style="display:">
+<input class="star" type="radio" name="43" value="2" style="display: none; ">
+<input class="star" type="radio" name="43" value="3" style="display: none; ">
+<input class="star" type="radio" name="43" value="4" style="display: none; ">
+<input class="star" type="radio" name="43" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(43)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[42].value , document.getElementsByName('comment')[42].value, 43)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -916,9 +1135,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="44" value="1" style="display:">
+<input class="star" type="radio" name="44" value="2" style="display: none; ">
+<input class="star" type="radio" name="44" value="3" style="display: none; ">
+<input class="star" type="radio" name="44" value="4" style="display: none; ">
+<input class="star" type="radio" name="44" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(44)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[43].value , document.getElementsByName('comment')[43].value, 44)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -947,9 +1170,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="45" value="1" style="display:">
+<input class="star" type="radio" name="45" value="2" style="display: none; ">
+<input class="star" type="radio" name="45" value="3" style="display: none; ">
+<input class="star" type="radio" name="45" value="4" style="display: none; ">
+<input class="star" type="radio" name="45" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(45)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[44].value , document.getElementsByName('comment')[44].value, 45)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -960,9 +1187,13 @@
    Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="46" value="1" style="display:">
+<input class="star" type="radio" name="46" value="2" style="display: none; ">
+<input class="star" type="radio" name="46" value="3" style="display: none; ">
+<input class="star" type="radio" name="46" value="4" style="display: none; ">
+<input class="star" type="radio" name="46" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(46)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[45].value , document.getElementsByName('comment')[45].value, 46)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -973,9 +1204,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="47" value="1" style="display:">
+<input class="star" type="radio" name="47" value="2" style="display: none; ">
+<input class="star" type="radio" name="47" value="3" style="display: none; ">
+<input class="star" type="radio" name="47" value="4" style="display: none; ">
+<input class="star" type="radio" name="47" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(47)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[46].value , document.getElementsByName('comment')[46].value, 47)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -986,9 +1221,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="48" value="1" style="display:">
+<input class="star" type="radio" name="48" value="2" style="display: none; ">
+<input class="star" type="radio" name="48" value="3" style="display: none; ">
+<input class="star" type="radio" name="48" value="4" style="display: none; ">
+<input class="star" type="radio" name="48" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(48)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[47].value , document.getElementsByName('comment')[47].value, 48)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1017,9 +1256,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="49" value="1" style="display:">
+<input class="star" type="radio" name="49" value="2" style="display: none; ">
+<input class="star" type="radio" name="49" value="3" style="display: none; ">
+<input class="star" type="radio" name="49" value="4" style="display: none; ">
+<input class="star" type="radio" name="49" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(49)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[48].value , document.getElementsByName('comment')[48].value, 49)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1030,9 +1273,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="50" value="1" style="display:">
+<input class="star" type="radio" name="50" value="2" style="display: none; ">
+<input class="star" type="radio" name="50" value="3" style="display: none; ">
+<input class="star" type="radio" name="50" value="4" style="display: none; ">
+<input class="star" type="radio" name="50" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(50)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[49].value , document.getElementsByName('comment')[49].value, 50)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1043,9 +1290,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="51" value="1" style="display:">
+<input class="star" type="radio" name="51" value="2" style="display: none; ">
+<input class="star" type="radio" name="51" value="3" style="display: none; ">
+<input class="star" type="radio" name="51" value="4" style="display: none; ">
+<input class="star" type="radio" name="51" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(51)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[50].value , document.getElementsByName('comment')[50].value, 51)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1056,9 +1307,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="52" value="1" style="display:">
+<input class="star" type="radio" name="52" value="2" style="display: none; ">
+<input class="star" type="radio" name="52" value="3" style="display: none; ">
+<input class="star" type="radio" name="52" value="4" style="display: none; ">
+<input class="star" type="radio" name="52" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(52)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[51].value , document.getElementsByName('comment')[51].value, 52)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1087,9 +1342,13 @@
     Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="53" value="1" style="display:">
+<input class="star" type="radio" name="53" value="2" style="display: none; ">
+<input class="star" type="radio" name="53" value="3" style="display: none; ">
+<input class="star" type="radio" name="53" value="4" style="display: none; ">
+<input class="star" type="radio" name="53" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(53)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[52].value , document.getElementsByName('comment')[52].value, 53)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1100,9 +1359,13 @@
     Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="54" value="1" style="display:">
+<input class="star" type="radio" name="54" value="2" style="display: none; ">
+<input class="star" type="radio" name="54" value="3" style="display: none; ">
+<input class="star" type="radio" name="54" value="4" style="display: none; ">
+<input class="star" type="radio" name="54" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(54)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[53].value , document.getElementsByName('comment')[53].value, 54)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1113,9 +1376,13 @@
     Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="55" value="1" style="display:">
+<input class="star" type="radio" name="55" value="2" style="display: none; ">
+<input class="star" type="radio" name="55" value="3" style="display: none; ">
+<input class="star" type="radio" name="55" value="4" style="display: none; ">
+<input class="star" type="radio" name="55" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(55)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[54].value , document.getElementsByName('comment')[54].value, 55)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1126,9 +1393,13 @@
     Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="56" value="1" style="display:">
+<input class="star" type="radio" name="56" value="2" style="display: none; ">
+<input class="star" type="radio" name="56" value="3" style="display: none; ">
+<input class="star" type="radio" name="56" value="4" style="display: none; ">
+<input class="star" type="radio" name="56" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(56)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[55].value , document.getElementsByName('comment')[55].value, 56)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1157,9 +1428,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="57" value="1" style="display:">
+<input class="star" type="radio" name="57" value="2" style="display: none; ">
+<input class="star" type="radio" name="57" value="3" style="display: none; ">
+<input class="star" type="radio" name="57" value="4" style="display: none; ">
+<input class="star" type="radio" name="57" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(57)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[56].value , document.getElementsByName('comment')[56].value, 57)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1170,9 +1445,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="58" value="1" style="display:">
+<input class="star" type="radio" name="58" value="2" style="display: none; ">
+<input class="star" type="radio" name="58" value="3" style="display: none; ">
+<input class="star" type="radio" name="58" value="4" style="display: none; ">
+<input class="star" type="radio" name="58" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(58)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[57].value , document.getElementsByName('comment')[57].value, 58)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1183,9 +1462,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="59" value="1" style="display:">
+<input class="star" type="radio" name="59" value="2" style="display: none; ">
+<input class="star" type="radio" name="59" value="3" style="display: none; ">
+<input class="star" type="radio" name="59" value="4" style="display: none; ">
+<input class="star" type="radio" name="59" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(59)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[58].value , document.getElementsByName('comment')[58].value, 59)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1196,9 +1479,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="60" value="1" style="display:">
+<input class="star" type="radio" name="60" value="2" style="display: none; ">
+<input class="star" type="radio" name="60" value="3" style="display: none; ">
+<input class="star" type="radio" name="60" value="4" style="display: none; ">
+<input class="star" type="radio" name="60" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(60)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[59].value , document.getElementsByName('comment')[59].value, 60)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1227,9 +1514,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="61" value="1" style="display:">
+<input class="star" type="radio" name="61" value="2" style="display: none; ">
+<input class="star" type="radio" name="61" value="3" style="display: none; ">
+<input class="star" type="radio" name="61" value="4" style="display: none; ">
+<input class="star" type="radio" name="61" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(61)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[60].value , document.getElementsByName('comment')[60].value, 61)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1240,9 +1531,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="62" value="1" style="display:">
+<input class="star" type="radio" name="62" value="2" style="display: none; ">
+<input class="star" type="radio" name="62" value="3" style="display: none; ">
+<input class="star" type="radio" name="62" value="4" style="display: none; ">
+<input class="star" type="radio" name="62" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(62)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[61].value , document.getElementsByName('comment')[61].value, 62)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1253,9 +1548,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="63" value="1" style="display:">
+<input class="star" type="radio" name="63" value="2" style="display: none; ">
+<input class="star" type="radio" name="63" value="3" style="display: none; ">
+<input class="star" type="radio" name="63" value="4" style="display: none; ">
+<input class="star" type="radio" name="63" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(63)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[62].value , document.getElementsByName('comment')[62].value, 63)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1266,9 +1565,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="64" value="1" style="display:">
+<input class="star" type="radio" name="64" value="2" style="display: none; ">
+<input class="star" type="radio" name="64" value="3" style="display: none; ">
+<input class="star" type="radio" name="64" value="4" style="display: none; ">
+<input class="star" type="radio" name="64" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(64)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[63].value , document.getElementsByName('comment')[63].value, 64)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1297,9 +1600,14 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="65" value="1" style="display:">
+<input class="star" type="radio" name="65" value="2" style="display: none; ">
+<input class="star" type="radio" name="65" value="3" style="display: none; ">
+<input class="star" type="radio" name="65" value="4" style="display: none; ">
+<input class="star" type="radio" name="65" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+
 <input type="button" onclick="viewComments(65)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[64].value , document.getElementsByName('comment')[64].value, 65)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1310,9 +1618,13 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="66" value="1" style="display:">
+<input class="star" type="radio" name="66" value="2" style="display: none; ">
+<input class="star" type="radio" name="66" value="3" style="display: none; ">
+<input class="star" type="radio" name="66" value="4" style="display: none; ">
+<input class="star" type="radio" name="66" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(66)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[65].value , document.getElementsByName('comment')[65].value, 66)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
@@ -1323,12 +1635,16 @@
      Comments and Rating</br>
     Name: <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    	
-    
-</form>
+    <div>
+<input class="star" type="radio" name="67" value="1" style="display:">
+<input class="star" type="radio" name="67" value="2" style="display: none; ">
+<input class="star" type="radio" name="67" value="3" style="display: none; ">
+<input class="star" type="radio" name="67" value="4" style="display: none; ">
+<input class="star" type="radio" name="67" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(67)" value="View Comments" />
 <input type="button" onclick="formSubmit(document.getElementsByName('user')[66].value , document.getElementsByName('comment')[66].value, 67)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
-</p>
+</p></form>
     </div>
     </div>
     </div>

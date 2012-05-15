@@ -18,16 +18,12 @@
 <script src="star-rating/jquery.rating.js"></script>
 <link rel="stylesheet" type="text/css" href="Social/jsShare.css">
 <script src="Social/jsShare.js" type="text/javascript"></script>
-var rate; var rateval =0;
-<script id = "yo" type="text/javascript">
+
+<script type="text/javascript">
        $(document).ready(function() {
            $('#buttons').jsShare({ maxwidth: 280 });
 		
-				$('.auto-submit-star').rating({callback: function(value){
-	 	 
-		 rateval = value;
-		//window.location.href=url;	
-	});
+	
 	
 	
 	   
@@ -36,30 +32,7 @@ var rate; var rateval =0;
 	
    </script>
   
- <script>function formSubmit(name, comment, id)
-{
-	a = name;
-	b = comment;
-	c = id;
-		
-	var url= "http://cold-spring-4585.herokuapp.com/comments/add.";
-	url= url+c+"&"+a+"&"+b;
-	
-		   window.location.href= url;
-		   
-       
 
-} </script>
-
- <script>function rateSubmit(id)
-{
-	rate = "http://cold-spring-4585.herokuapp.com/events/rating."
-				   
-     
-       var b = id;
-	 rate = rate+rateval+"&"+ b;
-
-} </script>
 </head>
 
 <body> 
@@ -73,68 +46,94 @@ var rate; var rateval =0;
 		</ul>
 	</div><!-- /navbar -->
     </div> 
-<div data-role="content">	
-<p style="color:blue;text-align:center;font-size:36px">
-Event Details</p>
-
- 
 
 
+<div id="tab-Testing" class="tabs-container" style="min-width: 0px; ">
+<h2>Test Suite</h2>
+<script type="text/javascript" language="javascript">
+$(function(){ 
+ $('#form1 :radio.star').rating(); 
 
-
-
-
-<p style="color:black;text-align:center;font-size:24px">Event Name</p>
-<p style="color:black;text-align:center;font-size:24px">Event Presenter</p>
-<p style="color:black;text-align:center;">Summary</p>
-<p style="text-align:center;">djflkasflasdfjkhgkgh;kaglhka;lghklahgl;kaghda;lghkl;akhg;a
-dkoshag;dahgko;airetohqaogho;aigdfl;ahkgfo;hiaewrghao;
-akgh;ai;ohgioqaergio;ahgfkiagh;fkagh;a;ghkah;lgkfl;aghka;l
-kioa;gh;oahkgj;ahgfk;ahkgf;lahkgfg;airthreithuaoituiaopthiirapo;
-aghd;ahjtreityuaiergh;kahfbvnfkghjr;eiohg;avgnn.</p>
-
-
-	
-
-<div data-role="collabsible-set">
-	<div data-role="collapsible"data-collapsed="true">	
-	<h2>Harmonic Quorum Systems: Data Management in 2D/3D Wireless Sensor Networks with Holes</h2>
-    <p>Chi Zhang; Jun Luo; Liu Xiang; Feng Li; Juncong Lin: Ying He<br />
- <div id="comments" style= "collapse" >
-    Comments and Rating</br>
-    Name: <input type="text" name="fname" id="user"/><br />
-    Comments: <input type="text" name="lname" id="comment" value="Comments and Ratings" onFocus="this.value=''; return false;"   / >
-    
-	
-    <div>  <a data-role="button" data-inline="true" >View Comments</a><a data-role="button" data-inline="true">Post comment</a>
-</form>
-<input type="button" onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" value="Submit form" />
-
-
-
-
-
-
- </div>
-</div>
-    
-
-
-
-    </div></div></div>
-
-<p style="text-align:center;font-size:24px">Time</p><p style="text-align:center"><a href="#" data-role="button" data-theme="b" data-inline="true">Add To Calendar</a></p>
+});
+</script>
+<script>
+$(function(){
+ $('#tab-Testing form').submit(function(){
+  $('.test',this).html('');
+  $('input',this).each(function(){
+	  var ratingUrl = "http://cold-spring-4585.herokuapp.com/events/rating."
+   if(this.checked) {ratingUrl = ratingUrl +this.name+"&"+this.value;
+   
+   alert(ratingUrl);
   
-<p style="text-align:center;font-size:24px">Directions</p><p style="text-align:center;"><a href="http://media.expedia.com/hotels/1000000/20000/16900/16801/16801_69_b.jpg" data-role="button" data-icon="star" data-theme="b" data-inline="true">View Map</a></p>
+   }}); this.form.reset();
+  return false;
+ });
+});
+</script>
 
-<p style="text-align:left; font-size:24px">Rate This Event:</p>
-<input name="star1"  value="1" type="radio" class="auto-submit-star"/>
-<input name="star1" value="2" type="radio" class="auto-submit-star"/>
-<input name="star1"  value="3" type="radio" class="auto-submit-star"/>
-<input name="star1"  value="4" type="radio" class="auto-submit-star"/>
-<input name="star1"  value="5" type="radio" class="auto-submit-star"/>
-<input type="button" onclick="rateSubmit(1)" value="Rate"/>   
+<form id="form1">
+
+<div>
+Rating 1:
+(N/M/Y)
+
+
+<input class="star" type="radio" name="1" value="1" style="display:">
+<input class="star" type="radio" name="1" value="2" style="display: none; ">
+<input class="star" type="radio" name="1" value="3" style="display: none; ">
+<input class="star" type="radio" name="1" value="4" style="display: none; ">
+<input class="star" type="radio" name="1" value="5" style="display: none; ">
 </div>
+<br>
+<div>
+Rating 2:
+(10 - 50)
+<input class="star" type="radio" name="2" value="1" style="display: none; ">
+<input class="star" type="radio" name="2" value="2" style="display: none; ">
+<input class="star" type="radio" name="2" value="3" style="display: none; ">
+<input class="star" type="radio" name="2" value="4" style="display: none; ">
+<input class="star" type="radio" name="2" value="5" style="display: none; ">
+</div>
+<br>
+
+
+<input type="submit" value="Submit scores!"> </td>
+
+<u>Test results</u>:<br><br>
+<div class="test Smaller">
+<span style="color:#FF0000">Results will be displayed here</span>
+</div>
+
+</form>
+<div class="Clear">&nbsp;</div><div class="Clear">&nbsp;</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
