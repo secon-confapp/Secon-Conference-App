@@ -3,7 +3,7 @@
         jsShare: function(options) {
             var settings = $.extend({
                 minwidth: 40,
-                maxwidth: 200,
+                maxwidth: 150,
                 animate: true,
                 speed: 1000,
                 initialdisplay: 'compact',
@@ -12,7 +12,7 @@
                 digg: false,
                 reddit: false,
                 stumbleupon: false,
-                messenger: true,
+                messenger: false,
                 delicious: false,
                 linkedin: true,
                 googlebuzz: false,

@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html>
+<html manifest="/offline.manifest">
 <head>
 <meta charset="UTF-8">
 <title>Secon 2012</title>
@@ -21,10 +21,7 @@
        });
    </script> 
 
-   $(document).ready(function() {
-      $('#buttons').jsShare({ maxwidth: 280 });
-       });
-</script>
+  
 
 
  <script>function formSubmit(name, comment, id)
@@ -57,7 +54,7 @@
 	<div data-role="header"  data-theme="c" data-id="myheader" data-position="fixed">		
 		<div data-role="navbar">
 			<ul>
-				<li><a href="index.html" class="ui-btn-active">Technical Programs</a></li>
+				<li><a class="ui-btn-active">Technical Programs</a></li>
 				<li><a href="info.html" rel="external">Info</a></li>
         
 			</ul>
@@ -79,8 +76,8 @@
 		<div data-role="navbar">
 			<ul>
 				<li><div id="buttons"></div></li>
-				<li><p style="text-align:center">IEEE SECON 2012</p></li>
-        		<li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+ 				<li><a>IEEE SECON 2012</a></li>
+        		        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data role="button">Explore Korea</a></li>
 			</ul>
 		</div><!-- /navbar -->   
 	</div><!-- /footer -->
@@ -93,15 +90,16 @@
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview" data-inset="true">
-	<li><a href="#page9" rel="internal">The Medley (Tue 11-12:30)</a></li>
-	<li><a href="#page10" rel="internal">Energy Efficiency (Tue 3:30-5)</a></li>
-	<li><a href="#page11" rel="internal">Scheduling and Resource Management (Tue 3:30-5) </a></li>
+<li><a href="#page37" rel="internal">Keynote (Tue 9-10:30) -- Grand Ballroom</a></li>
+	<li><a href="#page9" rel="internal">The Medley (Tue 11-12:30) -- Grand Ballroom</a></li>
+	<li><a href="#page10" rel="internal">Energy Efficiency (Tue 3:30-5) -- Junior Ballroom I</a></li>
+	<li><a href="#page11" rel="internal">Scheduling and Resource Management (Tue 3:30-5) -- Junior Ballroom II </a></li>
 </ul>	
 	</div>
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
@@ -114,18 +112,18 @@
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview" data-inset="true">
-	<li><a href="#page12" rel="internal">Data processing (Wed 9-10:30)</a></li>
-	<li><a href="#page13" rel="internal">Routing I (Wed 9-10:30)</a></li>
-	<li><a href="#page14" rel="internal">Localization (Wed 11-12:30)</a></li>
-	<li><a href="#page15" rel="internal">Content sources and distribution (Wed 11-12:30)</a></li>
-	<li><a href="#page16" rel="internal">Sensor Networks (Wed 3:30-5)</a></li>
-    <li><a href="#page17" rel="internal">Routing II (Wed 3:30-5)</a></li>
+	<li><a href="#page12" rel="internal">Data processing (Wed 9-10:30) -- Junior Ballroom I</a></li>
+	<li><a href="#page13" rel="internal">Routing I (Wed 9-10:30) -- Junior Ballroom II</a></li>
+	<li><a href="#page14" rel="internal">Localization (Wed 11-12:30) -- Junior Ballroom I</a></li>
+	<li><a href="#page15" rel="internal">Content sources and distribution (Wed 11-12:30) -- Junior Ballroom II</a></li>
+	<li><a href="#page16" rel="internal">Sensor Networks (Wed 3:30-5) -- Junior Ballroom I</a></li>
+    <li><a href="#page17" rel="internal">Routing II (Wed 3:30-5) -- Junior Ballroom II</a></li>
 </ul>	
 	</div>
 <div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
@@ -138,20 +136,20 @@
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview" data-inset="true">
-	<li><a href="#page18" rel="internal">Performance and Fairness (Thu 9-10:30) </a></li>
-	<li><a href="#page19" rel="internal">PHY/MAC Techniques (Thu 9-10:30)</a></li>
-	<li><a href="#page20" rel="internal">Security (Thu 11-12:30)</a></li>
-	<li><a href="#page21" rel="internal">Sensing and Estimation (Thu 11-12:30)</a></li>
-	<li><a href="#page22" rel="internal">Mobile Sensor Networks (Thu 1:30-3)</a></li>
-    <li><a href="#page23" rel="internal">Privacy and Trust (Thu 1:30-3)</a></li>
-    <li><a href="#page24" rel="internal">Topology, Coverage and Connectivity (Thu 3:30-5)</a></li>
-    <li><a href="#page25" rel="internal">Vehicular Systems (Thu 3:30-5)</a></li>
+	<li><a href="#page18" rel="internal">Performance and Fairness (Thu 9-10:30) -- Junior Ballroom I </a></li>
+	<li><a href="#page19" rel="internal">PHY/MAC Techniques (Thu 9-10:30) -- Junior Ballroom II</a></li>
+	<li><a href="#page20" rel="internal">Security (Thu 11-12:30) -- Junior Ballroom I</a></li>
+	<li><a href="#page21" rel="internal">Sensing and Estimation (Thu 11-12:30) -- Junior Ballroom II</a></li>
+	<li><a href="#page22" rel="internal">Mobile Sensor Networks (Thu 1:30-3) -- Junior Ballroom I</a></li>
+    <li><a href="#page23" rel="internal">Privacy and Trust (Thu 1:30-3) -- Junior Ballroom II</a></li>
+    <li><a href="#page24" rel="internal">Topology, Coverage and Connectivity (Thu 3:30-5) -- Junior Ballroom I</a></li>
+    <li><a href="#page25" rel="internal">Vehicular Systems (Thu 3:30-5) -- Junior Ballroom II</a></li>
 </ul>	
 	</div>
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
@@ -189,10 +187,11 @@ $(function(){
     <div data-role="content">
     <div data-role="collabsible-set">
 	<div data-role="collapsible"data-collapsed="true">	
-	<h2>Harmonic Quorum Systems: Data Management in 2D/3D Wireless Sensor Networks with Holes </br>
+	<h2>Harmonic Quorum Systems: Data Management in 2D/3D Wireless Sensor Networks with Holes 
     </h2>
-    <subtitle>Chi Zhang; Jun Luo; Liu Xiang; Feng Li; Juncong Lin: Ying He</subtitle>
-    <p>
+    <i>Authors: Chi Zhang; Jun Luo; Liu Xiang; Feng Li; Juncong Lin; Ying He</i>
+<p>
+    
    
        
  
@@ -200,17 +199,17 @@ $(function(){
        <!-- start here -->
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[0].value , document.getElementsByName('comment')[0].value, 1)" value="Post Comment" data-role="button" data-inline="true"  /> 
     <div>
 <input class="star" type="radio" name="1" value="1" style="display:">
 <input class="star" type="radio" name="1" value="2" style="display: none; ">
 <input class="star" type="radio" name="1" value="3" style="display: none; ">
 <input class="star" type="radio" name="1" value="4" style="display: none; ">
-<input class="star" type="radio" name="1" value="5" style="display: none; "></br>
-<input type="submit" value="Rate"></div>
+<input class="star" type="radio" name="1" value="5" style="display: none; ">
+<input id= "rate" data-role="button" data-inline="true" type="submit" value="Rate" class="inputbutton"/></div>
 
 <input type="button" onclick="viewComments(1)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[0].value , document.getElementsByName('comment')[0].value, 1)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val -->
+<!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val -->
 
 </p>
    
@@ -218,14 +217,16 @@ $(function(){
  
 </p>
     </div>
+
+
     <div data-role="collapsible"data-collapsed="true">
 	<h3>On Renewable Sensor Networks with Wireless Energy Transfer: The Multi-Node Case</h3>
-    <p>Liguang Xie; Yi Shi; Thomas Hou; Wenjing Lou; Hanif Sherali; Scott F Midkiff<br />
-   
+   <i>Authors: Liguang Xie; Yi Shi; Thomas Hou; Wenjing Lou; Hanif Sherali; Scott F Midkiff </i>
+   <p>
     
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[1].value , document.getElementsByName('comment')[1].value, 2)" value="Post Comment" data-role="button" data-inline="true" />
     <div>
 <input class="star" type="radio" name="2" value="1" style="display:">
 <input class="star" type="radio" name="2" value="2" style="display: none; ">
@@ -237,15 +238,17 @@ $(function(){
     
 
 <input type="button" onclick="viewComments(2)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[1].value , document.getElementsByName('comment')[1].value, 2)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
+
+
     <div data-role="collapsible"data-collapsed="true">
 	<h4>QoI-Aware Energy Management in Internet-of-Things Sensory Environments</h4>
-    <p>Zhanwei Sun; Chi Harold Liu; Chatschik Bisdikian; Jowl W. W. Branch; Bo Yang<br />
+   <i>Authors: Zhanwei Sun; Chi Harold Liu; Chatschik Bisdikian; Jowl W. W. Branch; Bo Yang</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[2].value , document.getElementsByName('comment')[2].value, 3)" value="Post Comment" data-role="button" data-inline="true" />
     <div>
 <input class="star" type="radio" name="3" value="1" style="display:">
 <input class="star" type="radio" name="3" value="2" style="display: none; ">
@@ -257,15 +260,17 @@ $(function(){
     
 
 <input type="button" onclick="viewComments(3)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[2].value , document.getElementsByName('comment')[2].value, 3)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
+
+
     <div data-role="collapsible"data-collapsed="true">
     <h5>Online Learning for Combinatorial Network Optimization with Restless Markovian Rewards</h5>
-    <p>Yi Gai; Bhaskar Krishnamachari; Mingyan Liu<br />
+   <i>Authors: Yi Gai; Bhaskar Krishnamachari; Mingyan Liu</i><p>
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[3].value , document.getElementsByName('comment')[3].value, 4)" value="Post Comment" data-role="button" data-inline="true" />
     <div>
 <input class="star" type="radio" name="4" value="1" style="display:">
 <input class="star" type="radio" name="4" value="2" style="display: none; ">
@@ -277,7 +282,7 @@ $(function(){
     
 
 <input type="button" onclick="viewComments(4)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[3].value , document.getElementsByName('comment')[3].value, 4)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -285,12 +290,14 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
+
+
 
 <div data-role="page" id="page10">
 	<div data-role="header" data-theme="c">
@@ -300,30 +307,31 @@ $(function(){
     <div data-role="collabsible-set">
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Simulating Power/Energy Consumption of Sensor Nodes with Flexible Hardware in Wireless Networks</h2>
-    <p>Jingyao Zhang; Srikrishna Iyer; Patrick Schaumont; Yaling Yang<br />
+    <i>Authors: Jingyao Zhang; Srikrishna Iyer; Patrick Schaumont; Yaling Yang</i><p>
    Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[4].value , document.getElementsByName('comment')[4].value, 5)" value="Post Comment" data-role="button" data-inline="true" /> 
     <div>
 <input class="star" type="radio" name="5" value="1" style="display:">
 <input class="star" type="radio" name="5" value="2" style="display: none; ">
 <input class="star" type="radio" name="5" value="3" style="display: none; ">
 <input class="star" type="radio" name="5" value="4" style="display: none; ">
-<input class="star" type="radio" name="5" value="5" style="display: none; ">
+<input class="star" type="radio" name="5" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
     	
     
 
 <input type="button" onclick="viewComments(5)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[4].value , document.getElementsByName('comment')[4].value, 5)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+<!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
+
     <div data-role="collapsible"data-collapsed="true">
 	<h3>OPERETTA: An Optimal Energy Efficient Bandwidth Aggregation System</h3>
-    <p>Karim Habak; Khaled A. Harras; Moustafa Youssef<br />
+    <i>Authors: Karim Habak; Khaled A. Harras; Moustafa Youssef</i><p>
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[5].value , document.getElementsByName('comment')[5].value, 6)" value="Post Comment" data-role="button" data-inline="true" />
     <div>
 <input class="star" type="radio" name="6" value="1" style="display:">
 <input class="star" type="radio" name="6" value="2" style="display: none; ">
@@ -335,15 +343,17 @@ $(function(){
     
 
 <input type="button" onclick="viewComments(6)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[5].value , document.getElementsByName('comment')[5].value, 6)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
+
+
     <div data-role="collapsible"data-collapsed="true">
 	<h4>An Energy-Efficient Approach for Provenance Transmission in Wireless Sensor Networks</h4>
-    <p>S. M. Iftekharul Alam; Sonia Fahmy<br />
+   <i>Authors: S. M. Iftekharul Alam; Sonia Fahmy</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[6].value , document.getElementsByName('comment')[6].value, 7)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="7" value="1" style="display:">
 <input class="star" type="radio" name="7" value="2" style="display: none; ">
@@ -355,15 +365,17 @@ $(function(){
     
 
 <input type="button" onclick="viewComments(7)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[6].value , document.getElementsByName('comment')[6].value, 7)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
+
+
     <div data-role="collapsible"data-collapsed="true">
     <h5>AutoSync: Automatic Duty-Cycle Control for Synchronous Low-Power Listening</h5>
-    <p>Morten Tranberg Hanses; Branislav Kusy; Raja Jurdak; Koen Langendoen<br />
+    <i>Authors: Morten Tranberg Hanses; Branislav Kusy; Raja Jurdak; Koen Langendoen</i><p>
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[7].value , document.getElementsByName('comment')[7].value, 8)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="8" value="1" style="display:">
 <input class="star" type="radio" name="8" value="2" style="display: none; ">
@@ -375,7 +387,7 @@ $(function(){
     
 
 <input type="button" onclick="viewComments(8)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[7].value , document.getElementsByName('comment')[7].value, 8)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -383,7 +395,7 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
@@ -398,10 +410,10 @@ $(function(){
     <div data-role="collabsible-set">
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Convergecast with Aggregatable Data Classes</h2>
-    <p>Fangfei Chen; Matthew P Johnson; Amotz Bar-Noy; Tom La Porta<br />
+    <i>Authors: Fangfei Chen; Matthew P Johnson; Amotz Bar-Noy; Tom La Porta</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[8].value , document.getElementsByName('comment')[8].value, 9)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="9" value="1" style="display:">
 <input class="star" type="radio" name="9" value="2" style="display: none; ">
@@ -410,15 +422,15 @@ $(function(){
 <input class="star" type="radio" name="9" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(9)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[8].value , document.getElementsByName('comment')[8].value, 9)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Flexible Beacon Scheduling Scheme for Interference Mitigation in Body Sensor Networks</h3>
-    <p>Seungku Kim; Seokhwan Kim; Jin-Woo Kim; Doo-seop Eom<br />
+    <i>Authors: Seungku Kim; Seokhwan Kim; Jin-Woo Kim; Doo-seop Eom</i><p>
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[9].value , document.getElementsByName('comment')[9].value, 10)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="10" value="1" style="display:">
 <input class="star" type="radio" name="10" value="2" style="display: none; ">
@@ -427,14 +439,14 @@ $(function(){
 <input class="star" type="radio" name="10" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(10)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[9].value , document.getElementsByName('comment')[9].value, 10)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> </p>
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Network Stability of Cognitive Radio Networks in the Presence of Heavy Tailed Traffic</h4>
-    <p>Pu Wang; Ian F. Akyildiz<br />
+    <i>Authors: Pu Wang; Ian F. Akyildiz</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[10].value , document.getElementsByName('comment')[10].value, 11)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="11" value="1" style="display:">
 <input class="star" type="radio" name="11" value="2" style="display: none; ">
@@ -443,15 +455,15 @@ $(function(){
 <input class="star" type="radio" name="11" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(11)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[10].value , document.getElementsByName('comment')[10].value, 11)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>PION: Human Mobility-based Service Provisioning Framework for Smartphone Users</h5>
-    <p>Chanmin Yoon; Yohan Chon; Hojung Cha<br />
+    <i>Authors: Chanmin Yoon; Yohan Chon; Hojung Cha</i><p>
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[11].value , document.getElementsByName('comment')[11].value, 12)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="12" value="1" style="display:">
 <input class="star" type="radio" name="12" value="2" style="display: none; ">
@@ -460,7 +472,7 @@ $(function(){
 <input class="star" type="radio" name="12" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(12)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[11].value , document.getElementsByName('comment')[11].value, 12)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -468,7 +480,7 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
@@ -483,10 +495,10 @@ $(function(){
     <div data-role="collabsible-set">
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>DECA: Recovering Fields of Physical Quantities from Incomplete Sensory Data</h2>
-    <p>Liu Xiang; Jun Luo; Chenwei Deng; Athanasios V. Vasilakos; Weisi Lin<br />
+    <i>Authors: Liu Xiang; Jun Luo; Chenwei Deng; Athanasios V. Vasilakos; Weisi Lin</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[12].value , document.getElementsByName('comment')[12].value, 13)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="13" value="1" style="display:">
 <input class="star" type="radio" name="13" value="2" style="display: none; ">
@@ -495,14 +507,14 @@ $(function(){
 <input class="star" type="radio" name="13" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(13)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[12].value , document.getElementsByName('comment')[12].value, 13)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Online Anomaly Rate Parameter Tracking for Anomaly Detection in Wireless Sensor Networks</h3>
-    <p>Colin O'Reilly; Alexander Gluhak; Muhammad Ali Imran; Sutharshan Rajasegarar<br />
+    <i>Authors: Colin O'Reilly; Alexander Gluhak; Muhammad Ali Imran; Sutharshan Rajasegarar</i><p>
  Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[13].value , document.getElementsByName('comment')[13].value, 14)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="14" value="1" style="display:">
 <input class="star" type="radio" name="14" value="2" style="display: none; ">
@@ -512,14 +524,14 @@ $(function(){
 <input type="submit" value="Rate"></div>
 
 <input type="button" onclick="viewComments(14)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[13].value , document.getElementsByName('comment')[13].value, 14)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> </p>
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Online Data Recovery in Wireless Sensor Networks</h4>
-    <p>Oluwasoji O Omiwade; Rong Zheng<br />
+    <i>Authors: Oluwasoji O Omiwade; Rong Zheng</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[14].value , document.getElementsByName('comment')[14].value, 15)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="15" value="1" style="display:">
 <input class="star" type="radio" name="15" value="2" style="display: none; ">
@@ -528,15 +540,15 @@ $(function(){
 <input class="star" type="radio" name="15" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(15)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[14].value , document.getElementsByName('comment')[14].value, 15)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Optimal Solution for the Index Coding Problem using Network Coding over GF(2)</h5>
-    <p>Jalaluddin Qureshi; Chuan Heng Foh; Jianfei Cai<br />
+    <i>Authors: Jalaluddin Qureshi; Chuan Heng Foh; Jianfei Cai</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[15].value , document.getElementsByName('comment')[15].value, 16)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="16" value="1" style="display:">
 <input class="star" type="radio" name="16" value="2" style="display: none; ">
@@ -545,7 +557,7 @@ $(function(){
 <input class="star" type="radio" name="16" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(16)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[15].value , document.getElementsByName('comment')[15].value, 16)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -553,7 +565,7 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
@@ -568,10 +580,10 @@ $(function(){
     <div data-role="collabsible-set">
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>MURAO: A Multi-level Routing Protocol for Acoustic-Optical Hybrid Underwater Wireless Sensor Networks</h2>
-    <p>Tiansi Hu; Yunsi Fei<br />
+    <i>Authors: Tiansi Hu; Yunsi Fei</i><p>
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[16].value , document.getElementsByName('comment')[16].value, 17)" value="Post Comment" data-role="button" data-inline="true"  /> 
     <div>
 <input class="star" type="radio" name="17" value="1" style="display:">
 <input class="star" type="radio" name="17" value="2" style="display: none; ">
@@ -580,15 +592,15 @@ $(function(){
 <input class="star" type="radio" name="17" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(17)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[16].value , document.getElementsByName('comment')[16].value, 17)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+<!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Cross-layer Routing on MIMO-OFDM Underwater Acoustic Links</h3>
-    <p>Li-Chung Kuo; Tommaso Melodia<br />
+    <i>Authors: Li-Chung Kuo; Tommaso Melodia</i><p>
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[17].value , document.getElementsByName('comment')[17].value, 18)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="18" value="1" style="display:">
 <input class="star" type="radio" name="18" value="2" style="display: none; ">
@@ -597,15 +609,15 @@ $(function(){
 <input class="star" type="radio" name="18" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(18)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[17].value , document.getElementsByName('comment')[17].value, 18)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>MDR: A P2P-based Market-guided Distributed Routing Mechanism for High-Throughput Hybrid Wireless Networks</h4>
-    <p>Ze Li; Haiying Shen<br />
+    <i>Authors: Ze Li; Haiying Shen</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[18].value , document.getElementsByName('comment')[18].value, 19)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="19" value="1" style="display:">
 <input class="star" type="radio" name="19" value="2" style="display: none; ">
@@ -614,15 +626,15 @@ $(function(){
 <input class="star" type="radio" name="19" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(19)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[18].value , document.getElementsByName('comment')[18].value, 19)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Bubble Routing: A Scalable Algorithm with Guaranteed Delivery in 3D Sensor Networks</h5>
-    <p>Su Xia; Miao Jin; Hongyi Wu; Hongyu Zhou<br />
+    <i>Authors: Su Xia; Miao Jin; Hongyi Wu; Hongyu Zhou</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[19].value , document.getElementsByName('comment')[19].value, 20)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="20" value="1" style="display:">
 <input class="star" type="radio" name="20" value="2" style="display: none; ">
@@ -632,7 +644,7 @@ $(function(){
 <input type="submit" value="Rate"></div>
 
 <input type="button" onclick="viewComments(20)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[19].value , document.getElementsByName('comment')[19].value, 20)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -640,7 +652,7 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
@@ -655,10 +667,10 @@ $(function(){
     <div data-role="collabsible-set">
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Improving Crowd-Sourced Wi-Fi Localization Systems using Bluetooth Beacons</h2>
-    <p>Jindan Zhu; Kai Zeng; Kyu-Han Kim; Prasant Mohapatra<br />
+    <i>Authors: Jindan Zhu; Kai Zeng; Kyu-Han Kim; Prasant Mohapatra</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[20].value , document.getElementsByName('comment')[20].value, 21)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="21" value="1" style="display:">
 <input class="star" type="radio" name="21" value="2" style="display: none; ">
@@ -667,15 +679,15 @@ $(function(){
 <input class="star" type="radio" name="21" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(21)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[20].value , document.getElementsByName('comment')[20].value, 21)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Range-free Selective Multilateration for Anisotropic Wireless Sensor Networks</h3>
-    <p>Shigeng Zhang; Jianxin Wang; Xuan Liu; Jiannong Cao<br />
+    <i>Authors: Shigeng Zhang; Jianxin Wang; Xuan Liu; Jiannong Cao</i><p>
    Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[21].value , document.getElementsByName('comment')[21].value, 22)" value="Post Comment" data-role="button" data-inline="true"  /> 
     <div>
 <input class="star" type="radio" name="22" value="1" style="display:">
 <input class="star" type="radio" name="22" value="2" style="display: none; ">
@@ -684,15 +696,15 @@ $(function(){
 <input class="star" type="radio" name="22" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(22)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[21].value , document.getElementsByName('comment')[21].value, 22)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+<!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Uncertainty-Aware Localization Solution for Under-Ice Autonomous Underwater Vehicles</h4>
-    <p>Baozhi Chen; Dario Pompili<br />
+    <i>Authors: Baozhi Chen; Dario Pompili</i><p>
    Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[22].value , document.getElementsByName('comment')[22].value, 23)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="23" value="1" style="display:">
 <input class="star" type="radio" name="23" value="2" style="display: none; ">
@@ -701,15 +713,15 @@ $(function(){
 <input class="star" type="radio" name="23" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(23)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[22].value , document.getElementsByName('comment')[22].value, 23)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>JSL: Joint Time Synchronization and Localization Design with Stratification Compensation in Mobile Underwater Sensor Networks</h5>
-    <p>Jun Liu; Zhaohui Wang; Michael Zuba; Zheng Peng; Jun-Hong Cui; Shengli Zhou<br />
+    <i>Authors: Jun Liu; Zhaohui Wang; Michael Zuba; Zheng Peng; Jun-Hong Cui; Shengli Zhou</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[23].value , document.getElementsByName('comment')[23].value, 24)" value="Post Comment" data-role="button" data-inline="true"  /> 
     <div>
 <input class="star" type="radio" name="24" value="1" style="display:">
 <input class="star" type="radio" name="24" value="2" style="display: none; ">
@@ -718,7 +730,7 @@ $(function(){
 <input class="star" type="radio" name="24" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(24)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[23].value , document.getElementsByName('comment')[23].value, 24)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+<!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -726,7 +738,7 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
@@ -741,10 +753,10 @@ $(function(){
     <div data-role="collabsible-set">
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Maximizing Timely Content Advertising in Delay Tolerant Networks</h2>
-    <p>Weixiong Rao; Kai Zhao; Yan Zhang; Pan Hui; Sasu Tarkoma<br />
+    <i>Authors: Weixiong Rao; Kai Zhao; Yan Zhang; Pan Hui; Sasu Tarkoma</i><p>
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[24].value , document.getElementsByName('comment')[24].value, 25)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="25" value="1" style="display:">
 <input class="star" type="radio" name="25" value="2" style="display: none; ">
@@ -753,15 +765,15 @@ $(function(){
 <input class="star" type="radio" name="25" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(25)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[24].value , document.getElementsByName('comment')[24].value, 25)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Offloading Cellular Networks through ITS Content Download</h3>
-    <p>Francesco Malandrino; Claudio E. Casetti; Carla-Fabiana Chiasserini; Marco Fiore<br />
+    <i>Authors: Francesco Malandrino; Claudio E. Casetti; Carla-Fabiana Chiasserini; Marco Fiore</i><p>
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[25].value , document.getElementsByName('comment')[25].value, 26)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="26" value="1" style="display:">
 <input class="star" type="radio" name="26" value="2" style="display: none; ">
@@ -770,15 +782,15 @@ $(function(){
 <input class="star" type="radio" name="26" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(26)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[25].value , document.getElementsByName('comment')[25].value, 26)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>DOVE: Data Dissemination to A Fixed Number of Receivers in VANET</h4>
-    <p>Tan Yan; Wensheng Zhang; Guiling Wang<br />
+    <i>Authors: Tan Yan; Wensheng Zhang; Guiling Wang</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[26].value , document.getElementsByName('comment')[26].value, 27)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="27" value="1" style="display:">
 <input class="star" type="radio" name="27" value="2" style="display: none; ">
@@ -787,15 +799,15 @@ $(function(){
 <input class="star" type="radio" name="27" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(27)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[26].value , document.getElementsByName('comment')[26].value, 27)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Identifying infection sources in large tree networks</h5>
-    <p>Wuqiong Luo; Wee Peng Tay<br />
+    <i>Authors: Wuqiong Luo; Wee Peng Tay</i><p>
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[27].value , document.getElementsByName('comment')[27].value, 28)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="28" value="1" style="display:">
 <input class="star" type="radio" name="28" value="2" style="display: none; ">
@@ -804,7 +816,7 @@ $(function(){
 <input class="star" type="radio" name="28" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(28)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[27].value , document.getElementsByName('comment')[27].value, 28)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -812,7 +824,7 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
@@ -827,10 +839,10 @@ $(function(){
     <div data-role="collabsible-set">
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Building an Efficient Overlay for Publish/Subscribe in Wireless Sensor Networks</h2>
-    <p>Claude Chaudet; Nicola Costagliola; Isabelle Demeure; Salma Ktari; Samuel Tardieu<br />
+    <i>Authors: Claude Chaudet; Nicola Costagliola; Isabelle Demeure; Salma Ktari; Samuel Tardieu</i><p>
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[28].value , document.getElementsByName('comment')[28].value, 29)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="29" value="1" style="display:">
 <input class="star" type="radio" name="29" value="2" style="display: none; ">
@@ -839,15 +851,15 @@ $(function(){
 <input class="star" type="radio" name="29" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(29)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[28].value , document.getElementsByName('comment')[28].value, 29)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>No-reboot and Zero-Flash Over-the-air Programming for Wireless Sensor Networks</h3>
-    <p>Nasif Shafi; Kashif Ali; Hossam S. Hassanein<br />
+    <i>Authors: Nasif Shafi; Kashif Ali; Hossam S. Hassanein</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[29].value , document.getElementsByName('comment')[29].value, 30)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="30" value="1" style="display:">
 <input class="star" type="radio" name="30" value="2" style="display: none; ">
@@ -856,15 +868,15 @@ $(function(){
 <input class="star" type="radio" name="30" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(30)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[29].value , document.getElementsByName('comment')[29].value, 30)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>The Time-keeping Anomaly of Energy-saving Sensors: Manifestation, Solution, and a Structural Monitoring Case Study</h4>
-    <p>Parya Moinzadeh; Kirill A. Mechitov; Reza Shiftehfar; Tarek Abdelzaher; Gul Asha; Billie Spences<br />
+    <i>Authors: Parya Moinzadeh; Kirill A. Mechitov; Reza Shiftehfar; Tarek Abdelzaher; Gul Asha; Billie Spences</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[30].value , document.getElementsByName('comment')[30].value, 31)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="31" value="1" style="display:">
 <input class="star" type="radio" name="31" value="2" style="display: none; ">
@@ -873,15 +885,15 @@ $(function(){
 <input class="star" type="radio" name="31" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(31)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[30].value , document.getElementsByName('comment')[30].value, 31)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Active Consensus over Sensor Networks via Selective Communication</h5>
-    <p>Lei Chen; Jeff Frolik<br />
+    <i>Authors: Lei Chen; Jeff Frolik</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[31].value , document.getElementsByName('comment')[31].value, 32)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="32" value="1" style="display:">
 <input class="star" type="radio" name="32" value="2" style="display: none; ">
@@ -890,7 +902,7 @@ $(function(){
 <input class="star" type="radio" name="32" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(32)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[31].value , document.getElementsByName('comment')[31].value, 32)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -898,7 +910,7 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
@@ -913,10 +925,10 @@ $(function(){
     <div data-role="collabsible-set">
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>On-Demand Data Forwarding for Automatic Adaptation of Data Propagation in WBANs</h2>
-    <p>Majid Nabi; Marc Geilen; Twan Basten<br />
+    <i>Authors: Majid Nabi; Marc Geilen; Twan Basten</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[32].value , document.getElementsByName('comment')[32].value, 33)" value="Post Comment" data-role="button" data-inline="true"  /> 
     <div>
 <input class="star" type="radio" name="33" value="1" style="display:">
 <input class="star" type="radio" name="33" value="2" style="display: none; ">
@@ -925,15 +937,15 @@ $(function(){
 <input class="star" type="radio" name="33" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(33)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[32].value , document.getElementsByName('comment')[32].value, 33)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+<!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>A Metric for Opportunistic Routing in Duty Cycled Wireless Sensor Networks</h3>
-    <p>Euhanna Ghadimi; Olaf Landsiedel; Pablo Soldati; Mikael Johansson<br />
+    <i>Authors: Euhanna Ghadimi; Olaf Landsiedel; Pablo Soldati; Mikael Johansson</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[33].value , document.getElementsByName('comment')[33].value, 34)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="34" value="1" style="display:">
 <input class="star" type="radio" name="34" value="2" style="display: none; ">
@@ -942,15 +954,15 @@ $(function(){
 <input class="star" type="radio" name="34" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(34)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[33].value , document.getElementsByName('comment')[33].value, 34)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Workload-Aware Opportunistic Routing in Multi-Channel, Multi-Radio Wireless Mesh Networks</h4>
-    <p>Fan Wu; Nitin Vaidya<br />
+    <i>Authors: Fan Wu; Nitin Vaidya</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[34].value , document.getElementsByName('comment')[34].value, 35)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="35" value="1" style="display:">
 <input class="star" type="radio" name="35" value="2" style="display: none; ">
@@ -959,15 +971,15 @@ $(function(){
 <input class="star" type="radio" name="35" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(35)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[34].value , document.getElementsByName('comment')[34].value, 35)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Universal Opportunistic Routing Scheme using Network Coding</h5>
-    <p>Abdallah A Khreishah; Issa M Khalil<br />
+    <i>Authors: Abdallah A Khreishah; Issa M Khalil</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[35].value , document.getElementsByName('comment')[35].value, 36)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="36" value="1" style="display:">
 <input class="star" type="radio" name="36" value="2" style="display: none; ">
@@ -976,7 +988,7 @@ $(function(){
 <input class="star" type="radio" name="36" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(36)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[35].value , document.getElementsByName('comment')[35].value, 36)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -984,7 +996,7 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
@@ -999,10 +1011,10 @@ $(function(){
     <div data-role="collabsible-set">
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Elimination of Exposed Terminal Problem Using Signature Detection</h2>
-    <p>Junmei Yao; Tao Xiong; Wei Lou<br />
+    <i>Authors: Junmei Yao; Tao Xiong; Wei Lou</i><p>
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[36].value , document.getElementsByName('comment')[36].value, 37)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="37" value="1" style="display:">
 <input class="star" type="radio" name="37" value="2" style="display: none; ">
@@ -1011,15 +1023,15 @@ $(function(){
 <input class="star" type="radio" name="37" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(37)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[36].value , document.getElementsByName('comment')[36].value, 37)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Robust Joint Congestion Control and Scheduling for Time-Varying Multihop Wireless Networks with Time Delay</h3>
-    <p>Fan Qiu; Yuan Xue<br />
+    <i>Authors: Fan Qiu; Yuan Xue</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[37].value , document.getElementsByName('comment')[37].value, 38)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="38" value="1" style="display:">
 <input class="star" type="radio" name="38" value="2" style="display: none; ">
@@ -1028,15 +1040,15 @@ $(function(){
 <input class="star" type="radio" name="38" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(38)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[37].value , document.getElementsByName('comment')[37].value, 38)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Joint Coding and Scheduling Optimization in Wireless Systems with Varying Delay Sensitivities</h4>
-    <p>Weifei Zeng; Chris Ng; Muriel Medard<br />
+    <i>Authors: Weifei Zeng; Chris Ng; Muriel Medard</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[38].value , document.getElementsByName('comment')[38].value, 39)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="39" value="1" style="display:">
 <input class="star" type="radio" name="39" value="2" style="display: none; ">
@@ -1045,15 +1057,15 @@ $(function(){
 <input class="star" type="radio" name="39" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(39)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[38].value , document.getElementsByName('comment')[38].value, 39)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Fairness and Social Welfare in Incentivizing Participatory Sensing</h5>
-    <p>Tie Luo; Chen Khong Tham<br />
+    <i>Authors: Tie Luo; Chen Khong Tham</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[39].value , document.getElementsByName('comment')[39].value, 40)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="40" value="1" style="display:">
 <input class="star" type="radio" name="40" value="2" style="display: none; ">
@@ -1062,7 +1074,7 @@ $(function(){
 <input class="star" type="radio" name="40" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(40)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[39].value , document.getElementsByName('comment')[39].value, 40)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -1070,7 +1082,7 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
@@ -1085,10 +1097,10 @@ $(function(){
     <div data-role="collabsible-set">
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Fast Rendezvous for Multiple Clients for Cognitive Radios Using Coordinated Channel Hopping</h2>
-    <p>Rohan Gandhi; Chih-Chun Wang; Y. Charlie Hu<br />
+    <i>Authors: Rohan Gandhi; Chih-Chun Wang; Y. Charlie Hu</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[40].value , document.getElementsByName('comment')[40].value, 41)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="41" value="1" style="display:">
 <input class="star" type="radio" name="41" value="2" style="display: none; ">
@@ -1097,15 +1109,15 @@ $(function(){
 <input class="star" type="radio" name="41" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(41)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[40].value , document.getElementsByName('comment')[40].value, 41)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>ASTRA: Application of Sequential Training to Rate Adaptation</h3>
-    <p>Hui Liu; Jialin He; Pengfei Cui; Joseph D. Camp<br />
+    <i>Authors: Hui Liu; Jialin He; Pengfei Cui; Joseph D. Camp</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[41].value , document.getElementsByName('comment')[41].value, 42)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="42" value="1" style="display:">
 <input class="star" type="radio" name="42" value="2" style="display: none; ">
@@ -1114,15 +1126,15 @@ $(function(){
 <input class="star" type="radio" name="42" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(42)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[41].value , document.getElementsByName('comment')[41].value, 42)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Packet Aggregation in Multi-Rate Wireless LANs</h4>
-    <p>Adnan Majeed; Nael Abu-Ghazaleh<br />
+    <i>Authors: Adnan Majeed; Nael Abu-Ghazaleh</i><p>
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[42].value , document.getElementsByName('comment')[42].value, 43)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="43" value="1" style="display:">
 <input class="star" type="radio" name="43" value="2" style="display: none; ">
@@ -1131,15 +1143,15 @@ $(function(){
 <input class="star" type="radio" name="43" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(43)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[42].value , document.getElementsByName('comment')[42].value, 43)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>On the Performance of Successive Interference Cancellation in Random ess Networks</h5>
-    <p>Mohsen Mollanoori; Majid Ghaderi<br />
+    <i>Authors: Mohsen Mollanoori; Majid Ghaderi</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[43].value , document.getElementsByName('comment')[43].value, 44)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="44" value="1" style="display:">
 <input class="star" type="radio" name="44" value="2" style="display: none; ">
@@ -1148,7 +1160,7 @@ $(function(){
 <input class="star" type="radio" name="44" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(44)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[43].value , document.getElementsByName('comment')[43].value, 44)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -1156,7 +1168,7 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
@@ -1171,10 +1183,10 @@ $(function(){
     <div data-role="collabsible-set">
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Authentication of Lossy Data in Body-Sensor Networks for Healthcare Monitoring</h2>
-    <p>Syed Taha Ali; Vijay Sivaraman<br />
+    <i>Authors: Syed Taha Ali; Vijay Sivaraman</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[44].value , document.getElementsByName('comment')[44].value, 45)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="45" value="1" style="display:">
 <input class="star" type="radio" name="45" value="2" style="display: none; ">
@@ -1183,15 +1195,15 @@ $(function(){
 <input class="star" type="radio" name="45" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(45)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[44].value , document.getElementsByName('comment')[44].value, 45)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Split Null Keys: A Null Space Based Defense for Pollution Attacks in Wireless Network Coding</h3>
-    <p>Andrew Newell; Cristina Nita-Rotaru<br />
+    <i>Authors: Andrew Newell; Cristina Nita-Rotaru</i><p>
    Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[45].value , document.getElementsByName('comment')[45].value, 46)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="46" value="1" style="display:">
 <input class="star" type="radio" name="46" value="2" style="display: none; ">
@@ -1200,15 +1212,15 @@ $(function(){
 <input class="star" type="radio" name="46" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(46)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[45].value , document.getElementsByName('comment')[45].value, 46)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>A Novel Unbalanced Tree Structure for Low-Cost Authentication of Streaming Content on Mobile and Sensor Devices</h4>
-    <p>Thivya Kandappu; Vijay Sivaraman<br />
+    <i>Authors: Thivya Kandappu; Vijay Sivaraman</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[46].value , document.getElementsByName('comment')[46].value, 47)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="47" value="1" style="display:">
 <input class="star" type="radio" name="47" value="2" style="display: none; ">
@@ -1217,15 +1229,15 @@ $(function(){
 <input class="star" type="radio" name="47" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(47)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[46].value , document.getElementsByName('comment')[46].value, 47)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Watchdogs to the rescue: Securing Wireless TCP</h5>
-    <p>Shehla Rana; Nitin Vaidya<br />
+    <i>Authors: Shehla Rana; Nitin Vaidya</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[47].value , document.getElementsByName('comment')[47].value, 48)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="48" value="1" style="display:">
 <input class="star" type="radio" name="48" value="2" style="display: none; ">
@@ -1234,7 +1246,7 @@ $(function(){
 <input class="star" type="radio" name="48" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(48)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[47].value , document.getElementsByName('comment')[47].value, 48)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -1242,7 +1254,7 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
@@ -1257,10 +1269,10 @@ $(function(){
     <div data-role="collabsible-set">
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>On Scalability and Robustness Limitations of Real and Asymptotic Confidence Bounds in Social Sensing</h2>
-    <p>Dong Wang; Lance Kaplan; Tarek Abdelzaher; Charu Aggarwal<br />
+    <i>Authors: Dong Wang; Lance Kaplan; Tarek Abdelzaher; Charu Aggarwal</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[48].value , document.getElementsByName('comment')[48].value, 49)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="49" value="1" style="display:">
 <input class="star" type="radio" name="49" value="2" style="display: none; ">
@@ -1269,15 +1281,15 @@ $(function(){
 <input class="star" type="radio" name="49" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(49)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[48].value , document.getElementsByName('comment')[48].value, 49)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>ConDense: Managing Data in Community-driven Mobile Geosensor Networks</h3>
-    <p>Sebastian Cartier; Saket Sathe; Dipanjan Chakraborty<br />
+    <i>Authors: Sebastian Cartier; Saket Sathe; Dipanjan Chakraborty</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[49].value , document.getElementsByName('comment')[49].value, 50)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="50" value="1" style="display:">
 <input class="star" type="radio" name="50" value="2" style="display: none; ">
@@ -1286,15 +1298,15 @@ $(function(){
 <input class="star" type="radio" name="50" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(50)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[49].value , document.getElementsByName('comment')[49].value, 50)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Transmit Power Estimation with a Single Monitor in Multi-band Networks</h4>
-    <p>Shaxun Chen; Kai Zeng; Ningning Cheng; Prasant Mohapatra<br />
+    <i>Authors: Shaxun Chen; Kai Zeng; Ningning Cheng; Prasant Mohapatra</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[50].value , document.getElementsByName('comment')[50].value, 51)" value="Post Comment" data-role="button" data-inline="true"  /> 
     <div>
 <input class="star" type="radio" name="51" value="1" style="display:">
 <input class="star" type="radio" name="51" value="2" style="display: none; ">
@@ -1303,15 +1315,15 @@ $(function(){
 <input class="star" type="radio" name="51" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(51)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[50].value , document.getElementsByName('comment')[50].value, 51)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+<!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Semi-Markov State Estimation and Policy Optimization for Energy Efficient Mobile Sensing</h5>
-    <p>Yi Wang; Bhaskar Krishnamachari; Murali Annavaram<br />
+    <i>Authors: Yi Wang; Bhaskar Krishnamachari; Murali Annavaram</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[51].value , document.getElementsByName('comment')[51].value, 52)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="52" value="1" style="display:">
 <input class="star" type="radio" name="52" value="2" style="display: none; ">
@@ -1320,7 +1332,7 @@ $(function(){
 <input class="star" type="radio" name="52" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(52)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[51].value , document.getElementsByName('comment')[51].value, 52)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -1328,7 +1340,7 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
@@ -1343,10 +1355,10 @@ $(function(){
     <div data-role="collabsible-set">
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Group-based Discovery in Low-duty-cycle Mobile Sensor Networks</h2>
-    <p>Liangyin Chen; Yu Gu; Shuo Guo; Tian He; Yuanchao Shu; Fan Zhang; Jiming Chen<br />
+    <i>Authors: Liangyin Chen; Yu Gu; Shuo Guo; Tian He; Yuanchao Shu; Fan Zhang; Jiming Chen</i><p>
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[52].value , document.getElementsByName('comment')[52].value, 53)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="53" value="1" style="display:">
 <input class="star" type="radio" name="53" value="2" style="display: none; ">
@@ -1355,15 +1367,15 @@ $(function(){
 <input class="star" type="radio" name="53" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(53)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[52].value , document.getElementsByName('comment')[52].value, 53)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Toward Distributed Optimal Movement Strategy for Data Harvesting in Wireless Sensor Networks</h3>
-    <p>Chul-Ho Lee; Do Young Eun<br />
+    <i>Authors: Chul-Ho Lee; Do Young Eun</i><p>
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[53].value , document.getElementsByName('comment')[53].value, 54)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="54" value="1" style="display:">
 <input class="star" type="radio" name="54" value="2" style="display: none; ">
@@ -1372,15 +1384,15 @@ $(function(){
 <input class="star" type="radio" name="54" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(54)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[53].value , document.getElementsByName('comment')[53].value, 54)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Mobile Data Harvesting in Wireless Underground Sensor Networks</h4>
-    <p>John Tooker; Mehmet Can Vuran<br />
+    <i>Authors: John Tooker; Mehmet Can Vuran</i><p>
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[54].value , document.getElementsByName('comment')[54].value, 55)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="55" value="1" style="display:">
 <input class="star" type="radio" name="55" value="2" style="display: none; ">
@@ -1389,15 +1401,15 @@ $(function(){
 <input class="star" type="radio" name="55" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(55)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[54].value , document.getElementsByName('comment')[54].value, 55)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Forecasting DTN Performance under Heterogeneous Mobility: The Case of Limited Replication</h5>
-    <p>Andreea M Picu; Thrasyvoulos Spyropoulos<br />
+    <i>Authors: Andreea M Picu; Thrasyvoulos Spyropoulos</i><p>
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[55].value , document.getElementsByName('comment')[55].value, 56)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="56" value="1" style="display:">
 <input class="star" type="radio" name="56" value="2" style="display: none; ">
@@ -1406,7 +1418,7 @@ $(function(){
 <input class="star" type="radio" name="56" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(56)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[55].value , document.getElementsByName('comment')[55].value, 56)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -1414,7 +1426,7 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
@@ -1429,10 +1441,10 @@ $(function(){
     <div data-role="collabsible-set">
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>BP-P2P: Belief Propagation-Based Trust and Reputation Management for P2P Networks</h2>
-    <p>Erman Ayday; Faramarz Fekri<br />
+    <i>Authors: Erman Ayday; Faramarz Fekri</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[56].value , document.getElementsByName('comment')[56].value, 57)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="57" value="1" style="display:">
 <input class="star" type="radio" name="57" value="2" style="display: none; ">
@@ -1441,15 +1453,15 @@ $(function(){
 <input class="star" type="radio" name="57" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(57)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[56].value , document.getElementsByName('comment')[56].value, 57)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Seed and Grow: An Attack Against Anonymized Social Networks</h3>
-    <p>Wei Peng; Feng Li; Xukai Zou; Jie Wu<br />
+    <i>Authors: Wei Peng; Feng Li; Xukai Zou; Jie Wu</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[57].value , document.getElementsByName('comment')[57].value, 58)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="58" value="1" style="display:">
 <input class="star" type="radio" name="58" value="2" style="display: none; ">
@@ -1458,15 +1470,15 @@ $(function(){
 <input class="star" type="radio" name="58" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(58)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[57].value , document.getElementsByName('comment')[57].value, 58)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>A Privacy-Preserving Social-Aware Incentive System for Word-of-Mouth Advertisement Dissemination on Smart Mobile Devices</h4>
-    <p>Wei Peng; Feng Li; Xukai Zou; Jie Wu<br />
+    <i>Authors: Wei Peng; Feng Li; Xukai Zou; Jie Wu</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[58].value , document.getElementsByName('comment')[58].value, 59)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="59" value="1" style="display:">
 <input class="star" type="radio" name="59" value="2" style="display: none; ">
@@ -1475,15 +1487,15 @@ $(function(){
 <input class="star" type="radio" name="59" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(59)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[58].value , document.getElementsByName('comment')[58].value, 59)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>Privacy-Preserving Energy Theft Detection in Smart Grids</h5>
-    <p>Sergio Salinas; Ming Li; Pan Li<br />
+    <i>Authors: Sergio Salinas; Ming Li; Pan Li</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[59].value , document.getElementsByName('comment')[59].value, 60)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="60" value="1" style="display:">
 <input class="star" type="radio" name="60" value="2" style="display: none; ">
@@ -1492,7 +1504,7 @@ $(function(){
 <input class="star" type="radio" name="60" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(60)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[59].value , document.getElementsByName('comment')[59].value, 60)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -1500,7 +1512,7 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
@@ -1515,10 +1527,10 @@ $(function(){
     <div data-role="collabsible-set">
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Generalized Geometry-Based Optimal Power Control in Wireless Networks</h2>
-    <p>Wei Wang; Kang G. Shin; Zhaoyang Zhang; Wenbo Wang; Tao Peng<br />
+    <i>Authors: Wei Wang; Kang G. Shin; Zhaoyang Zhang; Wenbo Wang; Tao Peng</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[60].value , document.getElementsByName('comment')[60].value, 61)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="61" value="1" style="display:">
 <input class="star" type="radio" name="61" value="2" style="display: none; ">
@@ -1527,15 +1539,15 @@ $(function(){
 <input class="star" type="radio" name="61" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(61)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[60].value , document.getElementsByName('comment')[60].value, 61)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Improving coverage prediction for primary multi-transmitter networks operating in the TV whitespaces</h3>
-    <p>Andreas Achtzehn; Janne Riihijarvi; Guilberth Martinez Vargas; Marina Petrova; Petri Mahonen<br />
+    <i>Authors: Andreas Achtzehn; Janne Riihijarvi; Guilberth Martinez Vargas; Marina Petrova; Petri Mahonen</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[61].value , document.getElementsByName('comment')[61].value, 62)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="62" value="1" style="display:">
 <input class="star" type="radio" name="62" value="2" style="display: none; ">
@@ -1544,15 +1556,15 @@ $(function(){
 <input class="star" type="radio" name="62" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(62)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[61].value , document.getElementsByName('comment')[61].value, 62)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Delta-Graphs for Wireless Ad Hoc Networks</h4>
-    <p>Ashikur Rahman; Carey Williamson<br />
+    <i>Authors: Ashikur Rahman; Carey Williamson</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[62].value , document.getElementsByName('comment')[62].value, 63)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="63" value="1" style="display:">
 <input class="star" type="radio" name="63" value="2" style="display: none; ">
@@ -1561,15 +1573,15 @@ $(function(){
 <input class="star" type="radio" name="63" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(63)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[62].value , document.getElementsByName('comment')[62].value, 63)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
     <h5>ARCHoN: Adaptive Range Control of Hotzone Cells in Heterogeneous Cellular Networks</h5>
-    <p>Ji-Hoon Yun; Kang G. Shin<br />
+    <i>Authors: Ji-Hoon Yun; Kang G. Shin</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[63].value , document.getElementsByName('comment')[63].value, 64)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="64" value="1" style="display:">
 <input class="star" type="radio" name="64" value="2" style="display: none; ">
@@ -1578,7 +1590,7 @@ $(function(){
 <input class="star" type="radio" name="64" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(64)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[63].value , document.getElementsByName('comment')[63].value, 64)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
 	</div>
     </div>
@@ -1586,7 +1598,7 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
@@ -1601,10 +1613,10 @@ $(function(){
     <div data-role="collabsible-set">
 	<div data-role="collapsible"data-collapsed="true">	
 	<h2>Network-Congestion-Aware Video Streaming: A Rest-and-Download Approach</h2>
-    <p>Eric Jung; Dhruv Gupta; Nicholas Mastronarde; Xing Liu<br />
+    <i>Authors: Eric Jung; Dhruv Gupta; Nicholas Mastronarde; Xing Liu</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[64].value , document.getElementsByName('comment')[64].value, 65)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="65" value="1" style="display:">
 <input class="star" type="radio" name="65" value="2" style="display: none; ">
@@ -1614,15 +1626,15 @@ $(function(){
 <input type="submit" value="Rate"></div>
 
 <input type="button" onclick="viewComments(65)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[64].value , document.getElementsByName('comment')[64].value, 65)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h3>Congestion Control in CSMA-based Vehicular Networks: Do Not Forget the Carrier Sensing</h3>
-    <p>Razvan Stanica; Emmanuel Chaput; Andre-Luc Beylot<br />
+    <i>Authors: Razvan Stanica; Emmanuel Chaput; Andre-Luc Beylot</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[65].value , document.getElementsByName('comment')[65].value, 66)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="66" value="1" style="display:">
 <input class="star" type="radio" name="66" value="2" style="display: none; ">
@@ -1631,15 +1643,15 @@ $(function(){
 <input class="star" type="radio" name="66" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(66)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[65].value , document.getElementsByName('comment')[65].value, 66)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p>
     </div>
     <div data-role="collapsible"data-collapsed="true">
 	<h4>Power Control for Fair Dynamic Channel Reservation in VANETs</h4>
-    <p>Parisa Haghani; Yih-Chun Hu<br />
+    <i>Authors: Parisa Haghani; Yih-Chun Hu</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / >
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[66].value , document.getElementsByName('comment')[66].value, 67)" value="Post Comment" data-role="button" data-inline="true"  />
     <div>
 <input class="star" type="radio" name="67" value="1" style="display:">
 <input class="star" type="radio" name="67" value="2" style="display: none; ">
@@ -1648,7 +1660,7 @@ $(function(){
 <input class="star" type="radio" name="67" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(67)" value="View Comments" />
-<input type="button" onclick="formSubmit(document.getElementsByName('user')[66].value , document.getElementsByName('comment')[66].value, 67)" value="Post Comment" /> <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
 </p></form>
     </div>
     </div>
@@ -1656,7 +1668,732 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><p style="text-align:center">IEEE SECON 2012</p></li>
+		<li><a>IEEE SECON 2012</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		</ul>
+	</div><!-- /navbar -->   
+</div><!-- /footer -->
+</div>
+
+
+
+<div data-role="page" id="page27">
+	<div data-role="header" data-theme="c">
+		<h1>Day 0:  ETSIoT Workshops</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview" data-inset="true">
+	<li><a href="#page29" rel="internal">Communications and Networks (Mon 9-10:30) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li><a href="#page30" rel="internal">Intelligent Device Management (Mon 11-12:30) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li><a href="#page31" rel="internal">(Invited Talks)* Toward Smartphone and IoT vision (Mon 1:30-3) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li><a href="#page32" rel="internal">App: Information Fusion, Localization (Mon 3:30-5) -- Topaz & Coral Rooms, 3rd floor</a></li>
+</ul>	
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">	
+<div data-role="navbar">
+		<ul>
+		<li><a>IEEE SECON 2012</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		</ul>
+	</div><!-- /navbar -->   
+</div><!-- /footer -->
+</div>
+
+
+<div data-role="page" id="page29">
+	<div data-role="header" data-theme="c">
+		<h1>Day 0: Communications and Networks</h1>
+	</div>
+    <div data-role="content">
+    <div data-role="collabsible-set">
+	<div data-role="collapsible"data-collapsed="true">	
+	<h2>AB-MAC: A TDMA-based Adaptive Beaconing MAC Protocol for Body Sensor Networks</h2>
+    <i>Authors: Seungku Kim; Jae-Ho Lee; Hyosun Hwang; Chisung Bae; Doo-seop Eom</i><p>
+     Comments and Rating</br>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[67].value , document.getElementsByName('comment')[67].value, 68)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="68" value="1" style="display:">
+<input class="star" type="radio" name="68" value="2" style="display: none; ">
+<input class="star" type="radio" name="68" value="3" style="display: none; ">
+<input class="star" type="radio" name="68" value="4" style="display: none; ">
+<input class="star" type="radio" name="68" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+
+<input type="button" onclick="viewComments(68)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+    <div data-role="collapsible"data-collapsed="true">
+	<h3>Performance Evaluation of IEEE 802.15.4e DSME MAC Protocol for Wireless Sensor Networks</h3>
+    <i>Authors: Wun-Cheol Jeong; Junhee Lee</i><p>
+     Comments and Rating</br>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[68].value , document.getElementsByName('comment')[68].value, 69)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="69" value="1" style="display:">
+<input class="star" type="radio" name="69" value="2" style="display: none; ">
+<input class="star" type="radio" name="69" value="3" style="display: none; ">
+<input class="star" type="radio" name="69" value="4" style="display: none; ">
+<input class="star" type="radio" name="69" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(69)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+
+    <div data-role="collapsible"data-collapsed="true">
+	<h4>QoE-driven Wi-Fi Selection mechanism for Next Generation Smartphones</h4>
+    <i>Authors: Hyunsoon Kim; Eugene Kim; Hwangnam Kim</i><p>
+     Comments and Rating</br>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[69].value , document.getElementsByName('comment')[69].value, 70)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="70" value="1" style="display:">
+<input class="star" type="radio" name="70" value="2" style="display: none; ">
+<input class="star" type="radio" name="70" value="3" style="display: none; ">
+<input class="star" type="radio" name="70" value="4" style="display: none; ">
+<input class="star" type="radio" name="70" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(70)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+
+<div data-role="collapsible"data-collapsed="true">
+	<h5>PipeInternet: Accurate Field Pipeline Information Acquisition Using Smartphones</h5>
+    <i>Authors: Duan Shihong; Yuwei Zhou; Jie He; Qin Wang</i><p>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[70].value , document.getElementsByName('comment')[70].value, 71)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="71" value="1" style="display:">
+<input class="star" type="radio" name="71" value="2" style="display: none; ">
+<input class="star" type="radio" name="71" value="3" style="display: none; ">
+<input class="star" type="radio" name="71" value="4" style="display: none; ">
+<input class="star" type="radio" name="71" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(71)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+
+
+</p></form>
+    </div>
+    </div>
+    </div>
+	<div data-role="footer" data-theme="c" data-position="fixed">	
+<div data-role="navbar">
+		<ul>
+		<li><a>IEEE SECON 2012</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		</ul>
+	</div><!-- /navbar -->   
+</div><!-- /footer -->
+</div>
+
+
+<div data-role="page" id="page30">
+	<div data-role="header" data-theme="c">
+		<h1>Day 0: Intelliegent Device Management</h1>
+	</div>
+    <div data-role="content">
+    <div data-role="collabsible-set">
+	<div data-role="collapsible"data-collapsed="true">	
+	<h2>Target Detection Algorithm of Multi-sensor based on Two-Dimensional Principal Component Analysis in Wireless Sensor Networks</h2>
+    <i>Authors: Bisai Bao; Yuxuan Sun; Junying Li; Haitao Liu</i><p>
+     Comments and Rating</br>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[71].value , document.getElementsByName('comment')[71].value, 72)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="72" value="1" style="display:">
+<input class="star" type="radio" name="72" value="2" style="display: none; ">
+<input class="star" type="radio" name="72" value="3" style="display: none; ">
+<input class="star" type="radio" name="72" value="4" style="display: none; ">
+<input class="star" type="radio" name="72" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+
+<input type="button" onclick="viewComments(72)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+    <div data-role="collapsible"data-collapsed="true">
+	<h3>Research on target recognition based on decision fusion with conflicting evidences in WSNs
+</h3>
+    <i>Authors: Wu Jianrong; Yang Yang; Haitao Liu</i><p>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[72].value , document.getElementsByName('comment')[72].value, 73)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="73" value="1" style="display:">
+<input class="star" type="radio" name="73" value="2" style="display: none; ">
+<input class="star" type="radio" name="73" value="3" style="display: none; ">
+<input class="star" type="radio" name="73" value="4" style="display: none; ">
+<input class="star" type="radio" name="73" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(73)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+
+    <div data-role="collapsible"data-collapsed="true">
+	<h4>A Query-driven Indoor Location System based on Smartphone</h4>
+    <i>Authors: Yanwei Yu; Jie He; Qin Wang; Fei Liu; Cheng Xu</i><p>
+     Comments and Rating</br>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[73].value , document.getElementsByName('comment')[73].value, 74)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="74" value="1" style="display:">
+<input class="star" type="radio" name="74" value="2" style="display: none; ">
+<input class="star" type="radio" name="74" value="3" style="display: none; ">
+<input class="star" type="radio" name="74" value="4" style="display: none; ">
+<input class="star" type="radio" name="74" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(74)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+
+<div data-role="collapsible"data-collapsed="true">
+	<h5>An Enhanced Localization Algorithm for ZigBee System Based On Correction Factor</h5>
+    <i>Authors: Yong Xu</i><p>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[74].value , document.getElementsByName('comment')[74].value, 75)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="75" value="1" style="display:">
+<input class="star" type="radio" name="75" value="2" style="display: none; ">
+<input class="star" type="radio" name="75" value="3" style="display: none; ">
+<input class="star" type="radio" name="75" value="4" style="display: none; ">
+<input class="star" type="radio" name="75" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(75)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+
+
+</p></form>
+    </div>
+    </div>
+    </div>
+	<div data-role="footer" data-theme="c" data-position="fixed">	
+<div data-role="navbar">
+		<ul>
+		<li><a>IEEE SECON 2012</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		</ul>
+	</div><!-- /navbar -->   
+</div><!-- /footer -->
+</div>
+
+
+
+<div data-role="page" id="page31">
+	<div data-role="header" data-theme="c">
+		<h1>Day 0: (Invited Talks)* Toward Smartphone and IoT Vision</h1>
+	</div>
+    <div data-role="content">
+    <div data-role="collabsible-set">
+	<div data-role="collapsible"data-collapsed="true">	
+	<h2>Toward Internet of Things and Future M2M
+</h2>
+    <i>Prof. Myung J. Lee</i><p>
+     Comments and Rating</br>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[75].value , document.getElementsByName('comment')[75].value, 76)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="76" value="1" style="display:">
+<input class="star" type="radio" name="76" value="2" style="display: none; ">
+<input class="star" type="radio" name="76" value="3" style="display: none; ">
+<input class="star" type="radio" name="76" value="4" style="display: none; ">
+<input class="star" type="radio" name="76" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+
+<input type="button" onclick="viewComments(76)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+    <div data-role="collapsible"data-collapsed="true">
+	<h3>Applications and Application-driven Research in Mobile Computing</h3>
+    <i>Prof. Romit Roy Choudhury</i><p>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[76].value , document.getElementsByName('comment')[76].value, 77)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="77" value="1" style="display:">
+<input class="star" type="radio" name="77" value="2" style="display: none; ">
+<input class="star" type="radio" name="77" value="3" style="display: none; ">
+<input class="star" type="radio" name="77" value="4" style="display: none; ">
+<input class="star" type="radio" name="77" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(77)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+
+    <div data-role="collapsible"data-collapsed="true">
+	<h4>Towards convergent fixed and mobile sensing infrastructures for cyber-physical systems
+</h4>
+    <i>Dr. Alexander Gluhak</i><p>
+     Comments and Rating</br>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[77].value , document.getElementsByName('comment')[77].value, 78)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="78" value="1" style="display:">
+<input class="star" type="radio" name="78" value="2" style="display: none; ">
+<input class="star" type="radio" name="78" value="3" style="display: none; ">
+<input class="star" type="radio" name="78" value="4" style="display: none; ">
+<input class="star" type="radio" name="78" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(78)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+
+
+</p></form>
+    </div>
+    </div>
+    </div>
+	<div data-role="footer" data-theme="c" data-position="fixed">	
+<div data-role="navbar">
+		<ul>
+		<li><a>IEEE SECON 2012</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		</ul>
+	</div><!-- /navbar -->   
+</div><!-- /footer -->
+</div>
+
+
+
+<div data-role="page" id="page32">
+	<div data-role="header" data-theme="c">
+		<h1>Day 0: App: Information Fusion, Localization</h1>
+	</div>
+    <div data-role="content">
+    <div data-role="collabsible-set">
+	<div data-role="collapsible"data-collapsed="true">	
+	<h2>Random Energy Charging for Reviving Sensors in Wireless Sensor Network</h2>
+    <i>Authors: Seung Keun Yoon; Sang Joon Kim; Uikun Kwon</i><p>
+     Comments and Rating</br>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[78].value , document.getElementsByName('comment')[78].value, 79)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="79" value="1" style="display:">
+<input class="star" type="radio" name="79" value="2" style="display: none; ">
+<input class="star" type="radio" name="79" value="3" style="display: none; ">
+<input class="star" type="radio" name="79" value="4" style="display: none; ">
+<input class="star" type="radio" name="79" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+
+<input type="button" onclick="viewComments(79)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+    <div data-role="collapsible"data-collapsed="true">
+	<h3>Mobile Grid Computing for Data- and Patient-centric Ubiquitous Healthcare</h3>
+    <i>Authors: Hariharasudhan Viswangathan; Eunkyung Lee; Dario Pompili</i><p>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[79].value , document.getElementsByName('comment')[79].value, 80)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="80" value="1" style="display:">
+<input class="star" type="radio" name="80" value="2" style="display: none; ">
+<input class="star" type="radio" name="80" value="3" style="display: none; ">
+<input class="star" type="radio" name="80" value="4" style="display: none; ">
+<input class="star" type="radio" name="80" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(80)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+
+    <div data-role="collapsible"data-collapsed="true">
+	<h4>Best Security Practices for Android, BlackBerry, and iOS</h4>
+    <i>Authors: Tae Oh; Bill Stackpole; Emily Cummins; Carlos Gonzalez; Rahul Ramachandran; Shinyoung Lim</i><p>
+     Comments and Rating</br>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[80].value , document.getElementsByName('comment')[80].value, 81)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="81" value="1" style="display:">
+<input class="star" type="radio" name="81" value="2" style="display: none; ">
+<input class="star" type="radio" name="81" value="3" style="display: none; ">
+<input class="star" type="radio" name="81" value="4" style="display: none; ">
+<input class="star" type="radio" name="81" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(81)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+
+<div data-role="collapsible"data-collapsed="true">
+	<h5>Android Power Management: Current and Future Trends</h5>
+    <i>Authors: Soumya Kanti Datta; Christian Bonnet; Navid Nikaein</i><p>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[81].value , document.getElementsByName('comment')[81].value, 82)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="82" value="1" style="display:">
+<input class="star" type="radio" name="82" value="2" style="display: none; ">
+<input class="star" type="radio" name="82" value="3" style="display: none; ">
+<input class="star" type="radio" name="82" value="4" style="display: none; ">
+<input class="star" type="radio" name="82" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(82)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+
+
+</p></form>
+    </div>
+    </div>
+    </div>
+	<div data-role="footer" data-theme="c" data-position="fixed">	
+<div data-role="navbar">
+		<ul>
+		<li><a>IEEE SECON 2012</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		</ul>
+	</div><!-- /navbar -->   
+</div><!-- /footer -->
+</div>
+
+
+
+
+<div data-role="page" id="page28">
+	<div data-role="header" data-theme="c">
+		<h1>Day 0:  VCSC Workshops</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview" data-inset="true">
+	<li><a href="#page33" rel="internal">Keynote Speeches (Mon 9-10:30) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li><a href="#page34" rel="internal">Vehicular Communication and Propagation (Mon 11-12:30) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li><a href="#page35" rel="internal">Vehicular Networking Protocols (Mon 1:30-3) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li><a href="#page36" rel="internal">Vehicular Mobility, Security and Management (Mon 3:30-5) -- Topaz & Coral Rooms, 3rd floor</a></li>
+</ul>	
+	</div>
+	<div data-role="footer" data-theme="c" data-position="fixed">	
+<div data-role="navbar">
+		<ul>
+		<li><a>IEEE SECON 2012</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		</ul>
+	</div><!-- /navbar -->   
+</div><!-- /footer -->
+</div>
+
+
+<div data-role="page" id="page33">
+	<div data-role="header" data-theme="c">
+		<h1>Day 0: Keynote Speeches</h1>
+	</div>
+    <div data-role="content">
+    <div data-role="collabsible-set">
+	<div data-role="collapsible"data-collapsed="true">	
+	<h2>Hyun Seo Oh, Ph. D., ETRI, Korea</h2>
+    <p>
+     Comments and Rating</br>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[82].value , document.getElementsByName('comment')[82].value, 83)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="83" value="1" style="display:">
+<input class="star" type="radio" name="83" value="2" style="display: none; ">
+<input class="star" type="radio" name="83" value="3" style="display: none; ">
+<input class="star" type="radio" name="83" value="4" style="display: none; ">
+<input class="star" type="radio" name="83" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+
+<input type="button" onclick="viewComments(83)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+    <div data-role="collapsible"data-collapsed="true">
+	<h3>Seung-Kwon Yoo, Senior Official at GM Korea
+</h3>
+    <p>
+     Comments and Rating</br>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[83].value , document.getElementsByName('comment')[83].value, 84)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="84" value="1" style="display:">
+<input class="star" type="radio" name="84" value="2" style="display: none; ">
+<input class="star" type="radio" name="84" value="3" style="display: none; ">
+<input class="star" type="radio" name="84" value="4" style="display: none; ">
+<input class="star" type="radio" name="84" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(84)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+
+</p></form>
+    </div>
+    </div>
+    </div>
+	<div data-role="footer" data-theme="c" data-position="fixed">	
+<div data-role="navbar">
+		<ul>
+		<li><a>IEEE SECON 2012</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		</ul>
+	</div><!-- /navbar -->   
+</div><!-- /footer -->
+</div>
+
+
+<div data-role="page" id="page34">
+	<div data-role="header" data-theme="c">
+		<h1>Day 0: Vehicular Communication and Propagation</h1>
+	</div>
+    <div data-role="content">
+    <div data-role="collabsible-set">
+	<div data-role="collapsible"data-collapsed="true">	
+	<h2>Performance Evaluation of Carrier Interferometry/OFDM (CI-OFDM) in Vehicular Communications</h2>
+    <i>Authors: Ravuri Harsha Vardhan; Mithun Mukherjee; Preetam Kumar</i><p>
+     Comments and Rating</br>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[84].value , document.getElementsByName('comment')[84].value, 85)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="85" value="1" style="display:">
+<input class="star" type="radio" name="85" value="2" style="display: none; ">
+<input class="star" type="radio" name="85" value="3" style="display: none; ">
+<input class="star" type="radio" name="85" value="4" style="display: none; ">
+<input class="star" type="radio" name="85" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+
+<input type="button" onclick="viewComments(85)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+    <div data-role="collapsible"data-collapsed="true">
+	<h3>Concurrent Dual-Channel RF Transceiver Module with Diversity for 802.11p WAVE</h3>
+    <i>Authors: Hyun-Seok Choi; Quang-Diep Bui; So Young Kang; Dongmin Kang; Hiyeon Song; Inn-Yeol Oh; Chul Sonn Park; Kwang-Joo Choi; Bill Choi; Young-Suk Jin; Geon-Wook Lee</i><p>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[85].value , document.getElementsByName('comment')[85].value, 86)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="86" value="1" style="display:">
+<input class="star" type="radio" name="86" value="2" style="display: none; ">
+<input class="star" type="radio" name="86" value="3" style="display: none; ">
+<input class="star" type="radio" name="86" value="4" style="display: none; ">
+<input class="star" type="radio" name="86" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(86)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+
+    <div data-role="collapsible"data-collapsed="true">
+	<h4>Performance Analysis of Intra-vehicle Ultra-Wide Band Propagation in Multi-user Environments</h4>
+    <i>Authors: YongNu Jin; Daehan Kwak; Kyung Sup Kwak</i><p>
+     Comments and Rating</br>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[86].value , document.getElementsByName('comment')[86].value, 87)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="87" value="1" style="display:">
+<input class="star" type="radio" name="87" value="2" style="display: none; ">
+<input class="star" type="radio" name="87" value="3" style="display: none; ">
+<input class="star" type="radio" name="87" value="4" style="display: none; ">
+<input class="star" type="radio" name="87" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(87)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p></form>
+
+    </div>
+    </div>
+    </div>
+	<div data-role="footer" data-theme="c" data-position="fixed">	
+<div data-role="navbar">
+		<ul>
+		<li><a>IEEE SECON 2012</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		</ul>
+	</div><!-- /navbar -->   
+</div><!-- /footer -->
+</div>
+
+
+
+<div data-role="page" id="page35">
+	<div data-role="header" data-theme="c">
+		<h1>Day 0: Vehicular Networking Protocols</h1>
+	</div>
+    <div data-role="content">
+    <div data-role="collabsible-set">
+	<div data-role="collapsible"data-collapsed="true">	
+	<h2>Energy Efficient Terminal-Discovering in Mobile Delay Tolerant Ad-hoc Networks</h2>
+    <i>Authors: Wei Feng; Lin Zhang; Shihang Li; Wenzhu Zhang</i><p>
+     Comments and Rating</br>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[87].value , document.getElementsByName('comment')[87].value, 88)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="88" value="1" style="display:">
+<input class="star" type="radio" name="88" value="2" style="display: none; ">
+<input class="star" type="radio" name="88" value="3" style="display: none; ">
+<input class="star" type="radio" name="88" value="4" style="display: none; ">
+<input class="star" type="radio" name="88" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+
+<input type="button" onclick="viewComments(88)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+    <div data-role="collapsible"data-collapsed="true">
+	<h3>Safe and Stable Routing Protocol for Cognitive Radio VANETs Considering Cognitive User Mobility and PU Activity</h3>
+    <i>Authors: Omid Abedi; Reza Berangi</i><p>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[88].value , document.getElementsByName('comment')[88].value, 89)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="89" value="1" style="display:">
+<input class="star" type="radio" name="89" value="2" style="display: none; ">
+<input class="star" type="radio" name="89" value="3" style="display: none; ">
+<input class="star" type="radio" name="89" value="4" style="display: none; ">
+<input class="star" type="radio" name="89" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(89)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+
+    <div data-role="collapsible"data-collapsed="true">
+	<h4>Cross-Layer Based Multiple Routing Path Plane for VANET</h4>
+    <i>Authors: Hung-Chin Jang; Chang-Kwei Yang</i><p>
+     Comments and Rating</br>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[89].value , document.getElementsByName('comment')[89].value, 90)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="90" value="1" style="display:">
+<input class="star" type="radio" name="90" value="2" style="display: none; ">
+<input class="star" type="radio" name="90" value="3" style="display: none; ">
+<input class="star" type="radio" name="90" value="4" style="display: none; ">
+<input class="star" type="radio" name="90" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(90)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+
+
+</p></form>
+    </div>
+    </div>
+    </div>
+	<div data-role="footer" data-theme="c" data-position="fixed">	
+<div data-role="navbar">
+		<ul>
+		<li><a>IEEE SECON 2012</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		</ul>
+	</div><!-- /navbar -->   
+</div><!-- /footer -->
+</div>
+
+
+
+<div data-role="page" id="page36">
+	<div data-role="header" data-theme="c">
+		<h1>Day 0: Vehicular Mobility, Security and Management</h1>
+	</div>
+    <div data-role="content">
+    <div data-role="collabsible-set">
+	<div data-role="collapsible"data-collapsed="true">	
+	<h2>Modelling Realistic Vehicle Traffic Flows</h2>
+    <i>Authors: Carlo Borgiattino; Francesco Malandrino; Claudio E. Casetti; Carla-Fabiana Chiasserini</i><p>
+     Comments and Rating</br>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[90].value , document.getElementsByName('comment')[90].value, 91)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="91" value="1" style="display:">
+<input class="star" type="radio" name="91" value="2" style="display: none; ">
+<input class="star" type="radio" name="91" value="3" style="display: none; ">
+<input class="star" type="radio" name="91" value="4" style="display: none; ">
+<input class="star" type="radio" name="91" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+
+<input type="button" onclick="viewComments(91)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+    <div data-role="collapsible"data-collapsed="true">
+	<h3>Security and Privacy for In-Vehicle Networks</h3>
+    <i>Authors: Hendrik Schweppe; Yves Roudier</i><p>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[91].value , document.getElementsByName('comment')[91].value, 92)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="92" value="1" style="display:">
+<input class="star" type="radio" name="92" value="2" style="display: none; ">
+<input class="star" type="radio" name="92" value="3" style="display: none; ">
+<input class="star" type="radio" name="92" value="4" style="display: none; ">
+<input class="star" type="radio" name="92" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(92)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+
+    <div data-role="collapsible"data-collapsed="true">
+	<h4>Service and Communication Management in Cooperative Vehicular Networks</h4>
+    <i>Authors: Olivia P. Brickley; Dirk Pesch</i><p>
+     Comments and Rating</br>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[92].value , document.getElementsByName('comment')[92].value, 93)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="93" value="1" style="display:">
+<input class="star" type="radio" name="93" value="2" style="display: none; ">
+<input class="star" type="radio" name="93" value="3" style="display: none; ">
+<input class="star" type="radio" name="93" value="4" style="display: none; ">
+<input class="star" type="radio" name="93" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(93)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p></form>
+    </div>
+    </div>
+    </div>
+	<div data-role="footer" data-theme="c" data-position="fixed">	
+<div data-role="navbar">
+		<ul>
+		<li><a>IEEE SECON 2012</a></li>
+        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		</ul>
+	</div><!-- /navbar -->   
+</div><!-- /footer -->
+</div>
+
+<div data-role="page" id="page37">
+	<div data-role="header" data-theme="c">
+		<h1>Day 1: Keynotes</h1>
+	</div>
+    <div data-role="content">
+    <div data-role="collabsible-set">
+	<div data-role="collapsible"data-collapsed="true">	
+	<h2>Digital Space Expansion through Smartphone
+</h2>
+    <i>Yoonchae Cheong</i><p>
+     Comments and Rating</br>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[93].value , document.getElementsByName('comment')[93].value, 94)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="94" value="1" style="display:">
+<input class="star" type="radio" name="94" value="2" style="display: none; ">
+<input class="star" type="radio" name="94" value="3" style="display: none; ">
+<input class="star" type="radio" name="94" value="4" style="display: none; ">
+<input class="star" type="radio" name="94" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+
+<input type="button" onclick="viewComments(94)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p>
+    </div>
+    <div data-role="collapsible"data-collapsed="true">
+	<h3>Is Dynamic Spectrum Access a Blessing or Curse?</h3>
+    <i>Kang Shin</i><p>
+    Your Name (optional): <input type="text" name="user" id="user"/><br />
+    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[94].value , document.getElementsByName('comment')[94].value, 95)" value="Post Comment" data-role="button" data-inline="true"  />
+    <div>
+<input class="star" type="radio" name="95" value="1" style="display:">
+<input class="star" type="radio" name="95" value="2" style="display: none; ">
+<input class="star" type="radio" name="95" value="3" style="display: none; ">
+<input class="star" type="radio" name="95" value="4" style="display: none; ">
+<input class="star" type="radio" name="95" value="5" style="display: none; "></br>
+<input type="submit" value="Rate"></div>
+<input type="button" onclick="viewComments(95)" value="View Comments" />
+ <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+</p></form>
+    </div>
+    </div>
+    </div>
+	<div data-role="footer" data-theme="c" data-position="fixed">	
+<div data-role="navbar">
+		<ul>
+		<li><a>IEEE SECON 2012</a></li>
         <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   

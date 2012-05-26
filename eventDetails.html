@@ -72,6 +72,26 @@ $(function(){
 });
 </script>
 
+<script>
+.centerbox {
+
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+ 
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  
+  display: box;
+  box-orient: horizontal;
+  box-pack: center;
+  box-align: center;
+}
+​</script>
+
 <form id="form1">
 
 <div>
@@ -121,11 +141,23 @@ Rating 2:
 
 
 
+   <div class="centerbox">
+
+<div><input class="star" type="radio" name="1" value="1">
+<input class="star" type="radio" name="1" value="2">
+<input class="star" type="radio" name="1" value="3">
+<input class="star" type="radio" name="1" value="4">
+<input class="star" type="radio" name="1" value="5"></div>
+<div><input id= "rate" data-role="button" data-inline="true" type="submit" value="Rate" class="inputbutton"/>
+</div>
+</div>
 
 
-
-
-
+ <div class="centerbox">
+      <div>un</div>
+      <div>deux</div>
+      <div>trois</div>
+    </div>
 
 
 
