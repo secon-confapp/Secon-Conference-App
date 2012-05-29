@@ -1,256 +1,257 @@
 <!DOCTYPE html> 
 <html manifest="/offline.manifest">
-<head>
-<meta charset="UTF-8">
-<title>Secon 2012</title>
-<link href="jquery-mobile/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css"/>
-<script src="jquery-mobile/jquery-1.5.min.js" type="text/javascript"></script>
-<script src="jquery-mobile/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
-<script src="/phonegap.js" type="text/javascript"></script>
-<script src="star-rating/jquery.MetaData.js"></script>
-<link rel="stylesheet" type="text/css" href="star-rating/jquery.rating.css">
-<script src="star-rating/jquery.rating.pack.js"></script>
-<script src="star-rating/jquery.form.js"></script>
-<script src="star-rating/jquery.rating.js"></script>
-<link rel="stylesheet" type="text/css" media="all" href="style.css" />
-<link rel="stylesheet" type="text/css" href="Social/jsShare.css">
-<script src="Social/jsShare.js" type="text/javascript"></script> 
-<script type="text/javascript">
-       jQuery(document).ready(function() {
-           jQuery('#buttons').jsShare({ maxwidth: 280 });
-       });
-   </script> 
+  <head>
+    <meta charset="UTF-8">
+    <title>Secon 2012</title>
+    <link href="jquery-mobile/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css"/>
+    <script src="jquery-mobile/jquery-1.5.min.js" type="text/javascript"></script>
+    <script src="jquery-mobile/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
+    <script src="/phonegap.js" type="text/javascript"></script>
+    <script src="star-rating/jquery.MetaData.js"></script>
+    <link rel="stylesheet" type="text/css" href="star-rating/jquery.rating.css">
+    <script src="star-rating/jquery.rating.pack.js"></script>
+    <script src="star-rating/jquery.form.js"></script>
+    <script src="star-rating/jquery.rating.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="Social/jsShare.css">
+    <script src="Social/jsShare.js" type="text/javascript"></script> 
+    <script type="text/javascript">
+      jQuery(document).ready(function() {
+      jQuery('#buttons').jsShare({ maxwidth: 280 });
+      });
+    </script> 
 
   
 
+    
+    <script>function formSubmit(name, comment, id)
+      {
+      a = name;
+      b = comment;
+      c = id;
+      
+      var url= "http://cold-spring-4585.herokuapp.com/comments/add.";
+      url= url+c+"&"+a+"&"+b;
+      
+      window.location.href= url;
+      this.form.reset();
+      
+      
+      } </script>
+    <script>function viewComments(id)
+      {
+      
+      var eventUrl="http://cold-spring-4585.herokuapp.com/comments/";
+      eventUrl= eventUrl + id+ "/view";	
+      
+      window.location.href = eventUrl;
+      
+      
+      }</script>
+  </head> 
+  <body>
+	
+    <div data-role="page" id="page">
+      <div data-role="header"  data-theme="c" data-id="myheader" data-position="fixed">		
+	<div data-role="navbar" >
+	  <ul>
+	    <li><a class="ui-btn-active">Technical Program</a></li>
+	    <li><a href="info.html" rel="external">Info</a></li>
+            
+	  </ul>
+	</div><!-- /navbar -->
+      </div><!-- /nav --> 
+      <div data-role="content">	
+	<div align="center"><img src="secon.jpg" width="150" height="55" alt="Secon"></div>
+	<p style="color:#0099ff;text-align:center;font-size:28px">Technical Program</p>
+	<ul data-role="listview" data-inset="true">
+          <li style="font-size: 12px; "><a href="#page27" rel="internal">Day 0 (Monday, Workshop: ETSIoT)</a></li>
+          <li style="font-size: 12px; "><a href="#page28" rel="internal">Day 0 (Monday, Workshop: VCSC)</a></li>
+	  <li style="font-size: 12px; "><a href="#page6" rel="internal">Day 1 (Tuesday, Conference)</a></li>
+	  <li style="font-size: 12px; "><a href="#page7" rel="internal">Day 2 (Wednesday, Conference)</a></li>
+	  <li style="font-size: 12px; "><a href="#page8" rel="internal">Day 3 (Thursday, Conference)</a></li>
+	</ul>
+      </div><!-- /content -->
+      
+      <div data-role="footer" data-theme="c" data-position="fixed">	
+	<div data-role="navbar">
+	  <ul>
+	    <li><div id="buttons"></div></li>
+ 	    <li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+            <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data role="button">Explore Korea</a></li>
+	  </ul>
+	</div><!-- /navbar -->   
+      </div><!-- /footer -->
+    </div><!-- /page -->
+    
 
- <script>function formSubmit(name, comment, id)
-{
-	a = name;
-	b = comment;
-	c = id;
-		
-	var url= "http://cold-spring-4585.herokuapp.com/comments/add.";
-	url= url+c+"&"+a+"&"+b;
-			
-		   window.location.href= url;
-			this.form.reset();
-       
-
-} </script>
-<script>function viewComments(id)
-{
-	
-	var eventUrl="http://cold-spring-4585.herokuapp.com/comments/";
-	eventUrl= eventUrl + id+ "/view";	
-	
-	window.location.href = eventUrl;
-	
-	
-}</script>
-</head> 
-<body>
-<div data-role="page" id="page">
-	<div data-role="header"  data-theme="c" data-id="myheader" data-position="fixed">		
-		<div data-role="navbar">
-			<ul>
-				<li><a class="ui-btn-active">Technical Programs</a></li>
-				<li><a href="info.html" rel="external">Info</a></li>
-        
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /nav --> 
+    <div data-role="page" id="page6">
+      <div data-role="header" data-theme="c" data-mini="true">
+		<h1 style="font-size: 14px; ">Day 1:  Technical Program</h1>
+      </div>
+      <div data-role="content">	
+	<ul data-role="listview" data-inset="true">
+	  <li style="font-size: 12px; "><a href="#page37" rel="internal">Keynote (Tue 9-10:30) -- Grand Ballroom</a></li>
+	  <li style="font-size: 12px; "><a href="#page9" rel="internal">The Medley (Tue 11-12:30) -- Grand Ballroom</a></li>
+	  <li style="font-size: 12px; "><a href="#page10" rel="internal">Energy Efficiency (Tue 3:30-5) -- Junior Ballroom I</a></li>
+	  <li style="font-size: 12px; "><a href="#page11" rel="internal">Scheduling and Resource Management (Tue 3:30-5) -- Junior Ballroom II </a></li>
+	</ul>	
+      </div>
+      <div data-role="footer" data-theme="c" data-position="fixed">	
+	<div data-role="navbar">
+	  <ul>
+	    <li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+            <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+	  </ul>
+	</div><!-- /navbar -->   
+      </div><!-- /footer -->
+    </div>
+    
+    <div data-role="page" id="page7">
+	<div data-role="header" data-theme="c">
+	  <h1 style="font-size: 14px; ">Day 2:  Technical Program</h1>
+	</div>
 	<div data-role="content">	
-
-		<p style="color:blue;text-align:center;font-size:36px">Technical Programs</p>
-			<ul data-role="listview" data-inset="true">
-            	<li><a href="#page27" rel="internal">Day 0 (Monday, Workshop: ETSIoT)</a></li>
-                <li><a href="#page28" rel="internal">Day 0 (Monday, Workshop: VCSC)</a></li>
-				<li><a href="#page6" rel="internal">Day 1 (Tuesday, Conference)</a></li>
-				<li><a href="#page7" rel="internal">Day 2 (Wednesday, Conference)</a></li>
-				<li><a href="#page8" rel="internal">Day 3 (Thursday, Conference)</a></li>
-				</ul>
-	</div><!-- /content -->
-
+		<ul data-role="listview" data-inset="true">
+		  <li style="font-size: 12px; "><a href="#page12" rel="internal">Data processing (Wed 9-10:30) -- Junior Ballroom I</a></li>
+		  <li style="font-size: 12px; "><a href="#page13" rel="internal">Routing I (Wed 9-10:30) -- Junior Ballroom II</a></li>
+		  <li style="font-size: 12px; "><a href="#page14" rel="internal">Localization (Wed 11-12:30) -- Junior Ballroom I</a></li>
+		  <li style="font-size: 12px; "><a href="#page15" rel="internal">Content sources and distribution (Wed 11-12:30) -- Junior Ballroom II</a></li>
+		  <li style="font-size: 12px; "><a href="#page16" rel="internal">Sensor Networks (Wed 3:30-5) -- Junior Ballroom I</a></li>
+		  <li style="font-size: 12px; "><a href="#page17" rel="internal">Routing II (Wed 3:30-5) -- Junior Ballroom II</a></li>
+		</ul>	
+	</div>
 	<div data-role="footer" data-theme="c" data-position="fixed">	
-		<div data-role="navbar">
-			<ul>
-				<li><div id="buttons"></div></li>
- 				<li><a>IEEE SECON 2012</a></li>
-        		        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data role="button">Explore Korea</a></li>
-			</ul>
-		</div><!-- /navbar -->   
+	  <div data-role="navbar">
+		<ul>
+		  <li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+		  <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		</ul>
+	</div><!-- /navbar -->   
 	</div><!-- /footer -->
-</div><!-- /page -->
-
-
-<div data-role="page" id="page6">
-	<div data-role="header" data-theme="c">
-		<h1>Day 1:  Technical Programs</h1>
-	</div>
-	<div data-role="content">	
-		<ul data-role="listview" data-inset="true">
-<li><a href="#page37" rel="internal">Keynote (Tue 9-10:30) -- Grand Ballroom</a></li>
-	<li><a href="#page9" rel="internal">The Medley (Tue 11-12:30) -- Grand Ballroom</a></li>
-	<li><a href="#page10" rel="internal">Energy Efficiency (Tue 3:30-5) -- Junior Ballroom I</a></li>
-	<li><a href="#page11" rel="internal">Scheduling and Resource Management (Tue 3:30-5) -- Junior Ballroom II </a></li>
-</ul>	
-	</div>
-	<div data-role="footer" data-theme="c" data-position="fixed">	
-<div data-role="navbar">
-		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+    </div>
+    
+    <div data-role="page" id="page8">
+      <div data-role="header"data-theme="c">
+	<h1 style="font-size: 14px; ">Day 3: Technical Program</h1>
+      </div>
+      <div data-role="content">	
+	<ul data-role="listview" data-inset="true">
+	  <li style="font-size: 12px; "><a href="#page18" rel="internal">Performance and Fairness (Thu 9-10:30) -- Junior Ballroom I </a></li>
+	  <li style="font-size: 12px; "><a href="#page19" rel="internal">PHY/MAC Techniques (Thu 9-10:30) -- Junior Ballroom II</a></li>
+	  <li style="font-size: 12px; "><a href="#page20" rel="internal">Security (Thu 11-12:30) -- Junior Ballroom I</a></li>
+	  <li style="font-size: 12px; "><a href="#page21" rel="internal">Sensing and Estimation (Thu 11-12:30) -- Junior Ballroom II</a></li>
+	  <li style="font-size: 12px; "><a href="#page22" rel="internal">Mobile Sensor Networks (Thu 1:30-3) -- Junior Ballroom I</a></li>
+	  <li style="font-size: 12px; "><a href="#page23" rel="internal">Privacy and Trust (Thu 1:30-3) -- Junior Ballroom II</a></li>
+	  <li style="font-size: 12px; "><a href="#page24" rel="internal">Topology, Coverage and Connectivity (Thu 3:30-5) -- Junior Ballroom I</a></li>
+	  <li style="font-size: 12px; "><a href="#page25" rel="internal">Vehicular Systems (Thu 3:30-5) -- Junior Ballroom II</a></li>
+	</ul>	
+      </div>
+      <div data-role="footer" data-theme="c" data-position="fixed">	
+	<div data-role="navbar">
+	  <ul>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+		<li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
-</div><!-- /footer -->
-</div>
+      </div><!-- /footer -->
+    </div>
+    
+    <div id="tab-Testing" class="tabs-container" >
+      <script type="text/javascript" language="javascript">
+	$(function(){ 
+	$('#form1 :radio.star').rating(); 
 
-<div data-role="page" id="page7">
-	<div data-role="header" data-theme="c">
-		<h1>Day 2:  Technical Programs</h1>
-	</div>
-	<div data-role="content">	
-		<ul data-role="listview" data-inset="true">
-	<li><a href="#page12" rel="internal">Data processing (Wed 9-10:30) -- Junior Ballroom I</a></li>
-	<li><a href="#page13" rel="internal">Routing I (Wed 9-10:30) -- Junior Ballroom II</a></li>
-	<li><a href="#page14" rel="internal">Localization (Wed 11-12:30) -- Junior Ballroom I</a></li>
-	<li><a href="#page15" rel="internal">Content sources and distribution (Wed 11-12:30) -- Junior Ballroom II</a></li>
-	<li><a href="#page16" rel="internal">Sensor Networks (Wed 3:30-5) -- Junior Ballroom I</a></li>
-    <li><a href="#page17" rel="internal">Routing II (Wed 3:30-5) -- Junior Ballroom II</a></li>
-</ul>	
-	</div>
-<div data-role="footer" data-theme="c" data-position="fixed">	
-<div data-role="navbar">
-		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
-		</ul>
-	</div><!-- /navbar -->   
-</div><!-- /footer -->
-</div>
-
-<div data-role="page" id="page8">
-	<div data-role="header"data-theme="c">
-		<h1>Day 3: Technical Programs</h1>
-	</div>
-	<div data-role="content">	
-		<ul data-role="listview" data-inset="true">
-	<li><a href="#page18" rel="internal">Performance and Fairness (Thu 9-10:30) -- Junior Ballroom I </a></li>
-	<li><a href="#page19" rel="internal">PHY/MAC Techniques (Thu 9-10:30) -- Junior Ballroom II</a></li>
-	<li><a href="#page20" rel="internal">Security (Thu 11-12:30) -- Junior Ballroom I</a></li>
-	<li><a href="#page21" rel="internal">Sensing and Estimation (Thu 11-12:30) -- Junior Ballroom II</a></li>
-	<li><a href="#page22" rel="internal">Mobile Sensor Networks (Thu 1:30-3) -- Junior Ballroom I</a></li>
-    <li><a href="#page23" rel="internal">Privacy and Trust (Thu 1:30-3) -- Junior Ballroom II</a></li>
-    <li><a href="#page24" rel="internal">Topology, Coverage and Connectivity (Thu 3:30-5) -- Junior Ballroom I</a></li>
-    <li><a href="#page25" rel="internal">Vehicular Systems (Thu 3:30-5) -- Junior Ballroom II</a></li>
-</ul>	
-	</div>
-	<div data-role="footer" data-theme="c" data-position="fixed">	
-<div data-role="navbar">
-		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
-		</ul>
-	</div><!-- /navbar -->   
-</div><!-- /footer -->
-</div>
-
-<div id="tab-Testing" class="tabs-container" >
-<script type="text/javascript" language="javascript">
-$(function(){ 
- $('#form1 :radio.star').rating(); 
-
-});
-</script>
-<script>
-$(function(){
- $('#tab-Testing form').submit(function(){
-  $('.test',this).html('');
-  $('input',this).each(function(){
-	  var ratingUrl = "http://cold-spring-4585.herokuapp.com/events/rating."
-   if(this.checked) {ratingUrl = ratingUrl +this.name+"&"+this.value;
-   
+	});
+      </script>
+      <script>
+	$(function(){
+	$('#tab-Testing form').submit(function(){
+	$('.test',this).html('');
+	$('input',this).each(function(){
+	var ratingUrl = "http://cold-spring-4585.herokuapp.com/events/rating."
+	if(this.checked) {ratingUrl = ratingUrl +this.name+"&"+this.value;
+	
    window.location.href= ratingUrl;
   	alert("Rated");
-   }}); window.location.href= events.html;
-  return false;
- });
-});
-</script>
-<form id="form1">
-
-<div data-role="page" id="page9">
-	<div data-role="header" data-theme="c">
-		<h1>Day 1: The Medley</h1>
+	}}); window.location.href= events.html;
+	return false;
+	});
+	});
+      </script>
+      <form id="form1">
+	
+	<div data-role="page" style="font-size: 12px;" id="page9" >
+	  <div data-role="header" data-theme="c">
+	    <h1 style="font-size: 14px; ">Day 1: The Medley</h1>
 	</div>
-    <div data-role="content">
-    <div data-role="collabsible-set">
-	<div data-role="collapsible"data-collapsed="true">	
-	<h2>Harmonic Quorum Systems: Data Management in 2D/3D Wireless Sensor Networks with Holes 
-    </h2>
-    <i>Authors: Chi Zhang; Jun Luo; Liu Xiang; Feng Li; Juncong Lin; Ying He</i>
-<p>
+	  <div data-role="content">
+	    <div data-role="collabsible-set">
+	      <div data-role="collapsible"data-collapsed="true">	
+		<h2>Harmonic Quorum Systems: Data Management in 2D/3D Wireless Sensor Networks with Holes 
+		</h2>
+		<i style="font-size: 12px;">Authors: Chi Zhang; Jun Luo; Liu Xiang; Feng Li; Juncong Lin; Ying He</i>
+		<p>
     
+		  
+		  
+		  
+		  
+		  <!-- start here --> 
+		  Comments and Rating</br>
+		  Your Name (optional): <input type="text" name="user" id="user"/><br />
+		  Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[0].value , document.getElementsByName('comment')[0].value, 1)" value="Post Comment" data-role="button" data-inline="true"  /> 
+		  <div>
+		    <input class="star" type="radio" name="1" value="1" style="display:">
+		    <input class="star" type="radio" name="1" value="2" style="display: none; ">
+		    <input class="star" type="radio" name="1" value="3" style="display: none; ">
+		    <input class="star" type="radio" name="1" value="4" style="display: none; ">
+		    <input class="star" type="radio" name="1" value="5" style="display: none; "></br>
+		    <input id= "rate" data-role="button" type="submit" value="Rate" class="inputbutton"/></div>
+		  
+		  <input type="button" onclick="viewComments(1)" value="View Comments" />
+		  <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val -->
+
+		</p>
+		
    
-       
- 
-       
-       <!-- start here -->
+		
+</p>
+</div>
+
+
+<div data-role="collapsible"data-collapsed="true">
+  <h3>On Renewable Sensor Networks with Wireless Energy Transfer: The Multi-Node Case</h3>
+  <i>Authors: Liguang Xie; Yi Shi; Thomas Hou; Wenjing Lou; Hanif Sherali; Scott F Midkiff </i>
+  <p>
+    
     Comments and Rating</br>
-    Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[0].value , document.getElementsByName('comment')[0].value, 1)" value="Post Comment" data-role="button" data-inline="true"  /> 
-    <div>
-<input class="star" type="radio" name="1" value="1" style="display:">
-<input class="star" type="radio" name="1" value="2" style="display: none; ">
-<input class="star" type="radio" name="1" value="3" style="display: none; ">
-<input class="star" type="radio" name="1" value="4" style="display: none; ">
-<input class="star" type="radio" name="1" value="5" style="display: none; ">
-<input id= "rate" data-role="button" data-inline="true" type="submit" value="Rate" class="inputbutton"/></div>
-
-<input type="button" onclick="viewComments(1)" value="View Comments" />
-<!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val -->
-
-</p>
-   
-   
- 
-</p>
-    </div>
-
-
-    <div data-role="collapsible"data-collapsed="true">
-	<h3>On Renewable Sensor Networks with Wireless Energy Transfer: The Multi-Node Case</h3>
-   <i>Authors: Liguang Xie; Yi Shi; Thomas Hou; Wenjing Lou; Hanif Sherali; Scott F Midkiff </i>
-   <p>
-    
-     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[1].value , document.getElementsByName('comment')[1].value, 2)" value="Post Comment" data-role="button" data-inline="true" />
     <div>
-<input class="star" type="radio" name="2" value="1" style="display:">
-<input class="star" type="radio" name="2" value="2" style="display: none; ">
-<input class="star" type="radio" name="2" value="3" style="display: none; ">
-<input class="star" type="radio" name="2" value="4" style="display: none; ">
-<input class="star" type="radio" name="2" value="5" style="display: none; "></br>
-<input type="submit" value="Rate"></div>
-    	
+      <input class="star" type="radio" name="2" value="1" style="display:">
+      <input class="star" type="radio" name="2" value="2" style="display: none; ">
+      <input class="star" type="radio" name="2" value="3" style="display: none; ">
+      <input class="star" type="radio" name="2" value="4" style="display: none; ">
+      <input class="star" type="radio" name="2" value="5" style="display: none; "></br>
+      <input type="submit" value="Rate"></div>
     
+    
+    
+    <input type="button" onclick="viewComments(2)" value="View Comments" />
+    <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+  </p>
+</div>
 
-<input type="button" onclick="viewComments(2)" value="View Comments" />
- <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
-</p>
-    </div>
 
-
-    <div data-role="collapsible"data-collapsed="true">
-	<h4>QoI-Aware Energy Management in Internet-of-Things Sensory Environments</h4>
-   <i>Authors: Zhanwei Sun; Chi Harold Liu; Chatschik Bisdikian; Jowl W. W. Branch; Bo Yang</i><p>
-     Comments and Rating</br>
+<div data-role="collapsible"data-collapsed="true">
+  <h4>QoI-Aware Energy Management in Internet-of-Things Sensory Environments</h4>
+  <i>Authors: Zhanwei Sun; Chi Harold Liu; Chatschik Bisdikian; Jowl W. W. Branch; Bo Yang</i><p>
+    Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[2].value , document.getElementsByName('comment')[2].value, 3)" value="Post Comment" data-role="button" data-inline="true" />
     <div>
-<input class="star" type="radio" name="3" value="1" style="display:">
+      <input class="star" type="radio" name="3" value="1" style="display:">
 <input class="star" type="radio" name="3" value="2" style="display: none; ">
 <input class="star" type="radio" name="3" value="3" style="display: none; ">
 <input class="star" type="radio" name="3" value="4" style="display: none; ">
@@ -259,184 +260,184 @@ $(function(){
     	
     
 
-<input type="button" onclick="viewComments(3)" value="View Comments" />
- <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
-</p>
-    </div>
+    <input type="button" onclick="viewComments(3)" value="View Comments" />
+    <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+  </p>
+</div>
 
 
-    <div data-role="collapsible"data-collapsed="true">
+<div data-role="collapsible"data-collapsed="true">
     <h5>Online Learning for Combinatorial Network Optimization with Restless Markovian Rewards</h5>
-   <i>Authors: Yi Gai; Bhaskar Krishnamachari; Mingyan Liu</i><p>
+    <i>Authors: Yi Gai; Bhaskar Krishnamachari; Mingyan Liu</i><p>
     Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
     Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[3].value , document.getElementsByName('comment')[3].value, 4)" value="Post Comment" data-role="button" data-inline="true" />
     <div>
-<input class="star" type="radio" name="4" value="1" style="display:">
+      <input class="star" type="radio" name="4" value="1" style="display:">
 <input class="star" type="radio" name="4" value="2" style="display: none; ">
 <input class="star" type="radio" name="4" value="3" style="display: none; ">
 <input class="star" type="radio" name="4" value="4" style="display: none; ">
 <input class="star" type="radio" name="4" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
-    	
     
-
-<input type="button" onclick="viewComments(4)" value="View Comments" />
- <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
-</p>
-	</div>
+    
+    
+    <input type="button" onclick="viewComments(4)" value="View Comments" />
+    <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+    </p>
+</div>
     </div>
-    </div>
+</div>
 	<div data-role="footer" data-theme="c" data-position="fixed">	
-<div data-role="navbar">
-		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
-		</ul>
-	</div><!-- /navbar -->   
-</div><!-- /footer -->
+	  <div data-role="navbar">
+	    <ul>
+	      <li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+              <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+	    </ul>
+	  </div><!-- /navbar -->   
+	</div><!-- /footer -->
 </div>
 
 
 
-<div data-role="page" id="page10">
-	<div data-role="header" data-theme="c">
-		<h1>Day 1: Energy Efficiency </h1>
-	</div>
-    <div data-role="content">
+<div data-role="page" style="font-size: 12px;"  id="page10">
+  <div data-role="header" data-theme="c">
+    <h1 style="font-size: 14px; ">Day 1: Energy Efficiency </h1>
+  </div>
+  <div data-role="content">
     <div data-role="collabsible-set">
-	<div data-role="collapsible"data-collapsed="true">	
+      <div data-role="collapsible"data-collapsed="true">	
 	<h2>Simulating Power/Energy Consumption of Sensor Nodes with Flexible Hardware in Wireless Networks</h2>
-    <i>Authors: Jingyao Zhang; Srikrishna Iyer; Patrick Schaumont; Yaling Yang</i><p>
-   Comments and Rating</br>
-    Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[4].value , document.getElementsByName('comment')[4].value, 5)" value="Post Comment" data-role="button" data-inline="true" /> 
-    <div>
-<input class="star" type="radio" name="5" value="1" style="display:">
-<input class="star" type="radio" name="5" value="2" style="display: none; ">
-<input class="star" type="radio" name="5" value="3" style="display: none; ">
-<input class="star" type="radio" name="5" value="4" style="display: none; ">
-<input class="star" type="radio" name="5" value="5" style="display: none; "></br>
-<input type="submit" value="Rate"></div>
-    	
-    
-
-<input type="button" onclick="viewComments(5)" value="View Comments" />
-<!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
-</p>
-    </div>
-
-    <div data-role="collapsible"data-collapsed="true">
+	<i>Authors: Jingyao Zhang; Srikrishna Iyer; Patrick Schaumont; Yaling Yang</i><p>
+	  Comments and Rating</br>
+	  Your Name (optional): <input type="text" name="user" id="user"/><br />
+	  Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[4].value , document.getElementsByName('comment')[4].value, 5)" value="Post Comment" data-role="button" data-inline="true" /> 
+	  <div>
+	    <input class="star" type="radio" name="5" value="1" style="display:">
+	    <input class="star" type="radio" name="5" value="2" style="display: none; ">
+	    <input class="star" type="radio" name="5" value="3" style="display: none; ">
+	    <input class="star" type="radio" name="5" value="4" style="display: none; ">
+	    <input class="star" type="radio" name="5" value="5" style="display: none; "></br>
+	    <input type="submit" value="Rate"></div>
+    	  
+	  
+	  
+	  <input type="button" onclick="viewComments(5)" value="View Comments" />
+	  <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+	</p>
+      </div>
+      
+      <div data-role="collapsible"data-collapsed="true">
 	<h3>OPERETTA: An Optimal Energy Efficient Bandwidth Aggregation System</h3>
-    <i>Authors: Karim Habak; Khaled A. Harras; Moustafa Youssef</i><p>
-    Comments and Rating</br>
-    Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[5].value , document.getElementsByName('comment')[5].value, 6)" value="Post Comment" data-role="button" data-inline="true" />
-    <div>
-<input class="star" type="radio" name="6" value="1" style="display:">
-<input class="star" type="radio" name="6" value="2" style="display: none; ">
-<input class="star" type="radio" name="6" value="3" style="display: none; ">
-<input class="star" type="radio" name="6" value="4" style="display: none; ">
-<input class="star" type="radio" name="6" value="5" style="display: none; "></br>
-<input type="submit" value="Rate"></div>
+	<i>Authors: Karim Habak; Khaled A. Harras; Moustafa Youssef</i><p>
+	  Comments and Rating</br>
+	  Your Name (optional): <input type="text" name="user" id="user"/><br />
+	  Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[5].value , document.getElementsByName('comment')[5].value, 6)" value="Post Comment" data-role="button" data-inline="true" />
+	  <div>
+	    <input class="star" type="radio" name="6" value="1" style="display:">
+	    <input class="star" type="radio" name="6" value="2" style="display: none; ">
+	    <input class="star" type="radio" name="6" value="3" style="display: none; ">
+	    <input class="star" type="radio" name="6" value="4" style="display: none; ">
+	    <input class="star" type="radio" name="6" value="5" style="display: none; "></br>
+	    <input type="submit" value="Rate"></div>
     	
     
 
-<input type="button" onclick="viewComments(6)" value="View Comments" />
- <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
-</p>
-    </div>
-
-
-    <div data-role="collapsible"data-collapsed="true">
+	  <input type="button" onclick="viewComments(6)" value="View Comments" />
+	  <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+	</p>
+      </div>
+      
+      
+      <div data-role="collapsible"data-collapsed="true">
 	<h4>An Energy-Efficient Approach for Provenance Transmission in Wireless Sensor Networks</h4>
-   <i>Authors: S. M. Iftekharul Alam; Sonia Fahmy</i><p>
-     Comments and Rating</br>
-    Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[6].value , document.getElementsByName('comment')[6].value, 7)" value="Post Comment" data-role="button" data-inline="true"  />
-    <div>
-<input class="star" type="radio" name="7" value="1" style="display:">
-<input class="star" type="radio" name="7" value="2" style="display: none; ">
-<input class="star" type="radio" name="7" value="3" style="display: none; ">
-<input class="star" type="radio" name="7" value="4" style="display: none; ">
-<input class="star" type="radio" name="7" value="5" style="display: none; "></br>
-<input type="submit" value="Rate"></div>
+	<i>Authors: S. M. Iftekharul Alam; Sonia Fahmy</i><p>
+	  Comments and Rating</br>
+	  Your Name (optional): <input type="text" name="user" id="user"/><br />
+	  Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[6].value , document.getElementsByName('comment')[6].value, 7)" value="Post Comment" data-role="button" data-inline="true"  />
+	  <div>
+	    <input class="star" type="radio" name="7" value="1" style="display:">
+	    <input class="star" type="radio" name="7" value="2" style="display: none; ">
+	    <input class="star" type="radio" name="7" value="3" style="display: none; ">
+	    <input class="star" type="radio" name="7" value="4" style="display: none; ">
+	    <input class="star" type="radio" name="7" value="5" style="display: none; "></br>
+	    <input type="submit" value="Rate"></div>
     	
     
 
-<input type="button" onclick="viewComments(7)" value="View Comments" />
- <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
-</p>
-    </div>
-
-
-    <div data-role="collapsible"data-collapsed="true">
-    <h5>AutoSync: Automatic Duty-Cycle Control for Synchronous Low-Power Listening</h5>
-    <i>Authors: Morten Tranberg Hanses; Branislav Kusy; Raja Jurdak; Koen Langendoen</i><p>
-    Comments and Rating</br>
-    Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[7].value , document.getElementsByName('comment')[7].value, 8)" value="Post Comment" data-role="button" data-inline="true"  />
-    <div>
-<input class="star" type="radio" name="8" value="1" style="display:">
-<input class="star" type="radio" name="8" value="2" style="display: none; ">
-<input class="star" type="radio" name="8" value="3" style="display: none; ">
-<input class="star" type="radio" name="8" value="4" style="display: none; ">
-<input class="star" type="radio" name="8" value="5" style="display: none; "></br>
-<input type="submit" value="Rate"></div>
-    	
+	  <input type="button" onclick="viewComments(7)" value="View Comments" />
+	  <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+	</p>
+      </div>
+      
+      
+      <div data-role="collapsible"data-collapsed="true">
+	<h5>AutoSync: Automatic Duty-Cycle Control for Synchronous Low-Power Listening</h5>
+	<i>Authors: Morten Tranberg Hanses; Branislav Kusy; Raja Jurdak; Koen Langendoen</i><p>
+	  Comments and Rating</br>
+	  Your Name (optional): <input type="text" name="user" id="user"/><br />
+	  Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[7].value , document.getElementsByName('comment')[7].value, 8)" value="Post Comment" data-role="button" data-inline="true"  />
+	  <div>
+	    <input class="star" type="radio" name="8" value="1" style="display:">
+	    <input class="star" type="radio" name="8" value="2" style="display: none; ">
+	    <input class="star" type="radio" name="8" value="3" style="display: none; ">
+	    <input class="star" type="radio" name="8" value="4" style="display: none; ">
+	    <input class="star" type="radio" name="8" value="5" style="display: none; "></br>
+	    <input type="submit" value="Rate"></div>
+    	  
     
 
-<input type="button" onclick="viewComments(8)" value="View Comments" />
- <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
-</p>
-	</div>
+	  <input type="button" onclick="viewComments(8)" value="View Comments" />
+	  <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+	</p>
+      </div>
     </div>
-    </div>
-	<div data-role="footer" data-theme="c" data-position="fixed">	
-<div data-role="navbar">
-		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
-		</ul>
-	</div><!-- /navbar -->   
-</div><!-- /footer -->
+  </div>
+  <div data-role="footer" data-theme="c" data-position="fixed">	
+    <div data-role="navbar">
+      <ul>
+	<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+      </ul>
+    </div><!-- /navbar -->   
+  </div><!-- /footer -->
 </div>
 
-<div data-role="page" id="page11">
-	<div data-role="header" data-theme="c">
-		<h1>Day 1: Scheduling and Resource Management</h1>
-	</div>
-    <div data-role="content">
+<div data-role="page" style="font-size: 12px;"  id="page11">
+  <div data-role="header" data-theme="c">
+    <h1 style="font-size: 14px; ">Day 1: Scheduling and Resource Management</h1>
+  </div>
+  <div data-role="content">
     <div data-role="collabsible-set">
-	<div data-role="collapsible"data-collapsed="true">	
+      <div data-role="collapsible"data-collapsed="true">	
 	<h2>Convergecast with Aggregatable Data Classes</h2>
-    <i>Authors: Fangfei Chen; Matthew P Johnson; Amotz Bar-Noy; Tom La Porta</i><p>
-     Comments and Rating</br>
-    Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[8].value , document.getElementsByName('comment')[8].value, 9)" value="Post Comment" data-role="button" data-inline="true"  />
-    <div>
-<input class="star" type="radio" name="9" value="1" style="display:">
-<input class="star" type="radio" name="9" value="2" style="display: none; ">
-<input class="star" type="radio" name="9" value="3" style="display: none; ">
-<input class="star" type="radio" name="9" value="4" style="display: none; ">
-<input class="star" type="radio" name="9" value="5" style="display: none; "></br>
-<input type="submit" value="Rate"></div>
-<input type="button" onclick="viewComments(9)" value="View Comments" />
- <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
-</p>
-    </div>
-    <div data-role="collapsible"data-collapsed="true">
+	<i>Authors: Fangfei Chen; Matthew P Johnson; Amotz Bar-Noy; Tom La Porta</i><p>
+	  Comments and Rating</br>
+	  Your Name (optional): <input type="text" name="user" id="user"/><br />
+	  Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[8].value , document.getElementsByName('comment')[8].value, 9)" value="Post Comment" data-role="button" data-inline="true"  />
+	  <div>
+	    <input class="star" type="radio" name="9" value="1" style="display:">
+	    <input class="star" type="radio" name="9" value="2" style="display: none; ">
+	    <input class="star" type="radio" name="9" value="3" style="display: none; ">
+	    <input class="star" type="radio" name="9" value="4" style="display: none; ">
+	    <input class="star" type="radio" name="9" value="5" style="display: none; "></br>
+	    <input type="submit" value="Rate"></div>
+	  <input type="button" onclick="viewComments(9)" value="View Comments" />
+	  <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> 
+	</p>
+      </div>
+      <div data-role="collapsible"data-collapsed="true">
 	<h3>Flexible Beacon Scheduling Scheme for Interference Mitigation in Body Sensor Networks</h3>
-    <i>Authors: Seungku Kim; Seokhwan Kim; Jin-Woo Kim; Doo-seop Eom</i><p>
-    Comments and Rating</br>
-    Your Name (optional): <input type="text" name="user" id="user"/><br />
-    Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[9].value , document.getElementsByName('comment')[9].value, 10)" value="Post Comment" data-role="button" data-inline="true"  />
-    <div>
-<input class="star" type="radio" name="10" value="1" style="display:">
-<input class="star" type="radio" name="10" value="2" style="display: none; ">
-<input class="star" type="radio" name="10" value="3" style="display: none; ">
-<input class="star" type="radio" name="10" value="4" style="display: none; ">
-<input class="star" type="radio" name="10" value="5" style="display: none; "></br>
+	<i>Authors: Seungku Kim; Seokhwan Kim; Jin-Woo Kim; Doo-seop Eom</i><p>
+	  Comments and Rating</br>
+	  Your Name (optional): <input type="text" name="user" id="user"/><br />
+	  Comments: <input type="text" name="comment" id="comment" value="" onFocus="this.value=''; return false;"   / ><input type="button" onclick="formSubmit(document.getElementsByName('user')[9].value , document.getElementsByName('comment')[9].value, 10)" value="Post Comment" data-role="button" data-inline="true"  />
+	  <div>
+	    <input class="star" type="radio" name="10" value="1" style="display:">
+	    <input class="star" type="radio" name="10" value="2" style="display: none; ">
+	    <input class="star" type="radio" name="10" value="3" style="display: none; ">
+	    <input class="star" type="radio" name="10" value="4" style="display: none; ">
+	    <input class="star" type="radio" name="10" value="5" style="display: none; "></br>
 <input type="submit" value="Rate"></div>
 <input type="button" onclick="viewComments(10)" value="View Comments" />
  <!-- to here change onclick="formSubmit(document.getElementById('user').value , document.getElementById('comment').value, 1)" change 1 to 2... etc. and array val --> </p>
@@ -480,16 +481,16 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
-<div data-role="page" id="page12">
+<div data-role="page" style="font-size: 12px;"  id="page12">
 	<div data-role="header" data-theme="c">
-		<h1>Day 2: Data processing</h1>
+		<h1 style="font-size: 14px; ">Day 2: Data processing</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -565,16 +566,16 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
-<div data-role="page" id="page13">
+<div data-role="page" style="font-size: 12px;"  id="page13">
 	<div data-role="header" data-theme="c">
-		<h1>Day 2: Routing I </h1>
+		<h1 style="font-size: 14px; ">Day 2: Routing I </h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -652,16 +653,16 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
-<div data-role="page" id="page14">
+<div data-role="page" style="font-size: 12px;"  id="page14">
 	<div data-role="header" data-theme="c">
-		<h1>Day 2: Localization</h1>
+		<h1 style="font-size: 14px; ">Day 2: Localization</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -738,16 +739,16 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
-<div data-role="page" id="page15">
+<div data-role="page" style="font-size: 12px;"  id="page15">
 	<div data-role="header" data-theme="c">
-		<h1>Day 2: Content sources and distribution</h1>
+		<h1 style="font-size: 14px; ">Day 2: Content sources and distribution</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -824,16 +825,16 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
-<div data-role="page" id="page16">
+<div data-role="page" style="font-size: 12px;"  id="page16">
 	<div data-role="header" data-theme="c">
-		<h1>Day 2: Sensor Networks</h1>
+		<h1 style="font-size: 14px; ">Day 2: Sensor Networks</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -910,16 +911,16 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
-<div data-role="page" id="page17">
+<div data-role="page" style="font-size: 12px;"  id="page17">
 	<div data-role="header" data-theme="c">
-		<h1>Day 2: Routing II</h1>
+		<h1 style="font-size: 14px; ">Day 2: Routing II</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -996,16 +997,16 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
-<div data-role="page" id="page18">
+<div data-role="page" style="font-size: 12px;"  id="page18">
 	<div data-role="header" data-theme="c">
-		<h1>Day 3: Performance and Fairness</h1>
+		<h1 style="font-size: 14px; ">Day 3: Performance and Fairness</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -1082,16 +1083,16 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
-<div data-role="page" id="page19">
+<div data-role="page" style="font-size: 12px;"  id="page19">
 	<div data-role="header" data-theme="c">
-		<h1>Day 3: PHY/MAC Techniques</h1>
+		<h1 style="font-size: 14px; ">Day 3: PHY/MAC Techniques</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -1168,16 +1169,16 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
-<div data-role="page" id="page20">
+<div data-role="page" style="font-size: 12px;"  id="page20">
 	<div data-role="header" data-theme="c">
-		<h1>Day 3: Security</h1>
+		<h1 style="font-size: 14px; ">Day 3: Security</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -1254,16 +1255,16 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
-<div data-role="page" id="page21">
+<div data-role="page" style="font-size: 12px;"  id="page21">
 	<div data-role="header" data-theme="c">
-		<h1>Day 3: Sensing and Estimation</h1>
+		<h1 style="font-size: 14px; ">Day 3: Sensing and Estimation</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -1340,16 +1341,16 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
-<div data-role="page" id="page22">
+<div data-role="page" style="font-size: 12px;"  id="page22">
 	<div data-role="header" data-theme="c">
-		<h1>Day 3: Mobile Sensor Networks</h1>
+		<h1 style="font-size: 14px; ">Day 3: Mobile Sensor Networks</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -1426,16 +1427,16 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
-<div data-role="page" id="page23">
+<div data-role="page" style="font-size: 12px;"  id="page23">
 	<div data-role="header" data-theme="c">
-		<h1>Day 3: Privacy and Trust</h1>
+		<h1 style="font-size: 14px; ">Day 3: Privacy and Trust</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -1512,16 +1513,16 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
-<div data-role="page" id="page24">
+<div data-role="page" style="font-size: 12px;"  id="page24">
 	<div data-role="header" data-theme="c">
-		<h1>Day 3: Topology, Coverage and Connectivity</h1>
+		<h1 style="font-size: 14px; ">Day 3: Topology, Coverage and Connectivity</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -1598,16 +1599,16 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
-<div data-role="page" id="page25">
+<div data-role="page" style="font-size: 12px;"  id="page25">
 	<div data-role="header" data-theme="c">
-		<h1>Day 3: Vehicular Systems</h1>
+		<h1 style="font-size: 14px; ">Day 3: Vehicular Systems</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -1668,8 +1669,8 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -1677,32 +1678,32 @@ $(function(){
 
 
 
-<div data-role="page" id="page27">
+<div data-role="page" style="font-size: 12px;"  id="page27">
 	<div data-role="header" data-theme="c">
-		<h1>Day 0:  ETSIoT Workshops</h1>
+		<h1 style="font-size: 14px; ">Day 0:  ETSIoT Workshop</h1>
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview" data-inset="true">
-	<li><a href="#page29" rel="internal">Communications and Networks (Mon 9-10:30) -- Topaz & Coral Rooms, 3rd floor</a></li>
-	<li><a href="#page30" rel="internal">Intelligent Device Management (Mon 11-12:30) -- Topaz & Coral Rooms, 3rd floor</a></li>
-	<li><a href="#page31" rel="internal">(Invited Talks)* Toward Smartphone and IoT vision (Mon 1:30-3) -- Topaz & Coral Rooms, 3rd floor</a></li>
-	<li><a href="#page32" rel="internal">App: Information Fusion, Localization (Mon 3:30-5) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li style="font-size: 12px; "><a href="#page29" rel="internal">Communications and Networks (Mon 9-10:30) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li style="font-size: 12px; "><a href="#page30" rel="internal">Intelligent Device Management (Mon 11-12:30) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li style="font-size: 12px; "><a href="#page31" rel="internal">(Invited Talks)* Toward Smartphone and IoT vision (Mon 1:30-3) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li style="font-size: 12px; "><a href="#page32" rel="internal">App: Information Fusion, Localization (Mon 3:30-5) -- Topaz & Coral Rooms, 3rd floor</a></li>
 </ul>	
 	</div>
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
 
-<div data-role="page" id="page29">
+<div data-role="page" style="font-size: 12px;"  id="page29">
 	<div data-role="header" data-theme="c">
-		<h1>Day 0: Communications and Networks</h1>
+		<h1 style="font-size: 14px; ">Day 0: Communications and Networks</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -1783,17 +1784,17 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
 
-<div data-role="page" id="page30">
+<div data-role="page" style="font-size: 12px;"  id="page30">
 	<div data-role="header" data-theme="c">
-		<h1>Day 0: Intelliegent Device Management</h1>
+		<h1 style="font-size: 14px; ">Day 0: Intelliegent Device Management</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -1874,8 +1875,8 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -1883,9 +1884,9 @@ $(function(){
 
 
 
-<div data-role="page" id="page31">
+<div data-role="page" style="font-size: 12px;"  id="page31">
 	<div data-role="header" data-theme="c">
-		<h1>Day 0: (Invited Talks)* Toward Smartphone and IoT Vision</h1>
+		<h1 style="font-size: 14px; ">Day 0: (Invited Talks)* Toward Smartphone and IoT Vision</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -1950,8 +1951,8 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -1959,9 +1960,9 @@ $(function(){
 
 
 
-<div data-role="page" id="page32">
+<div data-role="page" style="font-size: 12px;"  id="page32">
 	<div data-role="header" data-theme="c">
-		<h1>Day 0: App: Information Fusion, Localization</h1>
+		<h1 style="font-size: 14px; ">Day 0: App: Information Fusion, Localization</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -2041,8 +2042,8 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -2051,32 +2052,32 @@ $(function(){
 
 
 
-<div data-role="page" id="page28">
+<div data-role="page" style="font-size: 12px;"  id="page28">
 	<div data-role="header" data-theme="c">
-		<h1>Day 0:  VCSC Workshops</h1>
+		<h1 style="font-size: 14px; ">Day 0:  VCSC Workshop</h1>
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview" data-inset="true">
-	<li><a href="#page33" rel="internal">Keynote Speeches (Mon 9-10:30) -- Topaz & Coral Rooms, 3rd floor</a></li>
-	<li><a href="#page34" rel="internal">Vehicular Communication and Propagation (Mon 11-12:30) -- Topaz & Coral Rooms, 3rd floor</a></li>
-	<li><a href="#page35" rel="internal">Vehicular Networking Protocols (Mon 1:30-3) -- Topaz & Coral Rooms, 3rd floor</a></li>
-	<li><a href="#page36" rel="internal">Vehicular Mobility, Security and Management (Mon 3:30-5) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li style="font-size: 12px; "><a href="#page33" rel="internal">Keynote Speeches (Mon 9-10:30) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li style="font-size: 12px; "><a href="#page34" rel="internal">Vehicular Communication and Propagation (Mon 11-12:30) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li style="font-size: 12px; "><a href="#page35" rel="internal">Vehicular Networking Protocols (Mon 1:30-3) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li style="font-size: 12px; "><a href="#page36" rel="internal">Vehicular Mobility, Security and Management (Mon 3:30-5) -- Topaz & Coral Rooms, 3rd floor</a></li>
 </ul>	
 	</div>
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
 
-<div data-role="page" id="page33">
+<div data-role="page" style="font-size: 12px;"  id="page33">
 	<div data-role="header" data-theme="c">
-		<h1>Day 0: Keynote Speeches</h1>
+		<h1 style="font-size: 14px; ">Day 0: Keynote Speeches</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -2122,17 +2123,17 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
 
-<div data-role="page" id="page34">
+<div data-role="page" style="font-size: 12px;"  id="page34">
 	<div data-role="header" data-theme="c">
-		<h1>Day 0: Vehicular Communication and Propagation</h1>
+		<h1 style="font-size: 14px; ">Day 0: Vehicular Communication and Propagation</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -2194,8 +2195,8 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -2203,9 +2204,9 @@ $(function(){
 
 
 
-<div data-role="page" id="page35">
+<div data-role="page" style="font-size: 12px;"  id="page35">
 	<div data-role="header" data-theme="c">
-		<h1>Day 0: Vehicular Networking Protocols</h1>
+		<h1 style="font-size: 14px; ">Day 0: Vehicular Networking Protocols</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -2268,8 +2269,8 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
@@ -2277,9 +2278,9 @@ $(function(){
 
 
 
-<div data-role="page" id="page36">
+<div data-role="page" style="font-size: 12px;"  id="page36">
 	<div data-role="header" data-theme="c">
-		<h1>Day 0: Vehicular Mobility, Security and Management</h1>
+		<h1 style="font-size: 14px; ">Day 0: Vehicular Mobility, Security and Management</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -2340,16 +2341,16 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
 
-<div data-role="page" id="page37">
+<div data-role="page" style="font-size: 12px;"  id="page37">
 	<div data-role="header" data-theme="c">
-		<h1>Day 1: Keynotes</h1>
+		<h1 style="font-size: 14px; ">Day 1: Keynotes</h1>
 	</div>
     <div data-role="content">
     <div data-role="collabsible-set">
@@ -2393,8 +2394,8 @@ $(function(){
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
-		<li><a>IEEE SECON 2012</a></li>
-        <li><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
+		<li style="font-size: 12px; "><a>IEEE SECON 2012</a></li>
+        <li style="font-size: 12px; "><a href="http://www.wikitravel.org/en/Seoul" target = "_blank" data-role="button">Explore Korea</a></li>
 		</ul>
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
