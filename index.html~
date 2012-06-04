@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html manifest="/offline.appcache">
+<html manifest="/offline.manifest">
   <head>
     <meta charset="UTF-8">
     <title>Secon 2012</title>
@@ -1684,10 +1684,10 @@
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview" data-inset="true">
-	<li style="font-size: 12px; "><a href="#page29" rel="internal">Communications and Networks (Mon 9-10:30) -- Coral Room</a></li>
-	<li style="font-size: 12px; "><a href="#page30" rel="internal">Intelligent Device Management (Mon 11-12:30) -- Coral Room</a></li>
-	<li style="font-size: 12px; "><a href="#page31" rel="internal">(Invited Talks)* Toward Smartphone and IoT vision (Mon 1:30-3) -- Coral Room</a></li>
-	<li style="font-size: 12px; "><a href="#page32" rel="internal">App: Information Fusion, Localization (Mon 3:30-5) -- Coral Room</a></li>
+	<li style="font-size: 12px; "><a href="#page29" rel="internal">Communications and Networks (Mon 9-10:30) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li style="font-size: 12px; "><a href="#page30" rel="internal">Intelligent Device Management (Mon 11-12:30) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li style="font-size: 12px; "><a href="#page31" rel="internal">(Invited Talks)* Toward Smartphone and IoT vision (Mon 1:30-3) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li style="font-size: 12px; "><a href="#page32" rel="internal">App: Information Fusion, Localization (Mon 3:30-5) -- Topaz & Coral Rooms, 3rd floor</a></li>
 </ul>	
 	</div>
 	<div data-role="footer" data-theme="c" data-position="fixed">	
@@ -2058,10 +2058,10 @@
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview" data-inset="true">
-	<li style="font-size: 12px; "><a href="#page33" rel="internal">Keynote Speeches (Mon 9-10:30) -- Topaz Room</a></li>
-	<li style="font-size: 12px; "><a href="#page34" rel="internal">Vehicular Communication and Propagation (Mon 11-12:30) -- Topaz Room</a></li>
-	<li style="font-size: 12px; "><a href="#page35" rel="internal">Vehicular Networking Protocols (Mon 1:30-3) -- Topaz Room</a></li>
-	<li style="font-size: 12px; "><a href="#page36" rel="internal">Vehicular Mobility, Security and Management (Mon 3:30-5) -- Topaz Room</a></li>
+	<li style="font-size: 12px; "><a href="#page33" rel="internal">Keynote Speeches (Mon 9-10:30) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li style="font-size: 12px; "><a href="#page34" rel="internal">Vehicular Communication and Propagation (Mon 11-12:30) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li style="font-size: 12px; "><a href="#page35" rel="internal">Vehicular Networking Protocols (Mon 1:30-3) -- Topaz & Coral Rooms, 3rd floor</a></li>
+	<li style="font-size: 12px; "><a href="#page36" rel="internal">Vehicular Mobility, Security and Management (Mon 3:30-5) -- Topaz & Coral Rooms, 3rd floor</a></li>
 </ul>	
 	</div>
 	<div data-role="footer" data-theme="c" data-position="fixed">	
