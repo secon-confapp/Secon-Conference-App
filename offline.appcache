@@ -1,20 +1,14 @@
 CACHE MANIFEST
-#This is version 1.0
+#This is version 1.2.1
 
 CACHE:
-forums.html
 info.html
-eventDetails.html
 style.css
 comsoc.jpg
 ieee.jpg
 secon.jpg
-down.gif
-up.gif
 jquery.cookie.js
 jquery.loadJSON.js
-phonegap.js
-tablekit.js
 jquery-mobile/images/ajax-loader.png
 jquery-mobile/images/form-check-off.png
 jquery-mobile/images/form-check-on.png
@@ -36,9 +30,6 @@ scriptaculous/src/effects.js
 scriptaculous/src/scriptaculous.js
 scriptaculous/src/slider.js
 scriptaculous/src/unittest.js
-scriptaculous/CHANGELOG
-scriptaculous/MIT-LICENSE
-scriptaculous/README
 Social/images/bg.jpg
 Social/images/buzz.png
 Social/images/delicious.png
@@ -52,14 +43,10 @@ Social/images/plus.png
 Social/images/reddit.png
 Social/images/stumbleupon.png
 Social/images/twitter.png
-Social/index.htm
 Social/jsShare.css
 Social/jsShare.js
 Social/MyriadPro-Regular.otf
 star-rating/delete.gif
-star-rating/documentation.html
-star-rating/index.asp
-star-rating/index.html
 star-rating/jquery.form.js
 star-rating/jquery.js
 star-rating/jquery.MetaData.js
