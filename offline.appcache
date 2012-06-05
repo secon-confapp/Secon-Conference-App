@@ -2,10 +2,10 @@ CACHE MANIFEST
 #This is a comment
 
 CACHE:
+forums.html
 index.html
 info.html
 eventDetails.html
-forums.html
 style.css
 comsoc.jpg
 ieee.jpg
