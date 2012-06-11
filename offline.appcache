@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#This is version 1.8
+#This is version 1.8.1
 
 
 
@@ -11,6 +11,7 @@ style.css
 comsoc.jpg
 ieee.jpg
 secon.jpg
+map.png
 jquery.cookie.js
 jquery.loadJSON.js
 jquery-mobile/images/ajax-loader.png
