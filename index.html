@@ -205,11 +205,11 @@
 	$('input',this).each(function(){
 	var ratingUrl = "http://cold-spring-4585.herokuapp.com/events/changerating/"
 	if(this.checked) {ratingUrl = ratingUrl +this.name+"/"+this.value+"/"+localStorage.uid;
-	
+	alert(ratingUrl);
    window.location.href= ratingUrl;
   	alert("Rated");
 	
-	}}); window.location.href= "index.html";
+	}}); window.location.href= "javascript:history.go(-1)";
 	return false;
 	});
 	});
@@ -2391,7 +2391,7 @@
     <div data-role="content">
     <div data-role="collabsible-set">
 	<div data-role="collapsible"data-collapsed="true">	
-	<h2>6LowAID: An Efficient Adaptation Identifier Compression Mechanism for 6Lowpan</h2>
+	<h2 class = "demosposters" >6LowAID: An Efficient Adaptation Identifier Compression Mechanism for 6Lowpan</h2>
     <i>Authors: Dhananjay Singh; Bakul Gohel</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
@@ -2410,7 +2410,7 @@
     </div>
 	
 		<div data-role="collapsible"data-collapsed="true">	
-	<h3>Protecting Incumbent Licensed Services in TV White Spaces</h3>
+	<h3 class = "demosposters">Protecting Incumbent Licensed Services in TV White Spaces</h3>
     <i>Authors: Minh Thao Quach; Hicham Kalife</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
@@ -2429,7 +2429,7 @@
     </div>
 	
 			<div data-role="collapsible"data-collapsed="true">	
-	<h4>Towards Introducing Self-Configurability in Cognitive Femtocell Networks</h4>
+	<h4 class = "demosposters">Towards Introducing Self-Configurability in Cognitive Femtocell Networks</h4>
     <i>Authors: Furqan H. Khan; Young-June Choi</i><p>
      Comments and Rating</br>
     Your Name (optional): <input type="text" name="user" id="user"/><br />
