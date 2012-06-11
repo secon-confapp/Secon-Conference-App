@@ -1,5 +1,9 @@
 CACHE MANIFEST
+<<<<<<< HEAD
 #This is version 1.5.7.12
+=======
+#This is version 1.6.4
+>>>>>>> 4de344514d52862253db63629a66b94e2c47943b
 
 CACHE:
 info.html
