@@ -205,17 +205,14 @@
 	$('input',this).each(function(){
 	var ratingUrl = "http://cold-spring-4585.herokuapp.com/events/changerating/"
 	if(this.checked) {ratingUrl = ratingUrl +this.name+"/"+this.value+"/"+localStorage.uid;
-<<<<<<< HEAD
+
 	
 	
-  	alert("Rated");
-	window.location.href= ratingUrl;
-=======
-	alert(ratingUrl);
+ 
+     
    window.location.href= ratingUrl;
   	alert("Rated");
 	
->>>>>>> 4de344514d52862253db63629a66b94e2c47943b
 	}}); window.location.href= "javascript:history.go(-1)";
 	return false;
 	});
