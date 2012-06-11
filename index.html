@@ -205,7 +205,11 @@
 	$('input',this).each(function(){
 	var ratingUrl = "http://cold-spring-4585.herokuapp.com/events/changerating/"
 	if(this.checked) {ratingUrl = ratingUrl +this.name+"/"+this.value+"/"+localStorage.uid;
-	alert(ratingUrl);
+
+	
+	
+ 
+     
    window.location.href= ratingUrl;
   	alert("Rated");
 	
