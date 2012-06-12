@@ -204,21 +204,17 @@
 	$('.test',this).html('');
 	$('input',this).each(function(){
 	var ratingUrl = "http://cold-spring-4585.herokuapp.com/events/changerating/"
-	if(this.checked) {ratingUrl = ratingUrl +this.name+"/"+this.value+"/"+localStorage.uid;
-
+	if(this.checked) {
+	ratingUrl = ratingUrl +this.name+"/"+this.value+"/"+localStorage.uid;
 	
-	
- 
-     
-   window.location.href= ratingUrl;
+	window.location.href= ratingUrl;
   	alert("Rated");
 	
-	}}); window.location.href= "javascript:history.go(-1)";
-	return false;
-	});
+	}});  
+	return false;});
 	});
       </script>
-	  
+      
 <form id="form1">
 	
 <div data-role="page" style="font-size: 12px;" id="page9" >
@@ -336,7 +332,7 @@
 	    </ul>
 	  </div><!-- /navbar -->   
 	</div><!-- /footer -->
-</div></div>
+</div>
 
 <div data-role="page" style="font-size: 12px;"  id="page10">
   <div data-role="header" data-theme="c">
@@ -610,7 +606,7 @@
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
-
+</div>
 <div data-role="page" style="font-size: 12px;"  id="page13">
 	<div data-role="header" data-theme="c">
 		<h1 style="font-size: 14px; ">Day 2: Routing I </h1>
@@ -2146,7 +2142,6 @@
 </p>
     </div>
     </div>
-    </div>
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
@@ -2156,7 +2151,7 @@
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
-
+</div>
 <div data-role="page" style="font-size: 12px;"  id="page34">
 	<div data-role="header" data-theme="c">
 		<h1 style="font-size: 14px; ">Day 0: Vehicular Communication and Propagation</h1>
@@ -3115,7 +3110,6 @@
 </p>
     </div>
     </div>
-    </div>
 	<div data-role="footer" data-theme="c" data-position="fixed">	
 <div data-role="navbar">
 		<ul>
@@ -3125,6 +3119,10 @@
 	</div><!-- /navbar -->   
 </div><!-- /footer -->
 </div>
+</div>
+
+
+
 </form>
 </body>
 </html>
